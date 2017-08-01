@@ -1,9 +1,11 @@
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'starter',
+    title: "sobolevn's personal page",
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -14,7 +16,11 @@ module.exports = {
       }
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Questrial'
+      }
     ]
   },
 
@@ -36,11 +42,17 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules|dist)/
         })
       }
-    }
+    },
+
+    rootDir: __dirname,
+
+    vendor: ['vue-awesome']
   },
-  srcDir: path.resolve(__dirname, 'src', 'client'),
-  buildDir: 'dist/client'
+
+  plugins: [
+    '~plugins/vue-awesome'
+  ]
 }
