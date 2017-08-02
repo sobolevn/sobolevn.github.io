@@ -1,11 +1,7 @@
-# STATIC
+# sobolevn.github.io
 
-This directory contains your static files.
-Each file inside this directory is mapped to /.
+> sobolevn's personal page
 
-Example: /static/robots.txt is mapped as /robots.txt.
+![sobolevn's personal page](https://raw.githubusercontent.com/sobolevn/sobolevn.github.io/master/preview.png)
 
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/assets#static
-
-**This directory is not required, you can delete it if you don't want to use it.**
+Full readme is available here: https://github.com/sobolevn/sobolevn.github.io/tree/nuxt (`nuxt` is the default branch)

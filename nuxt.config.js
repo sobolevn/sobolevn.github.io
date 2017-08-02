@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   /*
   ** Headers of the page
@@ -46,8 +44,6 @@ module.exports = {
         })
       }
     },
-
-    rootDir: __dirname,
 
     vendor: ['vue-awesome']
   },
