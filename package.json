@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "normalize.css": "^7.0.0",
-    "nuxt": "1.1.1",
+    "nuxt": "1.2.1",
     "particles.js": "^2.0.0",
     "vue-awesome": "^2.3.4"
   },
