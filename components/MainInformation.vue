@@ -16,6 +16,10 @@
           <a href="https://medium.com/@sobolevn">
             <icon name="medium" scale="2" />
           </a>
+
+          <a href="https://dev.to/sobolevn">
+            <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Nikita Sobolev's DEV Profile" height="30" width="30" />
+          </a>
         </div>
       </div>
   </div>
@@ -69,7 +73,8 @@ export default {
     .main-information-card-icons {
       margin-top: 30px;
 
-      svg {
+      svg,
+      img {
         margin: 10px;
       }
     }
