@@ -6,3 +6,6 @@ npm-debug.log
 
 # Nuxt build
 .nuxt
+
+# Do not ignore dist
+!/dist
