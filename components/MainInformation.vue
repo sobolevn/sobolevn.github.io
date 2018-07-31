@@ -10,15 +10,19 @@
 
         <div class="main-information-card-icons">
           <a href="https://github.com/sobolevn">
-            <icon name="github" scale="2" />
+            <icon name="brands/github" scale="2" />
           </a>
 
           <a href="https://medium.com/@sobolevn">
-            <icon name="medium" scale="2" />
+            <icon name="brands/medium" scale="2" />
           </a>
 
           <a href="https://dev.to/sobolevn">
             <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Nikita Sobolev's DEV Profile" height="30" width="30" />
+          </a>
+
+          <a href="https://github.com/sobolevn/my-talks/">
+            <icon name="microphone-alt" scale="2" />
           </a>
         </div>
       </div>
