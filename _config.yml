@@ -30,6 +30,6 @@ sass:
 exclude: [vendor]
 
 # Plugins:
-gems:
+plugins:
   - jekyll-seo-tag
   - jemoji
