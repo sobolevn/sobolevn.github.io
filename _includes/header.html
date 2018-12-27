@@ -1,0 +1,17 @@
+<header class="c-page__header">
+  <h1><code>{{ site.title }}</code></h1>
+
+  {% if page.title == nil %}
+  <h1>{{ site.description }}</h1>
+  {% endif %}
+
+  <p>
+    <a href="{{ "/" | prepend: site.baseurl }}">Blog</a>
+    <span class="u-separate"></span>
+    <a href="{{ "/talks/" | prepend: site.baseurl }}">Talks</a>
+    <span class="u-separate"></span>
+    <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+    <span class="u-separate"></span>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+  </p>
+</header>

@@ -1,0 +1,35 @@
+# Site settings
+title: "sobolevn's personal blog"
+description: >
+  @sobolevn on good software, mediocre software, and bad software.
+  And rants about about management and development processes.
+
+author: Nikita Sobolev
+email: mail@sobolevn.me
+username: sobolevn
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sobolevn.me" # the base hostname & protocol for your site
+
+google_analytics_id: UA-66588818-1
+disqus_id: sobolevn-me
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:year/:month/:title
+
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:name
+
+sass:
+  style: compressed
+
+exclude: [vendor]
+
+# Plugins:
+gems:
+  - jekyll-seo-tag
+  - jemoji

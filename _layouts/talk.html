@@ -1,0 +1,64 @@
+---
+layout: page
+---
+
+<article class="c-article">
+  <header class="c-article__header">
+    <h1 class="c-article__title">{{ page.title }}</h1>
+    <p class="c-article__time">
+      <time datetime="{{ page.date | date_to_xmlschema }}"
+            itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+    </p>
+  </header>
+
+  <!-- Post Tags -->
+  <ul class="c-tags">
+    {% for tag in page.tags %}
+    <li class="c-tag">{{ tag }}</li>
+    {% endfor %}
+  </ul>
+
+  <!-- Content -->
+  <div class="c-article__main">
+    {{ content }}
+
+    {% if page.youtube %}
+      <iframe
+        id="ytplayer" type="text/html" width="640" height="360"
+        src="http://www.youtube.com/embed/{{ page.youtube }}"
+        frameborder="0"
+      ></iframe>
+    {% endif %}
+
+    {% if page.slides %}
+      <p>Slides: <a href="{{ page.slides }}">SpeakerDeck</a></p>
+    {% endif %}
+  </div>
+
+  <!-- Previous / Next Buttons -->
+  <div class="pagenav">
+    {% if page.previous.url %}
+      <div class="wrapper" id="left">
+        <small>
+          <b>Previous</b> {{ page.previous.date | date: "%b %-d, %Y" }}
+        </small>
+        <br>
+        <a class="no-hov" href="{{ page.previous.url | prepend: site.baseurl }}">
+          &laquo; {{ page.previous.title }}
+        </a>
+      </div>
+    {% endif %}
+
+    {% if page.next.url %}
+    <div class="wrapper" id="right">
+      <small>{{ page.next.date | date: "%b %-d, %Y" }} <b>Next</b></small>
+      <br>
+      <a class="no-hov" href="{{ page.next.url | prepend: site.baseurl }}">
+        {{ page.next.title }} &raquo;
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</article>

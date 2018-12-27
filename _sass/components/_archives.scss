@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+
+.c-archives {
+    margin-bottom: 10rem;
+}
+
+.c-archives__year {
+    margin-bottom: 2.5rem;
+    @include fs--heading-1;
+}
+
+.c-archives__list {
+    margin-bottom: 2.5rem;
+    list-style: none;
+}
+
+.c-archives__item {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-top: 1px solid #EFF1F3;
+
+    @media screen and (min-width: $bp__sm) {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .c-archives__description {
+        margin-top: 1rem;
+    }
+
+    h3 {
+        font-weight: 900;
+        text-rendering: optimizeLegibility;
+        font-size: 30px;
+        line-height: 1.1;
+
+        small {
+          font-weight: normal;
+          font-size: 15px;
+        }
+    }
+
+    p {
+        @include fs--body;
+        color: #515862;
+
+        small {
+            margin-left: 1rem;
+        }
+    }
+}
+
