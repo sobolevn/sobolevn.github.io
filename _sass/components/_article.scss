@@ -38,7 +38,7 @@
 }
 
 .c-article__main {
-    margin-bottom: 5rem; // 50px
+    margin-bottom: 3rem; // 50px
     @include fs--body;
     color: $c-base__01;
 
@@ -80,7 +80,6 @@
     }
 
     img {
-        width: 33%;
         margin: 0 auto;
         display: block;
     }
@@ -103,9 +102,6 @@
 			max-width: 100%;
 			height: 100%;
 		}
-}
-
-.c-article__footer {
 }
 
 .pagenav {

@@ -23,6 +23,17 @@ layout: page
   <!-- Content -->
   <div class="c-article__main">
     {{ content }}
+
+    <hr>
+
+    {% if page.republished %}
+      <h4>Republished as:</h4>
+      <ul>
+      {% for repost in page.republished %}
+        <li><a href="{{ repost[1] }}" target="_blank">{{ repost[0] }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 
   <!-- Previous / Next Buttons -->
