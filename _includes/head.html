@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <link rel="icon" href="{{ "/favicon.png" | prepend: site.baseurl }}">
+  {% include favicons.html %}
 
   <!-- Meta information -->
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>

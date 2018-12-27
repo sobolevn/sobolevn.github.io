@@ -1,5 +1,3 @@
-# sobolevn.github.io
+# sobolevn's personal page
 
-> sobolevn's personal page
-
-
+[See it live!](https://sobolevn.me)
