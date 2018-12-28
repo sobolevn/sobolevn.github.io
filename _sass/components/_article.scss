@@ -39,6 +39,8 @@
 
 .c-article__main {
     @include fs--body;
+
+    font-size: 1.1rem;
     margin-bottom: 3rem; // 50px
     color: $c-base__01;
 
