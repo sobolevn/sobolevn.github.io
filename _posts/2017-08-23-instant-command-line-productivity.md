@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Instant +100% command line productivity boost
 description: Brief overview of some awesome command line utilities to increase your productivity and make you a happier developer
 date: 2017-08-23
@@ -14,7 +15,8 @@ There are a lot of fields to improve your productivity. Today I am going to shar
 
 ## TLDR
 
-My full setup includes all the stuff discussed in this article and even more. Check it out: https://github.com/sobolevn/dotfiles
+My full setup includes all the stuff discussed in this article and even more.
+Check it out: [https://github.com/sobolevn/dotfiles](https://github.com/sobolevn/dotfiles)
 
 
 ## Shell
@@ -27,9 +29,9 @@ Using a good, helping, and the stable shell is the key to your command line prod
 
 You can follow these steps to install this setup:
 
-1. Install `zsh`: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
-2. Install `oh-my-zsh`: http://ohmyz.sh/
-3. Choose plugins that might be useful for you: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+1. Install [`zsh`](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+2. Install [`oh-my-zsh`](http://ohmyz.sh/)
+3. Choose [plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) that might be useful for you
 
 You may also want to tweak your settings to [turn off case sensitive autocomplete](https://github.com/sobolevn/dotfiles/blob/master/config/zshrc#L12). Or change how your [history works](https://github.com/sobolevn/dotfiles/blob/master/config/zshrc#L24).
 
@@ -57,7 +59,7 @@ Light:
 
 And dark:
 
-![sobole.zsh-theme](https://raw.githubusercontent.com/sobolevn/sobole-zsh-theme/master/showcases/dark-mode.png)
+![sobole.zsh-theme](https://raw.githubusercontent.com/sobolevn/sobole-zsh-theme/master/showcases/ls-colors-dark.png)
 
 Get your another +15% boost. And an awesome-looking theme.
 
@@ -126,15 +128,13 @@ It can be used to fuzzy-find anything, not just history. But it requires [some c
 You are now a search ninja with +15% productivity bonus.
 
 
-## Further reading
-
-Using better CLIs: https://dev.to/sobolevn/using-better-clis-6o8
-
-
 ## Conclusion
 
 Following these simple steps, you can dramatically increase your command line productivity, like +100% (numbers are approximate).
 
 There are other tools and hacks I will cover in the next articles.
 
-Do you like reading about the latest trends in software development? Subscribe to our blog on Medium: https://medium.com/wemake-services
+
+## Further reading
+
+[Using better CLIs](https://dev.to/sobolevn/using-better-clis-6o8)

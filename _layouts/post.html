@@ -2,9 +2,9 @@
 layout: page
 ---
 
-<article class="c-article">
+<article class="c-article" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header class="c-article__header">
-    <h1 class="c-article__title">{{ page.title }}</h1>
+    <h1 class="c-article__title" itemprop="name">{{ page.title }}</h1>
     <p class="c-article__time">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
@@ -22,7 +22,9 @@ layout: page
 
   <!-- Content -->
   <div class="c-article__main">
-    {{ content }}
+    <div class="c-article__body" itemprop="articleBody">
+      {{ content }}
+    </div>
 
     <hr>
 

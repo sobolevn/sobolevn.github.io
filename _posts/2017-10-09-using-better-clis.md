@@ -15,7 +15,8 @@ Here are some very good alternatives to some default command line applications.
 
 ## TLDR
 
-My full setup includes all the stuff discussed in this article and even more. Check it out: https://github.com/sobolevn/dotfiles
+My full setup includes all the stuff discussed in this article and even more.
+Check it out: [https://github.com/sobolevn/dotfiles](https://github.com/sobolevn/dotfiles)
 
 
 ## Git
@@ -66,7 +67,7 @@ Features:
 
 It also has a version for `mysql` called [`mycli`](https://github.com/dbcli/mycli).
 
-By the way, yesterday a new [10th version](https://www.postgresql.org/about/news/1786/) of `postgres` was released. :tada:
+By the way, yesterday a new [10th version](https://www.postgresql.org/about/news/1786/) of `postgres` was released.
 
 ### glances
 
@@ -143,4 +144,4 @@ It is a must for all of my projects. If you like it, also check out [`jupyter`](
 
 ## Previous series
 
-- [Instant 100% command line productivity boost](https://dev.to/sobolevn/instant-100-command-line-productivity-boost)
+- [Instant 100% command line productivity boost](https://sobolevn.me/2017/08/instant-command-line-productivity)

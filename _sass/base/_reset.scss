@@ -173,8 +173,12 @@ pre {
   padding: 10px;
 }
 
-code {
-  color: black;
+:not(pre) > code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
 }
 
 small {

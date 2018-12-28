@@ -38,8 +38,8 @@
 }
 
 .c-article__main {
-    margin-bottom: 3rem; // 50px
     @include fs--body;
+    margin-bottom: 3rem; // 50px
     color: $c-base__01;
 
     > * {
@@ -48,10 +48,12 @@
 
     h2 {
         @include fs--heading-2;
+        margin: 2.5em 0 0.5em;
     }
 
     h3 {
         @include fs--heading-3;
+        margin: 1em 0 0.5em;
     }
 
     h4 {
@@ -79,28 +81,36 @@
         margin-left: 2.1rem;
     }
 
+    li {
+        p { padding: 5px 0; }
+    }
+
     img {
         margin: 0 auto;
         display: block;
     }
 
+    p {
+        padding: 15px 0;
+    }
+
 		.web-container {
-			position: relative;
-			width: 100%;
-			max-width: 100%;
-			height: 0;
-			padding-bottom: 62.5%;
-			border: 1px solid #cacaca;
-			overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 0;
+        padding-bottom: 62.5%;
+        border: 1px solid #cacaca;
+        overflow: hidden;
 		}
 
 		.web-container iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			max-width: 100%;
-			height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
 		}
 }
 
