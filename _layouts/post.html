@@ -8,7 +8,8 @@ layout: page
     <p class="c-article__time">
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
+        {{ page.date | date: "%B %-d, %Y" }}
+        <small>{% include read_time.html post=page %}</small>
       </time>
     </p>
   </header>
@@ -23,7 +24,7 @@ layout: page
   <!-- Content -->
   <div class="c-article__main">
     <div class="c-article__body" itemprop="articleBody">
-      {{ content }}
+      {% include anchors.html html=content %}
     </div>
 
     <hr>

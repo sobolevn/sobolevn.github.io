@@ -30,11 +30,17 @@
 .c-article__title {
     @include fs--heading-1;
     color: $c-base__02;
+    display: block;
+    width: 100%;
 }
 
 .c-article__time {
     @include fs--body;
     color: $c-base__01;
+
+    small {
+      margin-left: 1rem;
+    }
 }
 
 .c-article__main {
@@ -50,7 +56,7 @@
 
     h2 {
         @include fs--heading-2;
-        margin: 2.5em 0 0.5em;
+        margin: 2em 0 0.5em;
     }
 
     h3 {

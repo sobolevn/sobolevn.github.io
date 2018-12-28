@@ -22,8 +22,7 @@ html {
 }
 
 body {
-    @include ff--sans-serif(400);
-    -webkit-font-smoothing: antialiased;
+    @include ff--serif(400);
 }
 
 article,
@@ -50,8 +49,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
+    @include ff--sans-serif(900);
     color: $c-base__02;
+
+    a {
+      @include ff--sans-serif(900);
+      color: $c-base__02;
+    }
 }
 
 
@@ -90,7 +94,7 @@ svg {
 
 /* Links */
 
-a {
+a:not(.anchor) {
     color: $c-accent__blue;
     background-color: transparent;
     text-decoration: none;
@@ -120,6 +124,10 @@ a {
       }
     }
 
+}
+
+a.anchor {
+  text-decoration: none;
 }
 
 /* Override hover animation with no-hov class */

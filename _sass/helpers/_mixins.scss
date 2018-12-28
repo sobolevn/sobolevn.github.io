@@ -16,6 +16,11 @@
 
 // Font families
 @mixin ff--sans-serif($font-weight: normal) {
+  font-family: 'Montserrat', sans-serif;;
+  font-weight: $font-weight;
+}
+
+@mixin ff--serif($font-weight: normal) {
     font-family: 'Merriweather', serif;
     font-weight: $font-weight;
 }
@@ -25,14 +30,9 @@
 }
 
 // Font sizing
-@mixin fs--title {
-    line-height: 1.5;
-    font-size: 2.4rem;
-}
-
 @mixin fs--heading-1 {
     line-height: 1.5;
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 @mixin fs--heading-2 {
