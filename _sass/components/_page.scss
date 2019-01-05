@@ -19,6 +19,10 @@
     p {
         @include fs--meta;
     }
+
+    a {
+        line-height: 1.5;
+    }
 }
 
 .c-page__footer {

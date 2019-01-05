@@ -98,8 +98,11 @@
         display: block;
     }
 
+    blockquote,
+    ul,
+    ol,
     p {
-        padding: 15px 0;
+        margin-bottom: 1rem;
     }
 
 		.web-container {
