@@ -21,3 +21,8 @@ This talk covers:
 - mocking
 - creating tests fixtures
 - generating fake data
+
+
+## Related talks
+
+- [Enterprise Ready Vue Template](/talks/moscowjs-2018)
