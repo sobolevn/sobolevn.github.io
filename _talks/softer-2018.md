@@ -1,7 +1,7 @@
 ---
 layout: talk
 title: "Problems in teaching programming"
-conference: DevConf
+conference: Softer
 slides: https://speakerdeck.com/sobolevn/problems-in-teaching-programming
 youtube:
 location: Moscow, Russia
