@@ -2,12 +2,12 @@
 layout: talk
 title: "Alternative HR"
 conference: Index Tech
-slides: sobolevn/alternative-hr
+slides: https://speakerdeck.com/sobolevn/alternative-hr
 youtube:
 location: Moscow, Russia
 language: ru
 date: 2018-10-12
-tags: management rsdp hiring
+tags: rsdp management hiring
 ---
 
 This talk shows that there are different ways to hire people in 2018.
