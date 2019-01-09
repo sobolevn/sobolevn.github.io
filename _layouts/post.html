@@ -9,8 +9,8 @@ layout: page
       <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished">
         {{ page.date | date: "%B %-d, %Y" }}
-        <small>{% include read_time.html post=page %}</small>
       </time>
+      <small>{% include read_time.html post=page %}</small>
     </p>
   </header>
 

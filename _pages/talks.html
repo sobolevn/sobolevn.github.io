@@ -21,7 +21,9 @@ permalink: /talks/
       </h3>
       <p>
         {{ talk.date | date: "%b %-d, %Y" }}
-        <small>{{ talk.conference }} :{{ talk.language }}:</small>
+        <small>
+          {{ talk.conference }} :{{ talk.language }}:
+        </small>
       </p>
     </li>
     {% if forloop.last %}
