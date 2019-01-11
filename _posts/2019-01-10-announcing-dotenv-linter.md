@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Announcing dotenv-linter: a tool to lint your .env files"
-description: Simple linter for `.env` files. While `.env` files are very simple it is required to keep them consistent. This tool offers a wide range of consistency rules and best practices. And it integrates perfectly into any existing workflow.
+title: "Announcing dotenv-linter"
+description: Simple linter for `.env` files. While `.env` files are pretty straight-forward it is required to keep them consistent. This tool offers a wide range of consistency rules and best practices. And it integrates perfectly into any existing workflow.
 date: 2019-01-10
 tags: python
 republished:
