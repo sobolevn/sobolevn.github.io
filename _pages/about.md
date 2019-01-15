@@ -5,6 +5,9 @@ permalink: /about/
 ---
 
 I am Nikita Sobolev (Russian: Никита Соболев).
+This is how I usually look like:
+
+<img src="https://avatars3.githubusercontent.com/u/4660275?s=460&v=4" alt="My photo" width="250">
 
 ## Work
 
