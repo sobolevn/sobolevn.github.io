@@ -40,6 +40,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
       jekyll (~> 3.3)
+    jekyll-sitemap (1.2.0)
+      jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     jemoji (0.10.1)
@@ -81,7 +83,8 @@ PLATFORMS
 DEPENDENCIES
   ffi (>= 1.9.24)
   jekyll (>= 3.6.3)
-  jekyll-seo-tag (~> 2.5)
+  jekyll-seo-tag (~> 2.5.0)
+  jekyll-sitemap (~> 1.2.0)
   jemoji (~> 0.10.1)
 
 BUNDLED WITH

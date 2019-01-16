@@ -33,3 +33,4 @@ exclude: [vendor]
 plugins:
   - jekyll-seo-tag
   - jemoji
+  - jekyll-sitemap
