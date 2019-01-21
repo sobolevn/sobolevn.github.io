@@ -24,6 +24,10 @@ collections:
     output: true
     permalink: /:collection/:name
 
+feed:
+  collections:
+    - talks
+
 sass:
   style: compressed
 
@@ -34,3 +38,4 @@ plugins:
   - jekyll-seo-tag
   - jemoji
   - jekyll-sitemap
+  - jekyll-feed
