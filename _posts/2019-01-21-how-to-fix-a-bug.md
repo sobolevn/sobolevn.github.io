@@ -48,7 +48,7 @@ Of course, there are tools to help you to spot bugs and alert you when they happ
 
 Once the bug is spotted, it needs to be reported. Seems like an easy step, doesn't it? Well, actually, it may seem easy, but it is for sure the most important part of the process. To report a good bug you will need to submit a lot of information. Your issue must tell a story:
 
-- Why this is a bug in the first place? Maybe this is a feature...
+- Why do you think that this is a bug? Maybe this is a feature...
 - What should happen in your opinion? Bugs without a clearly defined expected behavior can become really hard to fix. And they can grow to feature requests. Which should be solved differently.
 - Why this bug is important? You have to prove that it should be fixed right now. Since some bugs are trifling and can be ignored _for now_.
 - How to reproduce an issue? This should contain all the technical information about the issue. What versions were used? What browser / OS is used? What configuration is applied? Sometimes it is even possible to create a separate repository just to show an issue reproduction.
@@ -94,7 +94,7 @@ Remember, that some bugs cannot be reproduced in a reasonable amount of time.
 You can have a look at some regression tests I have created for [`wemake-python-styleguide`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/wemake-services/wemake-python-styleguide%24+regression). Here's a sneak peak of a test structure that works for us:
 
 ```python
-code_that_brakes = '''
+code_that_breaks = '''
 def current_session(
     telegram_id: int,
     for_update: bool = True,
