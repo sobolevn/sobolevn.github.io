@@ -43,7 +43,7 @@ That happens quite often, that's not a surprise.
 
 ![Bugs everywhere](https://thepracticaldev.s3.amazonaws.com/i/6pquqfacysta1rvvafzs.jpg)
 
-So, we must be ready to handle that. We must create a working set of rules and practices to dodge possible errors and handle the ones that we failed to detect early.
+So, we must be ready to handle that. We must create a working set of rules and practices to dodge possible errors and [handle the ones](https://sobolevn.me/2019/01/how-to-fix-a-bug) that we failed to detect early.
 
 But how?
 
