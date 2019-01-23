@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>sobolevn</ShortName>
+  <Description>sobolevn's personal blog</Description>
+  <Tags>python javascript rsdp elixir</Tags>
+  <Contact>mail@sobolevn.me</Contact>
+  <Url type="application/atom+xml" template="https://sobolevn.me/feed.xml"/>
+  <LongName>On good software, mediocre software, and bad software. Also rants about management and development processes.</LongName>
+  <Image height="128" width="128" type="image/png">https://sobolevn.me/assets/images/favicons/favicon-96x96.png</Image>
+  <Developer>Nikita Sobolev</Developer>
+  <Attribution>Copyright 2016, Nikita Sobolev, All Rights Reserved</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <Language>en-us</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

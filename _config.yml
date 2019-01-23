@@ -30,6 +30,7 @@ collections:
 feed:
   collections:
     - talks
+    - activities
 
 sass:
   style: compressed
