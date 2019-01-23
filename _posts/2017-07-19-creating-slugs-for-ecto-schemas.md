@@ -5,7 +5,9 @@ description: What is a slug?
 date: 2017-07-19
 tags: elixir
 republished:
-  medium.com: https://medium.com/wemake-services/creating-slugs-for-ecto-schemas-7349513410f0
+  - resource: medium.com
+    link: https://medium.com/wemake-services/creating-slugs-for-ecto-schemas-7349513410f0
+    language: us
 ---
 
 ## What is a slug?

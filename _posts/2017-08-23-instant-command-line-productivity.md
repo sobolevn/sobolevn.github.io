@@ -5,7 +5,9 @@ description: Brief overview of some awesome command line utilities to increase y
 date: 2017-08-23
 tags: bash python
 republished:
-  dev.to: https://dev.to/sobolevn/testing-bash-scripts
+  - resource: dev.to
+    link: https://dev.to/sobolevn/testing-bash-scripts
+    language: us
 ---
 
 Being productive is fun.

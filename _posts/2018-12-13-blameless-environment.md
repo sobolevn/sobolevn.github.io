@@ -5,7 +5,12 @@ description: Blaming people does not work. Let's stop to do that. And find alter
 date: 2018-12-13
 tags: rsdp management
 republished:
-  dev.to: https://dev.to/sobolevn/building-blameless-working-environment--17hl
+  - resource: dev.to
+    link: https://dev.to/sobolevn/building-blameless-working-environment--17hl
+    language: us
+  - resource: tech.rocks
+    link: https://techrocks.ru/2018/12/15/working-environment-without-blaming-anyone/
+    language: ru
 ---
 
 ![Blame](https://thepracticaldev.s3.amazonaws.com/i/6fy52tyxgnx0r1nk6h6i.png)

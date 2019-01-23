@@ -5,7 +5,9 @@ description: Don't stick to the default CLIs, there are better alternatives!
 date: 2017-10-09
 tags: bash python
 republished:
-  dev.to: https://dev.to/sobolevn/using-better-clis-6o8
+  - resource: dev.to
+    link: https://dev.to/sobolevn/using-better-clis-6o8
+    language: us
 ---
 
 For people who spend half of their lives in a terminal user experience and functionality is highly important. Making you a happier person.

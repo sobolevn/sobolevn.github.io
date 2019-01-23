@@ -5,7 +5,9 @@ description: Simple linter for `.env` files. While `.env` files are pretty strai
 date: 2019-01-10
 tags: python
 republished:
-  dev.to: https://dev.to/wemake-services/announcing-dotenv-linter-a-tool-to-lint-your-env-files-3m1g
+  - resource: dev.to
+    link: https://dev.to/wemake-services/announcing-dotenv-linter-a-tool-to-lint-your-env-files-3m1g
+    language: us
 ---
 
 I happy to announce a simple yet very useful tool to lint your `.env` files.

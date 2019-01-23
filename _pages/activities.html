@@ -1,27 +1,24 @@
 ---
 layout: page
-title: Talks
-permalink: /talks/
+title: Activities
+permalink: /activities/
 ---
 
 <div class="c-summary">
   <p>
-    I love conference and meetups. I generally speak about <code>python</code>,
-    <code>elixir</code>, <code>javascript</code>, and management.
+    This is an incomplete list of different activities that I do.
   </p>
   <p>
-    You can invite me to speak on your event.
-    Just <a href="mailto:mail@sobolevn.me">drop me a line!</a>
+    These are mostly interviews, webinars, and podcasts with me.
   </p>
 </div>
 
 <section class="c-archives">
   <link rel="shortcut icon" href="">
-
-  {% assign sorted_talks = site.talks | reverse %}
-  {% for talk in sorted_talks  %}
-    {% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
-    {% capture next_year %}{{ talk.previous.date | date: "%Y" }}{% endcapture %}
+  {% assign sorted_activities = site.activities | reverse %}
+  {% for activity in sorted_activities  %}
+    {% capture this_year %}{{ activity.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ activity.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
       <h2 class="c-archives__year" id="{{ this_year }}-ref">{{ this_year }}</h2>
@@ -29,12 +26,12 @@ permalink: /talks/
     {% endif %}
     <li class="c-archives__item">
       <h3>
-        <a href="{{ talk.url | prepend: site.baseurl }}">{{ talk.title }}</a>
+        :link: <a href="{{ activity.link }}" target="_blank">{{ activity.title }}</a>
       </h3>
       <p>
-        {{ talk.date | date: "%b %-d, %Y" }}
+        {{ activity.date | date: "%b %-d, %Y" }}
         <small>
-          {{ talk.conference }} :{{ talk.language }}:
+          {{ activity.type }} :{{ activity.language }}:
         </small>
       </p>
     </li>

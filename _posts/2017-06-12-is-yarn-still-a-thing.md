@@ -5,7 +5,9 @@ description: "When npm@5 was just released this question was the first one I hav
 date: 2017-06-12
 tags: javascript
 republished:
-  medium.com: https://medium.com/wemake-services/is-yarn-still-a-thing-3c6886410c83
+  - resource: medium.com
+    link: https://medium.com/wemake-services/is-yarn-still-a-thing-3c6886410c83
+    language: us
 ---
 
 When `npm@5` was just released this question was the first one I have googled.

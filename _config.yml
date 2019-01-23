@@ -23,6 +23,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:name
+  activities:
+    output: true
+    permalink: /:collection:/:name
 
 feed:
   collections:

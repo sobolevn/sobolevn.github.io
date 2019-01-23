@@ -5,9 +5,15 @@ description: Some time ago I was faced with a task of testing a bash script. At 
 date: 2017-07-08
 tags: bash
 republished:
-  dev.to: https://dev.to/sobolevn/testing-bash-scripts
-  medium.com: https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
-  habr.com: https://habr.com/post/278937/
+  - resource: dev.to
+    link: https://dev.to/sobolevn/testing-bash-scripts
+    language: us
+  - resource: medium.com
+    link: https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
+    language: us
+  - resource: habr.com
+    link: https://habr.com/post/278937/
+    language: ru
 ---
 
 <img src="https://cdn-images-1.medium.com/max/1200/1*FEE98iWinlZBYkxBAG8MvA.png" width="33%">
