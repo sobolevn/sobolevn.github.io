@@ -4,6 +4,7 @@ title: "Simple dependent types in Python"
 description: "Python typing just got a new shiny feature: Literal types. Let's dive in a get familiar with it."
 date: 2019-01-31
 tags: python django
+republished:
   - resource: dev.to
     link: https://dev.to/wemake-services/simple-dependent-types-in-python-4e14
     language: us
