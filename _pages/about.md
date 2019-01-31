@@ -14,8 +14,8 @@ This is how I usually look like:
 I work as a CTO at [wemake.services](https://wemake.services),
 I am also happen to be a founder of this company.
 
-The thing I like about my job is freedom:
-- I can create new products for our clients
+The thing I like about my job is freedom, I can:
+- Create new products for our clients
 - Write a lot of [open-source code](https://github.com/sobolevn)
 - Work on processes in our company, that's exactly how I came up with [`RSDP`](https://wemake.services/meta/)
 - Spread a word about what I do with my [blog posts](https://sobolevn.me/) and [conference talks](https://sobolevn.me/talks/)
