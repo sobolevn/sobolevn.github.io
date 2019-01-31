@@ -19,3 +19,6 @@ No spam, one email per month.
 Unsubscribe available.
 
 <iframe class="c-article__subscribe" src="https://tinyletter.com/sobolevn"></iframe>
+
+If `iframe` does not show up, [use the power of this link](https://tinyletter.com/sobolevn).
+Nothing is really working these days!
