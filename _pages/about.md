@@ -41,7 +41,7 @@ I worked as a professor in several universities in Russia:
 - [MosPolytech](https://mospolytech.ru/) in 2017
 - [RANEPA](https://www.ranepa.ru/) in 2018
 
-And I also created several
+And I have also created several
 independent courses for `#tceh`, `iidf`, and `Numa Moscow`.
 
 ## Identity
@@ -58,7 +58,7 @@ My public `gpg` key is: [`C9F576BBC3A81B65BAF16635FF672D568AE3C73E`](https://key
 
 Please, drop me a line if you want to:
 
-1. Create new product using `RSDP`
+1. Create a new product using `RSDP`
 2. [Audit](https://wemake.services/meta/rsdp/audits/) your code
 3. Invite me to speak at your conference or meetup
 4. Invite me to make a private consulting session
