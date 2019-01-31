@@ -17,8 +17,8 @@ Consider email subscription.
 You can also subscribe to my blog posts via emails.
 No spam, one email per month.
 Unsubscribe available.
+[Powered by TinyLetter](https://tinyletter.com/sobolevn).
 
-<iframe class="c-article__subscribe" src="https://tinyletter.com/sobolevn"></iframe>
-
-If `iframe` does not show up, [use the power of this link](https://tinyletter.com/sobolevn).
-Nothing is really working these days!
+<div class="subscribe-form">
+ <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/sobolevn" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sobolevn', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input class="subscribe-form__input-text" type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input class="subscribe-form__input-submit" type="submit" value="Subscribe" /></form>
+</div>

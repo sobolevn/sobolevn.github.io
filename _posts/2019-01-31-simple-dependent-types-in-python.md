@@ -115,7 +115,7 @@ function(x1, x1)
 ```
 
 See? Since `x1` is a variable - it cannot be used where we expect `Literal`s.
-In the first part of this series, I wrote an article about [using real constants in `python`](https://dev.to/wemake-services/1-minute-guide-to-real-constants-in-python-2bpk). Read it if you do not know the difference between variables and constants in `python`.
+In the first part of this series, I wrote an article about [using real constants in `python`](https://sobolevn.me/2018/07/real-python-contants). Read it if you do not know the difference between variables and constants in `python`.
 
 Will constants help in this case? Yes, they will!
 
