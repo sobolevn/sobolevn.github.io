@@ -155,6 +155,12 @@
 }
 
 .subscribe-form {
+    form {
+       border: 1px solid  #ccc;
+       padding: 1em;
+       text-align: center;
+    }
+
     .subscribe-form__input-text {
         @include input();
         width: 50%;

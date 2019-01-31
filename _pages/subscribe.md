@@ -20,5 +20,5 @@ Unsubscribe available.
 [Powered by TinyLetter](https://tinyletter.com/sobolevn).
 
 <div class="subscribe-form">
- <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/sobolevn" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sobolevn', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input class="subscribe-form__input-text" type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input class="subscribe-form__input-submit" type="submit" value="Subscribe" /></form>
+ <form action="https://tinyletter.com/sobolevn" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sobolevn', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input class="subscribe-form__input-text" type="text" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input class="subscribe-form__input-submit" type="submit" value="Subscribe" /></form>
 </div>
