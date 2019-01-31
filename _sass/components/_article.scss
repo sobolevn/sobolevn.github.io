@@ -124,13 +124,22 @@
         width: 100%;
         max-width: 100%;
         height: 100%;
-		}
+    }
+
+    .post-subscribe {
+        text-align: center;
+    }
 }
 
 .c-article__repost {
     img {
         display: inline-block;
     }
+}
+
+.c-article__subscribe {
+    width: 100%;
+    height: 660px;
 }
 
 .pagenav {
