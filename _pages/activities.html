@@ -31,7 +31,8 @@ permalink: /activities/
       <p>
         {{ activity.date | date: "%b %-d, %Y" }}
         <small>
-          {{ activity.link|domain_name }}, {{ activity.type }} :{{ activity.language }}:
+          {% assign domain = activity.link | replace_first: 'www.', '' | split: '/' %}
+          {{ domain[2] }}, {{ activity.type | downcase }} :{{ activity.language }}:
         </small>
       </p>
     </li>
