@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simple dependent types in Python"
-description: "Python typing just got a new shiny feature: Literal types. Let's dive in a get familiar with it."
+description: "Python typing just got a new shiny feature: Literal types. Let's dive in and get familiar with it."
 date: 2019-01-31
 tags: python django
 republished:
