@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating slugs for Ecto schemas"
-description: What is a slug?
+description: "The term “slug” comes from the world of newspaper production. If you have ever created a simple “Blog” application you have already reinvented it. Let's have a look at how you can use slugs in Elixir apps."
 date: 2017-07-19
 tags: elixir
 republished:
@@ -194,7 +194,3 @@ We have tried to cover everything inside documentation and it is [available onli
 
 Check `ecto_autoslug_field` out:
 [ecto_autoslug_field - Automatically create slugs for Ecto schemas.](https://github.com/sobolevn/ecto_autoslug_field)
-
-## Gratis
-
-Special thanks to @h4cc for creating [slugger](https://github.com/h4cc/slugger) which we rely on.
