@@ -21,6 +21,12 @@ The thing I like about my job is freedom, I can:
 - Spread a word about what I do with my [blog posts](https://sobolevn.me/) and [conference talks](https://sobolevn.me/talks/)
 - Participate in different closely-related [activities](https://sobolevn.me/activities/)
 
+### Side projects
+
+I also run a few side projects:
+
+- [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers
+
 ## Stack
 
 I work with `python`, `elixir`, and `javascript` (`typescript` too).
