@@ -344,7 +344,7 @@ This is a perfectly readable and safe way to do the exact same thing as we previ
 1. "Exceptions are hard to notice". Now, they are wrapped with a typed `Result` container, which makes them crystal clear.
 2.  "Restoring normal behavior in-place is impossible". We now can safely delegate the restoration process to the caller. We provide `.fix()` and `.rescue()` methods for this specific use-case.
 3. "Execution flow is unclear". Now it is the same as a regular business flow. From top to bottom.
-4. "Exceptions are not exceptional". And we know it! We expect things to go wrong and is ready for it.
+4. "Exceptions are not exceptional". And we know it! We expect things to go wrong and are ready for it.
 
 ## Use-cases and limitations
 
