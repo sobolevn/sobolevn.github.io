@@ -6,7 +6,7 @@ date: 2019-02-09
 tags: python
 ---
 
-![Article logo](ttps://thepracticaldev.s3.amazonaws.com/i/hikrr2fhv3os6b816n3w.png)
+![Article logo](https://thepracticaldev.s3.amazonaws.com/i/hikrr2fhv3os6b816n3w.png)
 
 What are exceptions? Judging by their name it is an entity representing some exceptional situation that happens inside your program.
 
