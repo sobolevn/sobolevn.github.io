@@ -179,7 +179,7 @@ Failure(4).bind(lambda number: Success(number / 2))
 # => Failure(4)
 
 Failure(4).map(lambda number: number / 2)
-# => Failure(2)
+# => Failure(4)
 ```
 
 Now you can just concentrate on correct execution flow and be sure that failed state won't break your program in random places.
