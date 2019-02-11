@@ -4,6 +4,10 @@ title: Python exceptions considered an anti-pattern
 description: "You might be wondering how do exceptions are an anti-pattern and how does this relate to typing at all? Well, let's find out!"
 date: 2019-02-09
 tags: python
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/python-exceptions-considered-an-anti-pattern-17o9
+    language: us
 ---
 
 ![Article logo](https://thepracticaldev.s3.amazonaws.com/i/hikrr2fhv3os6b816n3w.png)
@@ -113,7 +117,7 @@ Now we got that exceptions are harmful to your code. Let's learn how to get read
 
 0. Write [`except Exception: pass`](https://wemake-python-styleguide.readthedocs.io/en/latest/pages/violations/best_practices.html#wemake_python_styleguide.violations.best_practices.WrongKeywordViolation) everywhere. That's as bad as you can imagine. Don't do it.
 1. Return `None`. That's evil too! You either will end up with `if something is not None:` on almost every line and global pollution of your logic by type-checking conditionals, or will suffer from `TypeError` every day. Not a pleasant choice.
-2. Write special-case classes. For example, you will have `User` base class with multiple error-subclasses like `UserNotFound(User)` and `MissingUser(User)`. It might be used for some specific situations, like [AnonymousUser](https://docs.djangoproject.com/en/2.1/ref/contrib/auth/#anonymoususer-object) in `django`, but it is not possible to wrap all your possible errors in special-case classes. It will require too much work from a developer. And over-complicate your domain model.
+2. Write special-case classes. For example, you will have `User` base class with multiple error-subclasses like `UserNotFound(User)` and `MissingUser(User)`. It might be used for some specific situations, like [`AnonymousUser`](https://docs.djangoproject.com/en/2.1/ref/contrib/auth/#anonymoususer-object) in `django`, but it is not possible to wrap all your possible errors in special-case classes. It will require too much work from a developer. And over-complicate your domain model.
 3. You can use container values, that wraps actual success or error value into a thin wrapper with utility methods to work with this value. That's exactly why we have created [`@dry-python/returns`](https://github.com/dry-python/returns) project. So you can make your functions return something meaningful, typed, and safe.
 
 Let's start with the same number dividing example, which returns `0` when the error happens. Maybe instead we can indicate that the result was not successful without any explicit numerical value?
@@ -155,7 +159,7 @@ def divide(first: float, second: float) -> Result[float, ZeroDivisionError]:
 
 ### How to work with wrapped values?
 
-There are two methods two work with these wrapped values:
+There are two methods [two work with these wrapped values](https://returns.readthedocs.io/en/latest/pages/container.html#working-with-containers):
 
 - `map` works with functions that return regular values
 - `bind` works with functions that return other containers
