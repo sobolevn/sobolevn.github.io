@@ -18,6 +18,12 @@ layout: page
       <p>
         {{ post.date | date: "%B %-d, %Y" }}
         <small>{% include read_time.html post=post %}</small>
+        <small>
+          <a href="{{ post.url | prepend: site.baseurl }}#discussion"
+             data-disqus-identifier="{{ post.id }}">
+            0 comments
+          </a>
+        </small>
       </p>
       <p class="c-archives__description">{{ post.description }}</p>
     </li>
@@ -35,3 +41,7 @@ layout: page
     {% endif %}
   {% endfor %}
 </section>
+
+<script
+  id="dsq-count-scr"
+  src="https://{{ site.disqus_id }}.disqus.com/count.js" async></script>
