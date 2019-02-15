@@ -113,7 +113,7 @@ And the list goes on and on! There are so maybe potential problems with these th
 
 ## How to be safe?
 
-Now we got that exceptions are harmful to your code. Let's learn how to get read off them. There are different patterns to write the exception-free code:
+Now we got that exceptions are harmful to your code. Let's learn how to get rid off them. There are different patterns to write the exception-free code:
 
 0. Write [`except Exception: pass`](https://wemake-python-styleguide.readthedocs.io/en/latest/pages/violations/best_practices.html#wemake_python_styleguide.violations.best_practices.WrongKeywordViolation) everywhere. That's as bad as you can imagine. Don't do it.
 1. Return `None`. That's evil too! You either will end up with `if something is not None:` on almost every line and global pollution of your logic by type-checking conditionals, or will suffer from `TypeError` every day. Not a pleasant choice.
