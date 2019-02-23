@@ -29,7 +29,7 @@ This article is split into three main parts:
 2. Rewriting user stories with BDD to make them verifiable
 3. Linking user stories with tests, source code, and documentation
 
-While some parts might look more interesting to different categories of reader, it is important for everyone to understand the full approach.
+While some parts might look more interesting to different categories of readers, it is important for everyone to understand the full approach.
 
 
 ## Spotting and fixing problems
