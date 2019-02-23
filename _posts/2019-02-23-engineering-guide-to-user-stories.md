@@ -150,7 +150,7 @@ First one: Gitlab accidentally sends us some garbage. Second one: our authentica
 Now we can add two more scenarios to make this user story complete.
 
 ```gherkin
-Feature: Tracking issues' progress
+Feature: Tracking issues progress
   As an architect
   I want to have up-to-date information about Gitlab issues
   So that I can overview and track the issues' progress
