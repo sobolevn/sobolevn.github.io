@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering guide to writing correct User Stories
-description: "Agile people are obsessed with writing user stories. And it a very powerful instrument indeed. But, from my practice, a lot of people are doing it wrong. Let's learn how to do it correctly. Including proper verification and mapping to the source code."
+description: "Agile people are obsessed with writing user stories. And it is a very powerful instrument indeed. But, from my practice, a lot of people are doing it wrong. Let's learn how to do it correctly. Including proper verification and mapping to the source code."
 date: 2019-02-23
 tags: requirements python
 writing_time:
