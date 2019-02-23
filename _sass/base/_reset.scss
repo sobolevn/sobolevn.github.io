@@ -49,11 +49,11 @@ h3,
 h4,
 h5,
 h6 {
-    @include ff--sans-serif(900);
+    @include ff--sans-serif(800);
     color: $c-base__02;
 
     a {
-      @include ff--sans-serif(900);
+      @include ff--sans-serif(800);
       color: $c-base__02;
     }
 }
