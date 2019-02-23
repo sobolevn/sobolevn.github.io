@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Engineering guide to writing correct User Stories
-description: "Agile people are obsessed with writing user stories. And it a very powerful instrument indeed. But, from my practice a lot of people are doing it wrong. Let's learn how to do it correctly. Including proper verification and mapping to the source code."
+description: "Agile people are obsessed with writing user stories. And it a very powerful instrument indeed. But, from my practice, a lot of people are doing it wrong. Let's learn how to do it correctly. Including proper verification and mapping to the source code."
 date: 2019-02-23
 tags: requirements python
 writing_time:
@@ -41,7 +41,7 @@ User stories tend not to have some of the given characteristics. We need to fix 
 ### Using consistent language
 
 Is "receive issue webhooks" and "list all current tasks" somehow connected?
-Are "tasks" and "issues" the same thing or not? It might be completely different things or just a bad wording. How do we know?
+Are "tasks" and "issues" the same thing or not? It might be completely different things or just bad wording. How do we know?
 
 That's what glossaries are for! Every project should start with defining specific terms that will build ubiquitous language for the future. How do we build this glossary in the first place? We ask domain experts. When we encounter a new term: we make sure that all domain experts understand this term correctly and similarly. We should also take care that the same term might be understood differently in different situations and contexts.
 
@@ -60,7 +60,7 @@ Excellent. Using the same words for the same entities is going to make our requi
 
 When we have modified the last line it caught my attention that a goal of the user is to "list all current issues". Why does this poor user want to list some issues? What is the point in doing it? No users want that. This requirement is simply incorrect.
 
-This is an indicator of a very important problem in writing requirements. We tend to mix our and user's goals. And while our goal is to please our users, we should concentrate on them in the first place. Making their needs value more that ours. And we should explicitly express that in our requirements.
+This is an indicator of a very important problem in writing requirements. We tend to mix our and user's goals. And while our goal is to please our users, we should concentrate on them in the first place. Making their needs value more than ours. And we should explicitly express that in our requirements.
 
 How do we know what the user wants? Again, we don't. We need to consult real users or their representatives about it. Or make a hypothesis yourself if we cannot ask anyone.
 
@@ -78,7 +78,7 @@ After collecting more feedback we know, that our users need to know the progress
 Have you ever met a single person who literally wants to "receive issue webhooks"?
 No one wants to do that. In this case, we also mix two different concerns together.
 
-There's a clear separation between user's goals and technical ways to achieve them. And "to receive issue webhooks" is clearly an implementation detail. Tomorrow it can be changed to WebSockets, push notifications, etc. And user's goal will not change because of that.
+There's a clear separation between user's goals and technical ways to achieve them. And "to receive issue webhooks" is clearly an implementation detail. Tomorrow it can be changed to WebSockets, push notifications, etc. And the user's goal will not change because of that.
 
 ```diff
 As a user
@@ -93,7 +93,7 @@ See? Only important information is left, implementation details are stripped awa
 
 Just by the context, it is pretty clear that we are dealing with some kind of developer-related tool. We use Gitlab and issue management. So, it would be not hard to guess that we will have different kinds of users: juniors, middle devs, and seniors. Maybe project managers and other people as well.
 
-So, we come to the roles definitions. All projects have different types of users. Even if you think that are no explicit types. These roles can form depending on the way or goal why your product is used. And these roles must be defined the same way we define terms for the project.
+So, we come to the roles definitions. All projects have different types of users. Even if you think that are no explicit types. These roles can form depending on the way or goal of why your product is used. And these roles must be defined the same way we define terms for the project.
 
 What kind of users are we talking about in this particular user story? Will junior devs overview and track the progress the same way as project managers and architects? Obviously, not.
 
@@ -104,7 +104,7 @@ I want to have up-to-date information about Gitlab issues
 So that I can overview and track the issues' progress
 ```
 
-After making an intelligent guess we can separate different user stories by different user roles. And it gives us fine-grained control over the features we ship and whom we ship these features to.
+After making an intelligent guess we can separate different user stories by different user roles. And it gives us fine-grained control over the features we ship and whom we ship these features too.
 
 
 ## Extending user stories
@@ -212,7 +212,7 @@ This way we can be sure that this feature will be one of the first one to be dev
 
 ## Linking everything together
 
-Without proper care you will soon end with a mess of user stories, tests, source code, and documentation. With the constant growth of your project it will be impossible to tell which parts of the application are responsible for what business use-cases. To overcome this problem we have to link everything together: requirements, source code, tests, and docs. Our goal is to end up with something like this:
+Without proper care, you will soon end with a mess of user stories, tests, source code, and documentation. With the constant growth of your project, it will be impossible to tell which parts of the application are responsible for what business use-cases. To overcome this problem we have to link everything together: requirements, source code, tests, and docs. Our goal is to end up with something like this:
 
 ![Linking everything together](https://thepracticaldev.s3.amazonaws.com/i/j1pko4hb4s1ua9kmehv9.png)
 
@@ -237,7 +237,7 @@ class CreateNewIssueFromWebhook(object):
         # Do something ...
 ```
 
-I use `sphinx` and [`literalinclude` directive](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude) to include the same file we use for tests to document the domain logic. I also use glossary to indicate that `issue` is not just a random word: it is a specific [term](http://www.sphinx-doc.org/en/latest/usage/restructuredtext/roles.html?highlight=term#role-term) that we use in this project.
+I use `sphinx` and [`literalinclude` directive](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-literalinclude) to include the same file we use for tests to document the domain logic. I also use the glossary to indicate that `issue` is not just a random word: it is a specific [term](http://www.sphinx-doc.org/en/latest/usage/restructuredtext/roles.html?highlight=term#role-term) that we use in this project.
 
 This way our tests, code, and docs will be as coupled as possible.
 And we will need to worry less about them. We can even automate this process and check that all classes inside `usecases/` have `.. literalinclude` directive in their docs.
