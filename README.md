@@ -4,7 +4,11 @@
 
 ## Development
 
-Make sure you have `ruby 2.4.3` installed, use `rvm` in case you don't.
+Make sure you have `ruby 2.5.1` installed, use `rnenv` in case you don't.
+
+1. `rbenv install`
+2. 
+
 Then run:
 
 1. `bundle install`

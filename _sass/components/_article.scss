@@ -103,8 +103,21 @@
     ol,
     p,
     li,
+    table,
     .highlighter-rouge {
         margin-bottom: 1rem;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        tr {
+            border: 1px inset;
+        }
+
+        th, td {
+            padding: 10px 5px;
+        }
     }
 
 		.web-container {
