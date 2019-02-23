@@ -43,10 +43,11 @@ That's what glossaries are for! Every project should start with defining specifi
 
 Let's say that in our case after consulting a domain expert we have found out that "task" is the same thing as "issue". We now need to remove the incorrect term.
 
-```
+```diff
 As a user
 I want to receive issue webhooks from Gitlab
-So that I can list all current issues
++++So that I can list all current issues
+---So that I can list all current tasks
 ```
 
 Excellent. Using the same words for the same entities is going to make our requirements more clear and consistent.
@@ -59,10 +60,11 @@ This is an indicator of a very important problem in writing requirements. We ten
 
 How do we know what the user wants? Again, we don't. We need to consult real users or their representatives about it. Or make a hypothesis yourself if we cannot ask anyone.
 
-```
+```diff
 As a user
 I want to receive issue webhooks from Gitlab
-So that I can overview and track the issues' progress
++++So that I can overview and track the issues' progress
+---So that I can list all current issues
 ```
 
 After collecting more feedback we know, that our users need to know the progress of a project. Not listing issues. That's why we need to receive and store information about issues from the third-party service.
@@ -74,9 +76,10 @@ No one wants to do that. In this case, we also mix two different concerns togeth
 
 There's a clear separation between user's goals and technical ways to achieve them. And "to receive issue webhooks" is clearly an implementation detail. Tomorrow it can be changed to WebSockets, push notifications, etc. And user's goal will not change because of that.
 
-```
+```diff
 As a user
-I want to have up-to-date information about Gitlab issues
++++I want to have up-to-date information about Gitlab issues
+---I want to receive issue webhooks from Gitlab
 So that I can overview and track the issues' progress
 ```
 
@@ -90,8 +93,9 @@ So, we come to the roles definitions. All projects have different types of users
 
 What kind of users are we talking about in this particular user story? Will junior devs overview and track the progress the same way as project managers and architects? Obviously, not.
 
-```
-As an architect
+```diff
++++As an architect
+---As a user
 I want to have up-to-date information about Gitlab issues
 So that I can overview and track the issues' progress
 ```
@@ -101,7 +105,7 @@ After making an intelligent guess we can separate different user stories by diff
 
 ## Extending user stories
 
-This simple `As a <role or persona>, I want <goal/need> so that <why>` is great, since it succinct and powerful at the same time. It gives us a perfect way to communicate. However, there are several disadvantages of the following format we should - at least - know about.
+This simple `As a <role or persona>, I want <goal/need> so that <why>` is great, since it is succinct and powerful at the same time. It gives us a perfect way to communicate. However, there are several disadvantages of the following format we should - at least - know about.
 
 ### Making user stories verifiable
 
