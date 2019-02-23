@@ -156,7 +156,8 @@ Feature: Tracking issues' progress
   So that I can overview and track the issues' progress
 
   Scenario: new valid issue webhook is received
-    Given issue webhook is valid and authenticated
+    Given issue webhook is valid
+    And issue webhook is authenticated
     When it is received
     Then a new issue is created
 
@@ -166,7 +167,8 @@ Feature: Tracking issues' progress
     Then no issue is created
 
   Scenario: new valid unauthenticated issue webhook is received
-    Given issue webhook is valid but not authenticated
+    Given issue webhook is valid
+    And issue webhook is not authenticated
     When it is received
     Then no issue is created
     And webhook data is saved for future investigation
