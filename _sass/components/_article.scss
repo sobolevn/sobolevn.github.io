@@ -91,19 +91,21 @@
 
     ul {
         list-style: none;
+
+        li {
+            position: relative;
+
+            &:before {
+                content: "\25BA";
+                left: -20px;
+                position: absolute;
+                font-size: 10px;
+                line-height: 28px;
+            }
+        }
     }
 
     li {
-        position: relative;
-
-        &:before {
-            content: "\25BA";
-            left: -20px;
-            position: absolute;
-            font-size: 10px;
-            line-height: 28px;
-        }
-
         p { padding: 5px 0; }
     }
 
