@@ -49,7 +49,7 @@ I worked as a professor in several universities in Russia:
 - [RANEPA](https://www.ranepa.ru/) in 2018
 
 And I have also created several
-independent courses for `#tceh`, `iidf`, and `Numa Moscow`.
+independent courses for `#tceh`, `iidf`, `devman`, and `Numa Moscow`.
 
 ## Identity
 
