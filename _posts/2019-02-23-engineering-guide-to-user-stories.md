@@ -118,7 +118,7 @@ How can we be sure that this story (now or still) works for our users? We cannot
 
 There is no clear mapping between this user story and our tests. It would be awesome if one can write user stories as tests...
 
-Wait, but it is possible! That's why we have [Behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) and `gherkin` language. It means that we can rewrite our user story in the `gherkin` format to make it verifiable.
+Wait, but it is possible! That's why we have [Behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) and `gherkin` language. That's why [BDD was created in the first place](https://cucumber.io/blog/2014/03/03/the-worlds-most-misunderstood-collaboration-tool). It means that we can rewrite our user story in the `gherkin` format to make it verifiable.
 
 ```gherkin
 Feature: Tracking issues' progress
