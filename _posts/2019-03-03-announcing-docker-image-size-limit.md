@@ -10,6 +10,8 @@ writing_time:
   decorating: "0:00"
 ---
 
+![Logo](https://thepracticaldev.s3.amazonaws.com/i/tbud96yztrdmtpbc8u2f.jpeg)
+
 Repo link: [https://github.com/wemake-services/docker-image-size-limit](https://github.com/wemake-services/docker-image-size-limit)
 
 ## My story
@@ -20,7 +22,7 @@ It looked pretty well. Just some new `python` dependencies to generate beautiful
 
 So, I have merged it without any hesitations.
 
-Several hours later I have found out that our image size increased from `~200 MiB` to `~1.5 GiB` in size. This is not acceptable!
+Several hours later I have found out that our image size increased from `~200 MiB` to `~1.5 GiB` in size. This is unacceptable!
 
 So, I have written this script to restrict the maximum image size in the future:
 
@@ -48,5 +50,5 @@ your-image-name:label exceeds 300MiB limit by 1200 MiB
 
 And that's it.
 
-Now, you can be sure that your image size will always be in control. Checkout out [the docs](https://github.com/wemake-services/docker-image-size-limit) for all possible options. And integrate it to your CI not to make the mistakes I have already fixed.
+Now, you can be sure that your image size will always be in control. Checkout out [the docs](https://github.com/wemake-services/docker-image-size-limit) for all possible options. And integrate it to your CI not to make the same mistakes I have already fixed.
 
