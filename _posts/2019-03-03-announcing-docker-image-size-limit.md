@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Announcing docker-image-size-limit"
-description: "Keep an eye on your docker image size, limit, and prevent it from growing too big"
+description: "Keep an eye on your docker image size, limit, and prevent it from growing too big."
 date: 2019-03-03
 tags: docker python
 writing_time:
