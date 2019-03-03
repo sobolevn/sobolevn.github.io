@@ -26,6 +26,7 @@ Several hours later I have found out that our image size increased from `~200 Mi
 
 So, I have written this script to restrict the maximum image size in the future:
 
+{% raw %}
 ```bash
 LIMIT=1024
 IMAGE='your-image-name:latest'
@@ -33,6 +34,7 @@ IMAGE='your-image-name:latest'
 SIZE="$(docker image inspect "$IMAGE" --format='{{.Size}}')"
 test "$SIZE" -gt "$LIMIT" && echo 'Limit exceeded'; false
 ```
+{% endraw %}
 
 It is just like `js` [`size-limit`](https://github.com/ai/size-limit) library, but for `docker`.
 
