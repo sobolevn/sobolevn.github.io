@@ -25,3 +25,11 @@ Unsubscribe at any moment.
 
 You can browse [the letters archive](https://tinyletter.com/sobolevn/archive)
 to see what my newsletter looks like.
+
+## Github
+
+You can also [follow me on Github](https://github.com/sobolevn)
+and be notified about everything I do, no just blog posts.
+
+Or you can watch only [blog repository](https://github.com/sobolevn/sobolevn.github.io)
+for new changes.
