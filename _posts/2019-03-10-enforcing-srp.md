@@ -291,12 +291,6 @@ class CalculatePrice(object):
 
 Now with the addition of [`@final` decorator](https://sobolevn.me/2018/07/real-python-contants) that restricts this class to be subclassed and `@dataclass` decorator with [`frozen`](http://www.attrs.org/en/stable/examples.html#immutability) and [`slots`](http://www.attrs.org/en/stable/examples.html#slots) properties our class respects all the rules we impose in the beginning.
 
-1. Handle only dependencies in the constructor
-2. Handle only logic arguments in the `__call__` method
-3. No mutable state
-4. No other public methods or any public attributes
-5. No superclasses or subclasses
-
 1. Handle only dependencies in the constructor. True, we have only declarative dependencies, the constructor is created for us by `attrs`
 2. Handle only logic arguments in the `__call__` method. True, by definition
 3. No mutable state. True, since we use `frozen` and `slots`
