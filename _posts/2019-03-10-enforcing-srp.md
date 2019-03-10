@@ -107,6 +107,8 @@ There are different formal methods to track functions like this, including:
 
 After we apply these methods it would be clear to us that this function is too complex. And we won't be able to compose it easily. It is possible (and recommended) to go further and to automate this process. That's how code-quality tools work with [`wemake-python-styleguide`](https://github.com/wemake-services/wemake-python-styleguide) as a notable example.
 
+Use it.
+
 Here's the less obvious example of a function that does several things and breaks SRP (and, sadly, things like that can not be automated, review your code):
 
 ```python
