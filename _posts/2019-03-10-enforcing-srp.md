@@ -238,7 +238,7 @@ To fix these problems, let me introduce you to the concept of callable objects.
 
 ## Separating logic and dependencies
 
-Before we start discussing callable objects, we need to discuss objects and OOP in general keeping SRP in mind. I see a major problem in OOP just inside its main idea: "Let's combine *data and behavior* together". For me, it is a clear violation of SRP, because objects by design do two things at once: they contain state *and* have some attached behavior. Of course, we will eliminate this flaw with callable objects.
+Before we start discussing callable objects, we need to discuss objects and OOP in general keeping SRP in mind. I see a major problem in OOP just inside its main idea: "Let's combine **data and behavior** together". For me, it is a clear violation of SRP, because objects by design do two things at once: they contain state **and** have some attached behavior. Of course, we will eliminate this flaw with callable objects.
 
 Callable objects look like regular objects with two public methods: `__init__` and `__call__`. And they follow specific rules that make them unique:
 
@@ -297,7 +297,7 @@ Now with the addition of [`@final` decorator](https://sobolevn.me/2018/07/real-p
 4. No other public methods or any public attributes. Mostly true, we cannot have public attributes by declaring `slots` property and declarative protected instance attributes, but we still can have public methods. Consider using a linter for this
 5. No superclasses or subclasses. True, we explicitly inherit from `object` and marking this class `final`, so any subclasses will be restricted
 
-It now may look like an object, but it is surely not a real object. It can not have any state, public methods, or attributes. But, it is great for Single Responsibility Principle. First of all, it does not have data *and* behavior. Just pure behavior. Secondly, it is hard to mess things up this way. You will always have a single method to call in all the objects that you have. And this is what SRP is all about. Just make sure that this method is not too complex and does one thing. Remember, no one stops you from creating protected methods to decompose `__call__` behavior.
+It now may look like an object, but it is surely not a real object. It can not have any state, public methods, or attributes. But, it is great for Single Responsibility Principle. First of all, it does not have data **and** behavior. Just pure behavior. Secondly, it is hard to mess things up this way. You will always have a single method to call in all the objects that you have. And this is what SRP is all about. Just make sure that this method is not too complex and does one thing. Remember, no one stops you from creating protected methods to decompose `__call__` behavior.
 
 However, we have not fixed the second problem of passing dependencies as arguments to functions (or callable object): noisy explicitness.
 
