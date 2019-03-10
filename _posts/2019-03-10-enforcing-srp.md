@@ -2,7 +2,7 @@
 title: Enforcing Single Responsibility Principle in Python
 description: "Single Responsibility Principle (or SRP) is one of the most important concepts in software development. The main idea of this concept is: all pieces of software must have only a single responsibility."
 date: 2019-03-10
-tags: docker python
+tags: python
 writing_time:
   writing: "6:00"
   proofreading: "3:00"
@@ -13,7 +13,7 @@ writing_time:
 
 Single Responsibility Principle (or SRP) is one of the most important concepts in software development. The main idea of this concept is: all pieces of software must have only a single responsibility.
 
-Why SRP is important? It is the main idea that stands behind software development. Decompose complex tasks to the set of simple building blocks to compose complex software from them back again. Just like we can compose builtin functions:
+Why SRP is important? It is the main idea that stands behind software development. Decompose complex tasks to the set of simple building blocks to compose complex software from them back again. Just like we can compose lego or builtin functions:
 
 ```python
 print(int(input('Input number: ')))
@@ -37,7 +37,7 @@ We expect these simplest building blocks (read "functions") to be composable. An
 
 Now, let's make sure we can really rely on functions as simple building blocks.
 
-We probably already know that functions can grow complex too and we have all seen functions like [this one](https://github.com/sobolevn/python-code-disasters/blob/7f8c856073e746cb79193df90ba2eb5f2eb144e7/python/create_objects.py#L1):
+We probably already know that functions can grow complex too and we have all seen absolutely unreadable functions like [this one](https://github.com/sobolevn/python-code-disasters/blob/7f8c856073e746cb79193df90ba2eb5f2eb144e7/python/create_objects.py#L1):
 
 ```python
 def create_objects(name, data, send=False, code=None):
