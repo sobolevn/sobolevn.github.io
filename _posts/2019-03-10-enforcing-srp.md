@@ -178,7 +178,7 @@ def controller(products: List[Product]):
 But, it also works for some cases. For example, I use [`@safe`](https://returns.readthedocs.io/en/latest/pages/functions.html#safe) function all the time:
 
 ```python
-from returns. functions import safe
+from returns.functions import safe
 
 user_input = input('Input number: ')
 
@@ -299,7 +299,7 @@ Now with the addition of [`@final` decorator](https://sobolevn.me/2018/07/real-p
 
 It now may look like an object, but it is surely not a real object. It can not have any state, public methods, or attributes. But, it is great for Single Responsibility Principle. First of all, it does not have data **and** behavior. Just pure behavior. Secondly, it is hard to mess things up this way. You will always have a single method to call in all the objects that you have. And this is what SRP is all about. Just make sure that this method is not too complex and does one thing. Remember, no one stops you from creating protected methods to decompose `__call__` behavior.
 
-However, we have not fixed the second problem of passing dependencies as arguments to functions (or callable object): noisy explicitness.
+However, we have not fixed the second problem of passing dependencies as arguments to functions (or callable objects): noisy explicitness.
 
 
 ## Dependency injection
