@@ -403,7 +403,10 @@ Consider adding [`returns`](https://github.com/dry-python/returns) library to th
 
 We came a long way. From absolutely messy functions that do scary things to simple callable objects with dependency injection that respect Single Responsibility Principle. We have discovered different tools, practices, and patterns along the way.
 
-But did our efforts make a big change? The most important question to ask yourself: is my code better after all this refactoring? My answer is: yes. What do you think? Share your opinion in comments below.
+But did our efforts make a big change? The most important question to ask yourself: is my code better after all this refactoring? My answer is: yes.
+This made a significant change for me.
+
+What do you think? Share your opinion in the comments below.
 
 Key takeaways:
 1. Use simple building blocks that compose easily
