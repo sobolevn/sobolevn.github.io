@@ -19,12 +19,17 @@ Why SRP is important? It is the main idea that stands behind software developmen
 print(int(input('Input number: ')))
 ```
 
-This article will guide you through a complex process of writing simple code. I personally consider this article rather complicated and hard to percept if you do not have a solid background in Python, so it is split into several parts. It is okay to stop after each piece, revise it and to get to the latter one, because it will ensure you get the point, or at least first proofreadings showed so:
+This article will guide you through a complex process of writing simple code. I personally consider this article rather complicated and hard to percept if you do not have a solid background in `python`, so it is split into several parts:
 1. Definition of simple building block
 2. Problems with the functional composition in `python`
 3. Introduction to callable objects to solve functional composition problems
 4. Dependency injection example that reduces the boilerplate code of callable objects
+
+It is okay to stop after each piece, revise it and to get to the latter one, because it will ensure you get the point, or at least first proof-readings showed so.
 Please do not hesitate to suggest edits or to ask questions. This topic is not covered so well and I will be glad to clarify anything.
+
+
+## Defining building blocks
 
 Let’s start with defining what are these "pieces of software" and "simplest building blocks" I am talking about?
 
@@ -97,7 +102,7 @@ def create_objects(name, data, send=False, code=None):
                 reannounce(t)
 ```
 
-We can say that this function definitely has more than one responsibility and should be refactored. But how do we make this decision?
+It really works and powers someone's production system. However, we can still say that this function definitely has more than one responsibility and should be refactored. But how do we make this decision?
 There are different formal methods to track functions like this, including:
 
 - [Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
@@ -107,9 +112,9 @@ There are different formal methods to track functions like this, including:
 
 After we apply these methods it would be clear to us that this function is too complex. And we won't be able to compose it easily. It is possible (and recommended) to go further and to automate this process. That's how code-quality tools work with [`wemake-python-styleguide`](https://github.com/wemake-services/wemake-python-styleguide) as a notable example.
 
-Use it.
+Just use it. It will detect all the hidden complexity and will not allow your code to rot.
 
-Here's the less obvious example of a function that does several things and breaks SRP (and, sadly, things like that can not be automated, review your code):
+Here's the less obvious example of a function that does several things and breaks SRP (and, sadly, things like that can not be automated at all, code reviews are the only way to find this kind of issues):
 
 ```python
 def calculate_price(products: List[Product]) -> Decimal:
@@ -122,7 +127,7 @@ def calculate_price(products: List[Product]) -> Decimal:
     return price
 ```
 
-Look at this `logger` variable. How did it make its way into the function's body? It is not an argument. It is just a hardcoded behavior. What if I do not want to log this specific price for some reason? Should I disable it with an argument flag?
+Look at this `logger` variable. How did it make its way into the function's body? It is not an argument. It is just a hard-coded behavior. What if I do not want to log this specific price for some reason? Should I disable it with an argument flag?
 
 In case I will try to do that, I will end up with something like this:
 
@@ -134,6 +139,8 @@ def calculate_price(products: List[Product], log: bool = True) -> ...
 Congratulations, we now have [a well-known anti-pattern](https://martinfowler.com/bliki/FlagArgument.html) in our code. Do not use boolean flags. They are bad.
 
 Moreover, how do I test this function? Without this `logger.log` call it would be a perfectly testable pure function. Something goes in and I can predict what will go out. And now it is impure. To test that `logger.log` actually works I would have to mock it somehow and assert that log was created.
+
+You may argue that `logger` in `python` has a global configuration just for this case. But, it is a dirty solution to the same problem.
 
 Such a mess just because of a single line! The problem with this function is that it is hard to notice this double responsibility. If we rename this function from `calculate_price` to proper `calculate_and_log_price` it would become obvious that this function does not respect SRP. And the rule is that simple: if "correct and full" function name contains `and`, `or`, or `then` – it is a good candidate for refactoring.
 
@@ -240,7 +247,7 @@ To fix these problems, let me introduce you to the concept of callable objects.
 
 ## Separating logic and dependencies
 
-Before we start discussing callable objects, we need to discuss objects and OOP in general keeping SRP in mind. I see a major problem in OOP just inside its main idea: "Let's combine **data and behavior** together". For me, it is a clear violation of SRP, because objects by design do two things at once: they contain state **and** have some attached behavior. Of course, we will eliminate this flaw with callable objects.
+Before we start discussing callable objects, we need to discuss objects and OOP in general keeping SRP in mind. I see a major problem in OOP just inside its main idea: "Let's combine **data and behavior** together". For me, it is a clear violation of SRP, because objects by design do two things at once: they contain their state **and** have perform some attached behavior. Of course, we will eliminate this flaw with callable objects.
 
 Callable objects look like regular objects with two public methods: `__init__` and `__call__`. And they follow specific rules that make them unique:
 
@@ -248,7 +255,7 @@ Callable objects look like regular objects with two public methods: `__init__` a
 2. Handle only logic arguments in the `__call__` method
 3. No mutable state
 4. No other public methods or any public attributes
-5. No superclasses or subclasses
+5. No parent classes or subclasses
 
 The straight-forward way to implement a callable object is something like this:
 
@@ -297,7 +304,7 @@ Now with the addition of [`@final` decorator](https://sobolevn.me/2018/07/real-p
 2. Handle only logic arguments in the `__call__` method. True, by definition
 3. No mutable state. True, since we use `frozen` and `slots`
 4. No other public methods or any public attributes. Mostly true, we cannot have public attributes by declaring `slots` property and declarative protected instance attributes, but we still can have public methods. Consider using a linter for this
-5. No superclasses or subclasses. True, we explicitly inherit from `object` and marking this class `final`, so any subclasses will be restricted
+5. No parent classes or subclasses. True, we explicitly inherit from `object` and marking this class `final`, so any subclasses will be restricted
 
 It now may look like an object, but it is surely not a real object. It can not have any state, public methods, or attributes. But, it is great for Single Responsibility Principle. First of all, it does not have data **and** behavior. Just pure behavior. Secondly, it is hard to mess things up this way. You will always have a single method to call in all the objects that you have. And this is what SRP is all about. Just make sure that this method is not too complex and does one thing. Remember, no one stops you from creating protected methods to decompose `__call__` behavior.
 
@@ -319,7 +326,7 @@ from project.postcards.services import (
 
 @final
 @dataclass(frozen=True, slots=True)
-class SendTodayPostcardsUsecase(object):
+class SendTodaysPostcardsUsecase(object):
     _repository: PostcardsForToday
     _email: SendPostcardsByEmail
     _analytics: CountPostcardInAnalytics
@@ -334,7 +341,7 @@ Next, we have to invoke this callable class:
 
 ```python
 # Injecting dependencies:
-send_postcards = SendTodayPostcardsUsecase(
+send_postcards = SendTodaysPostcardsUsecase(
     PostcardsForToday(db=Postgres('postgres://...')),
     SendPostcardsByEmail(email=SendGrid('username', 'pass')),
     CountPostcardInAnalytics(source=GoogleAnalytics('google', 'admin')),
@@ -344,7 +351,7 @@ send_postcards = SendTodayPostcardsUsecase(
 send_postcards(datetime.now())
 ```
 
-The problem is clearly seen in this example. We have a lot of dependencies-related boilerplate. Every time we create an instance of `SendTodayPostcardsUsecase` – we have to create all its dependencies. Going all the way deep.
+The problem is clearly seen in this example. We have a lot of dependencies-related boilerplate. Every time we create an instance of `SendTodaysPostcardsUsecase` – we have to create all its dependencies. Going all the way deep.
 
 And all this boilerplate seems redundant. We have already specified all types of expected dependencies in our class. And transitive dependencies in our class's dependencies, and so on. Why do we have to duplicate this code once again?
 
@@ -376,7 +383,7 @@ container.register(SendPostcardsByEmail)
 container.register(CountPostcardInAnalytics)
 
 # End dependencies:
-container.register(SendTodayPostcardsUsecase)
+container.register(SendTodaysPostcardsUsecase)
 ```
 
 And then use it everywhere:
@@ -384,7 +391,7 @@ And then use it everywhere:
 ```python
 from project.implemented import container
 
-send_postcards = container.resolve(SendTodayPostcardsUsecase)
+send_postcards = container.resolve(SendTodaysPostcardsUsecase)
 send_postcards(datetime.now())
 ```
 
@@ -405,8 +412,9 @@ Consider adding [`returns`](https://github.com/dry-python/returns) library to th
 
 We came a long way. From absolutely messy functions that do scary things to simple callable objects with dependency injection that respect Single Responsibility Principle. We have discovered different tools, practices, and patterns along the way.
 
-But did our efforts make a big change? The most important question to ask yourself: is my code better after all this refactoring? My answer is: yes.
-This made a significant change for me.
+But did our efforts make a big change? The most important question to ask yourself: is my code better after all this refactoring?
+
+My answer is: yes. This made a significant change for me. I can compose simple building blocks into complex use-cases with ease. It is typed, testable, and readable.
 
 What do you think? Share your opinion in the comments below.
 
