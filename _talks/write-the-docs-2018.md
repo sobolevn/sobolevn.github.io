@@ -3,7 +3,7 @@ layout: talk
 title: "Continuous Documentation"
 conference: Write The Docs Moscow
 slides: https://speakerdeck.com/sobolevn/continous-documentation
-youtube:
+youtube: UMEDdvUNRAQ
 location: Moscow, Russia
 language: ru
 date: 2018-08-22

@@ -1,5 +1,5 @@
 ---
-type: Inteview
+type: Interview
 title: "5 things why you should learn Python"
 language: ru
 date: 2016-12-19

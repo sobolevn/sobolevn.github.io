@@ -1,5 +1,5 @@
 ---
-type: Inteview
+type: Interview
 title: "_theInitialCommit with Nikita Sobolev"
 language: us
 date: 2017-09-05
