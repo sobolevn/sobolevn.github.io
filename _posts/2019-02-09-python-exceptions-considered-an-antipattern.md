@@ -8,6 +8,9 @@ republished:
   - resource: dev.to
     link: https://dev.to/wemake-services/python-exceptions-considered-an-anti-pattern-17o9
     language: us
+  - resource: habr.com
+    link: https://habr.com/ru/company/oleg-bunin/blog/445234/
+    language: ru
 ---
 
 ![Article logo](https://thepracticaldev.s3.amazonaws.com/i/hikrr2fhv3os6b816n3w.png)
