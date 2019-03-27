@@ -8,6 +8,10 @@ writing_time:
   writing: "0:30"
   proofreading: "0:10"
   decorating: "0:00"
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/announcing-docker-image-size-limit-keep-an-eye-on-your-docker-image-size-4pm8
+    language: us
 ---
 
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/tbud96yztrdmtpbc8u2f.jpeg)
