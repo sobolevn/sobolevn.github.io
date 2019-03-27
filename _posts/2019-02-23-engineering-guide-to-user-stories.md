@@ -8,6 +8,13 @@ writing_time:
   writing: "3:00"
   proofreading: "1:30"
   decorating: "0:30"
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/engineering-guide-to-writing-correct-user-stories-1i7f
+    language: us
+  - resource: hackernoon.com
+    link: https://hackernoon.com/engineering-guide-to-writing-correct-user-stories-238bb2a2b6e0
+    language: us
 ---
 
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/3p0vlvdavfjlwr3neiw8.png)
@@ -132,7 +139,7 @@ Feature: Tracking issues' progress
     Then a new issue is created
 ```
 
-Now, this user story is verifiable. We can literally use it as a test and track its status. Moreover, we now have a mapping between our higher-order requirement and an implementation detail which will allow us to understand how exactly we are going to fulfill this requirement. Notice, we do not replace the business requirement with implementation details, but we *compliment* it.
+Now, this user story is verifiable. We can literally use it as a test and track its status. Moreover, we now have a mapping between our higher-order requirement and an implementation detail which will allow us to understand how exactly we are going to fulfill this requirement. Notice, we do not replace the business requirement with implementation details, but we *complement* it.
 
 ### Spotting the incompleteness
 

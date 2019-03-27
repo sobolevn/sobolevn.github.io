@@ -7,6 +7,10 @@ writing_time:
   writing: "6:00"
   proofreading: "3:00"
   decorating: "1:00"
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/enforcing-single-responsibility-principle-in-python-2il8
+    language: us
 ---
 
 ![Article logo](https://images.unsplash.com/photo-1516981879613-9f5da904015f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80)
