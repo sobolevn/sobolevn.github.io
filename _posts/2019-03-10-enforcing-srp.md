@@ -11,6 +11,9 @@ republished:
   - resource: dev.to
     link: https://dev.to/wemake-services/enforcing-single-responsibility-principle-in-python-2il8
     language: us
+  - resource: webdevblog.ru
+    link: https://webdevblog.ru/primenenie-principa-edinoj-otvetstvennosti-v-python/
+    language: ru
 ---
 
 ![Article logo](https://images.unsplash.com/photo-1516981879613-9f5da904015f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80)
