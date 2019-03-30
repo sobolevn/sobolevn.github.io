@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Enforcing Single Responsibility Principle in Python
 description: "Single Responsibility Principle (or SRP) is one of the most important concepts in software development. The main idea of this concept is: all pieces of software must have only a single responsibility."
 date: 2019-03-10
