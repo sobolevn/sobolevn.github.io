@@ -23,6 +23,8 @@ future_talks:
 </div>
 
 <section class="c-archives">
+  <link rel="shortcut icon" href="">
+
   <h2 class="c-archives__year" id="upcoming-ref">Upcoming</h2>
   {% for talk in page.future_talks  %}
     <li class="c-archives__item">
@@ -37,10 +39,6 @@ future_talks:
       </p>
     </li>
   {% endfor %}
-</section>
-
-<section class="c-archives">
-  <link rel="shortcut icon" href="">
 
   {% assign sorted_talks = site.talks | reverse %}
   {% for talk in sorted_talks  %}
