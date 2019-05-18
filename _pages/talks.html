@@ -2,6 +2,13 @@
 layout: page
 title: Talks
 permalink: /talks/
+
+future_talks:
+  - title: Blameless environment
+    conference: RIT++
+    url: https://ritfest.ru/2019/abstracts/5005
+    date: 2019-05-27
+    language: ru
 ---
 
 <div class="c-summary">
@@ -14,6 +21,23 @@ permalink: /talks/
     Just <a href="mailto:mail@sobolevn.me">drop me a line!</a>
   </p>
 </div>
+
+<section class="c-archives">
+  <h2 class="c-archives__year" id="upcoming-ref">Upcoming</h2>
+  {% for talk in page.future_talks  %}
+    <li class="c-archives__item">
+      <h3>
+        <a href="{{ talk.url }}">{{ talk.title }}</a>
+      </h3>
+      <p>
+        {{ talk.date | date: "%b %-d, %Y" }}
+        <small>
+          {{ talk.conference }} :{{ talk.language }}:
+        </small>
+      </p>
+    </li>
+  {% endfor %}
+</section>
 
 <section class="c-archives">
   <link rel="shortcut icon" href="">
