@@ -120,8 +120,13 @@
     p,
     li,
     table,
-    .highlighter-rouge {
+    code {
         margin-bottom: 1rem;
+    }
+
+    :not(pre) > code {
+        margin: 0;
+        display: inline-block;
     }
 
     table {
