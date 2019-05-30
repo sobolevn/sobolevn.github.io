@@ -109,12 +109,17 @@ a:not(.anchor) {
       content: '';
       position: absolute;
       z-index: -1;
-      width: 100%;
       height: 0%;
-      left: 0;
+      left: -1.5px;
+      right: -1.5px;
       bottom: 0;
       background-color: $c-accent__blue;
       transition: all ease 0.3s;
+    }
+
+    code ~ &::after {
+      left: 0;
+      right: 0;
     }
 
     &:hover {
