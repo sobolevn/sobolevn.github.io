@@ -22,3 +22,7 @@ to show some code samples.
 
 P.S. This talk was [also presented](https://conf.python.ru/2019/abstracts/5159)
 on MoscowPythonConf++ the same year as a reserve one.
+
+## TODO
+
+Replace [this youtube link](https://youtu.be/EkOniFi76bY?t=28130) with a separate video.

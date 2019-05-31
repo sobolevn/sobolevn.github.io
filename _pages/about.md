@@ -25,7 +25,7 @@ The thing I like about my job is freedom, I can:
 
 I also run a few side projects:
 
-- [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers
+- [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers (**closed**)
 - [drylabs.io](https://drylabs.io/) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
 
 ## Stack
