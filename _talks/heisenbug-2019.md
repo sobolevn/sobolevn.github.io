@@ -3,7 +3,7 @@ layout: talk
 title: "Do you test your tests?"
 conference: Heisenbug
 slides: https://speakerdeck.com/sobolevn/do-you-test-your-tests
-youtube:
+youtube: wIOX_I69zYg
 location: St.Petersburg, Russia
 language: ru
 date: 2019-05-17
@@ -22,7 +22,3 @@ to show some code samples.
 
 P.S. This talk was [also presented](https://conf.python.ru/2019/abstracts/5159)
 on MoscowPythonConf++ the same year as a reserve one.
-
-## TODO
-
-Replace [this youtube link](https://youtu.be/EkOniFi76bY?t=28130) with a separate video.
