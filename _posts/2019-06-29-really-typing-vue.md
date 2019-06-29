@@ -11,6 +11,8 @@ writing_time:
 republished: []
 ---
 
+{% raw %}
+
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/paw8ll63hfo6oe5a7pi0.png)
 
 inb4: This is not another "setting up" a new project with Vue and TypeScript tutorial. Let's do some deep dive into more complex topics!
@@ -306,3 +308,5 @@ The average level of `typescript` support in `Vue` ecosystem increased over the 
 But, it is production ready at the moment. These are just things to improve! Writing type-safe `Vue` code really improves your Developer Experience and allows you to focus on the important stuff while leaving the heavy-lifting to the compiler.
 
 What are your favorite hacks and tools to type `Vue` apps? Let's discuss it in the comment section.
+
+{% endraw %}
