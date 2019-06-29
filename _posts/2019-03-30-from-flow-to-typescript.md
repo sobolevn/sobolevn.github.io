@@ -8,7 +8,10 @@ writing_time:
   writing: "2:00"
   proofreading: "0:30"
   decorating: "0:30"
-republished: []
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/from-flow-to-typescript-why-1k7m
+    language: us
 ---
 
 ![Article logo](https://thepracticaldev.s3.amazonaws.com/i/xkai9z2i7pgsu2jktkdf.png)
