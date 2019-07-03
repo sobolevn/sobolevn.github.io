@@ -274,7 +274,7 @@ But, it is not possible. And not much can be done: there are a lot of dynamic ro
 
 ## vue-test-utils
 
-Speaking about tests I cannot mention `@vue/test-utils` that also has some problems with typing.
+Speaking about tests I do not have any excuses not to mention `@vue/test-utils` that also has some problems with typing.
 
 When we will try to test our new shiny component with `typedStore` property, we will find out that we actually cannot do that according to the `typescript`:
 
