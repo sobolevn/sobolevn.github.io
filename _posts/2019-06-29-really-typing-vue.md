@@ -33,7 +33,7 @@ And as I said I am not going to guide you through the basic setup for three reas
 
 ## Component typings
 
-The first broken expectation when you start to work with `Vue` and `typescript` and after you have already typed your class components is that `<template>` and `<style>` tags are still not typed. Let' me show you an example:
+The first broken expectation when you start to work with `Vue` and `typescript` and after you have already typed your class components is that `<template>` and `<style>` tags are still not typed. Let me show you an example:
 
 ```vue
 <template>
