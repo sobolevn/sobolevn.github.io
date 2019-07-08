@@ -164,6 +164,22 @@
     .post-subscribe {
         text-align: center;
     }
+
+    .post-republish {
+      ul {
+        li {
+          margin-bottom: 0;
+
+          &:before {
+            line-height: 32px;
+          }
+        }
+      }
+
+      a {
+        font-size: 15px;
+      }
+    }
 }
 
 .c-article__repost {
