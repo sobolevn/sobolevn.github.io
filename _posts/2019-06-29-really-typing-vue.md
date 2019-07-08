@@ -8,7 +8,13 @@ writing_time:
   writing: "1:30"
   proofreading: "0:30"
   decorating: "0:10"
-republished: []
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/really-typing-vue-6j2
+    language: us
+  - resource: habr.com
+    link: https://habr.com/ru/post/458632/
+    language: us
 ---
 
 {% raw %}
