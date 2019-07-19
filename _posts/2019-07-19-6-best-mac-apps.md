@@ -64,7 +64,7 @@ It adds new icons to your Finder to open anything inside your Terminal or Editor
 
 [Spectacle](https://www.spectacleapp.com/) allows using keyboard shortcuts to reorganize windows on your desktop.
 
-![Spectacle](https://thepracticaldev.s3.amazonaws.com/i/joilcp6nbyufwicbl5qq.gif)
+![Spectacle](https://thepracticaldev.s3.amazonaws.com/i/9hcfzz4gmrzntdlxljyf.gif)
 
 It is a life-saver for people who have a lot of opened windows and complex workflows. Do you want to have an IDE opened next to your browser? Two key presses. Do you want your terminals sorted? Two key presses.
 
