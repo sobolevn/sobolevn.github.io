@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 6 mac apps that fit everyone
-description: "You often can see lists of awesome ьфс apps that you are not going to use or ones that just do not fit you. This one is different. This list contains simple, yet very powerful productivity boosters that totally fits everyone."
+description: "You often can see lists of awesome mac apps that you are not going to use or ones that just do not fit you. This one is different. This list contains simple, yet very powerful productivity boosters that totally fits everyone."
 date: 2019-07-19
 tags: mac
 writing_time:
