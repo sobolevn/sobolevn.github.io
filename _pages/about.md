@@ -27,6 +27,7 @@ I also run a few side projects:
 
 - [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers (**closed**)
 - [drylabs.io](https://drylabs.io/) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
+- `opensource-findings` media channels where I share and advertise awesome opens-source related projects, articles, and talks. Available both on [twitter](https://twitter.com/OpensourceF) and [telegram](https://t.me/opensource_findings)
 
 ## Stack
 
