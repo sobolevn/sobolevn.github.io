@@ -42,7 +42,7 @@ Moreover, we make services for our clients, and [we hire](https://wemake.service
 
 > Dev: `Flow`? Why not `TypeScript`?
 
-> Me: Oh, are kidding me? :facepalm:
+> Me: Oh, are you kidding me? :facepalm:
 
 If you do not want to fight this hype train but make it work for you it is better to step aside and use whatever is hyped. Keeping in mind that there's no massive change for your current workflow.
 
