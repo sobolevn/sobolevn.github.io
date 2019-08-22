@@ -3,7 +3,7 @@ layout: talk
 title: "Alternative HR"
 conference: Index Tech
 slides: https://speakerdeck.com/sobolevn/alternative-hr
-youtube:
+youtube: T9VFH5Ur8w4
 location: Moscow, Russia
 language: ru
 date: 2018-10-12
