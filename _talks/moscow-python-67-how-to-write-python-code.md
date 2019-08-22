@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: "How to write python code so people would love you (or not)"
+title: "How to write python code so people would love you"
 conference: MoscowPython Meetup
 slides: https://speakerdeck.com/sobolevn/how-to-write-python-code-so-people-would-love-you-or-not
 youtube:
@@ -10,16 +10,16 @@ date: 2019-08-21
 tags: python
 ---
 
-Writing easy code is a hard thing to do.
+> so people would love you *(or not)
 
+Writing easy code is a hard thing to do.
 A lot of people and tools provide us
 a way to over-complicate our design and workflow.
-
 I suggest to take a different approach.
 
 Featuring:
-- https://github.com/dry-python/returns
-- https://github.com/bobthemighty/punq
+- <https://github.com/dry-python/returns>
+- <https://github.com/bobthemighty/punq>
 
-Cut video will soon available.
+Short video will available soon.
 Now only [the raw source](https://youtu.be/PZ9Gd6goyFs?t=1342) is available.
