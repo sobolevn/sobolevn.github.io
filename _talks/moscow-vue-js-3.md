@@ -14,6 +14,9 @@ Please, stop writing your business logic inside your components and `Vuex`.
 
 This talk explains that this is easy!
 
+Featuring:
+- <https://github.com/wemake-services/wemake-vue-template>
+
 ## Related talks
 
 - [Enterprise Ready Vue Template](https://sobolevn.me/talks/moscowjs-2018)
