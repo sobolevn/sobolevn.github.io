@@ -18,6 +18,7 @@ permalink: /talks/
 <section class="c-archives">
   <link rel="shortcut icon" href="">
 
+  {% if page.future_talks %}
   <h2 class="c-archives__year" id="upcoming-ref">Upcoming</h2>
   {% for talk in page.future_talks  %}
     <li class="c-archives__item">
@@ -32,6 +33,7 @@ permalink: /talks/
       </p>
     </li>
   {% endfor %}
+  {% endif %}
 
   {% assign sorted_talks = site.talks | reverse %}
   {% for talk in sorted_talks  %}
