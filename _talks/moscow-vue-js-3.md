@@ -17,6 +17,8 @@ This talk explains that this is easy!
 Featuring:
 - <https://github.com/wemake-services/wemake-vue-template>
 
+Video is currently [available here](https://www.youtube.com/watch?v=hHVQVOEhxSw).
+
 ## Related talks
 
 - [Enterprise Ready Vue Template](https://sobolevn.me/talks/moscowjs-2018)
