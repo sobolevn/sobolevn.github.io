@@ -89,6 +89,7 @@ warn_no_return = True
 Then we configure `django-stubs` plugin:
 
 ```ini
+# setup.cfg
 [mypy]
 # Appending to `mypy` section:
 plugins =
@@ -143,6 +144,7 @@ server/apps/main/views.py:15: note: Revealed type is 'django.contrib.auth.models
 Let's try to break something:
 
 ```python
+# server/apps/main/views.py
 def index(request: HttpRequest) -> HttpResponse:
     return render(request.META, 'main/index.html')
 ```
@@ -278,8 +280,6 @@ from server.apps.main.serializers import BlogPostSerializer
 from server.apps.main.models import BlogPost
 
 class BlogPostViewset(viewsets.ModelViewSet):
-    """API demo."""
-
     serializer_class = BlogPostSerializer
     queryset = BlogPost.objects.all()
 ```
@@ -325,6 +325,10 @@ and [`mappers`](https://github.com/dry-python/mappers)
 it will allow writing type-safe and declarative business logic wrapped
 into typed framework interfaces.
 And to decrease the number of errors in the layer between these two.
+
+Optional gradual static typing also allows you to start fast
+and add types only when your API is stabilized
+or go with types-driven development from the very start.
 
 However, `django-stubs` and `djangorestframework-stubs` are new projects.
 There are still a lot of bugs, planned features, missing type specs.
