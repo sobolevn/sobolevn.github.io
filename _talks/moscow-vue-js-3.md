@@ -3,7 +3,7 @@ layout: talk
 title: "Business logic in Vue.js"
 conference: MoscowVue
 slides: https://speakerdeck.com/sobolevn/business-logic-in-vue-dot-js
-youtube:
+youtube: cAvX3ilAb6k
 location: Moscow, Russia
 language: ru
 date: 2019-08-22
@@ -16,8 +16,6 @@ This talk explains that this is easy!
 
 Featuring:
 - <https://github.com/wemake-services/wemake-vue-template>
-
-Video is currently [available here](https://www.youtube.com/watch?v=hHVQVOEhxSw).
 
 ## Related talks
 
