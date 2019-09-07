@@ -37,7 +37,8 @@ layout: page
       </h2>
     </div>
 
-    {% if page.republished %}
+    {% assign reposts = page.republished.size %}
+    {% if reposts != 0 %}
     <div class="post-republish">
       <h4>Republished as:</h4>
       <ul>

@@ -8,8 +8,13 @@ writing_time:
   writing: "3:00"
   proofreading: "0:30"
   decorating: "0:30"
-republished: []
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/typechecking-django-internals-and-querysets-1m47
+    language: us
 ---
+
+![Post logo](https://i.imgur.com/X2EZBa3.png)
 
 As you have [already](https://sobolevn.me/2019/02/python-exceptions-considered-an-antipattern)
 [know](https://sobolevn.me/2018/07/real-python-contants)
