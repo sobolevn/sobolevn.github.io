@@ -5,6 +5,8 @@
 .c-page__subtitle {
     @include fs--heading-1;
     margin-bottom: 2.5rem; // 25px
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .c-page__header {
@@ -45,6 +47,12 @@
     p {
         @include fs--body;
         color: $c-base__01;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .c-page__subtitle {
+        font-size: 1.8em;
     }
 }
 
