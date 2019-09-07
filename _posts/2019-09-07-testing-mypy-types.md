@@ -50,9 +50,9 @@ Long story short, it is impossible. This little helper is builtin inside `mypy` 
 
 ## Modern approach
 
-I stumbled on [`pytest-mypy-plugins`](https://github.com/typeddjango/pytest-mypy-plugins) package.
+I stumbled on [`pytest-mypy-plugins`](https://github.com/typeddjango/pytest-mypy-plugins) package. It was originally created to make sure that types for `django` works fine in [`TypedDjango`](https://github.com/typeddjango) project.
 
-To install it in your project run:
+To install `pytest-mypy-plugins` in your project run:
 
 ```bash
 pip install pytest-mypy-plugins
@@ -84,7 +84,7 @@ What do we have here?
 - `# N:` comment that indicates a note from `mypy`
 - `files` section where you can create temporary helper files to be used in this test
 
-Nice! How can we run it? And since `pytest-mypy-plugins` is a `pytest` plugin, we only need to run `pytest` as usual and to specify our `mypy` configuration file (defaults to `mypy.ini`):
+Nice! How can we run it? Since `pytest-mypy-plugins` is a `pytest` plugin, we only need to run `pytest` as usual and to specify our `mypy` configuration file (defaults to `mypy.ini`):
 
 ```bash
 pytest --mypy-ini-file=setup.cfg
@@ -121,6 +121,8 @@ It works! Let's complicate our example a little bit.
 ## Checking for errors
 
 We can also use `pytest-mypy-plugins` to enforce and check constraints on our complex type specs. Let's imagine you have a type definition with complex generics and you want to make sure that it works correctly.
+
+That's actually very helpful, because you can check for success cases with raw `mypy` checks, while you cannot tell `mypy` to expect an error for a specific expression or call.
 
 Let's begin with our complex type definition:
 
@@ -161,10 +163,7 @@ This code takes two function and checks that their types match, so they can be c
     main:9: note: Revealed type is 'def (Any) -> Any'
 ```
 
-In this example I changed two things:
-
-- `disable_cache` flag to disable `mypy`'s cache since it might not work as you expect with the cache
-- `out` is easier for multi-line output than inline comments
+In this example I changed how we make a type assertion: `out` is easier for multi-line output than inline comments.
 
 Now we have two passing tests:
 
@@ -190,7 +189,7 @@ We can change `mypy` configuration on per-test bases. Let's add some new values 
 
 ```yml
 - case: compose_optional_functions
-  mypy_config:
+  mypy_config:  # appends options for this test
     no_implicit_optional = True
   main: |
     from returns.functions import compose
@@ -207,7 +206,7 @@ We can change `mypy` configuration on per-test bases. Let's add some new values 
     main:9: note: Revealed type is 'def (builtins.int*) -> builtins.str*'
 ```
 
-We added [`no_implicit_optional`](https://mypy.readthedocs.io/en/latest/command_line.html#none-and-optional-handling) option that requires to add explicit `Optional[]` type to arguments where we set `None` as a default. And our test got it from the `mypy_config` section that appends options to the base `mypy` settings from `--mypy-ini-file` setting.
+We added [`no_implicit_optional`](https://mypy.readthedocs.io/en/latest/command_line.html#none-and-optional-handling) configuration option that requires to add explicit `Optional[]` type to arguments where we set `None` as a default value. And our test got it from the `mypy_config` section that appends options to the base `mypy` settings from `--mypy-ini-file` setting.
 
 
 ## Custom DSL
@@ -226,7 +225,7 @@ Imagine, that we want to have `reveal_type` as a top-level key. It will just rev
       main:4: note: Revealed type is 'def (arg: builtins.int) -> builtins.float'
 ```
 
-Let's have a look at what it takes to do it:
+Let's have a look at what it takes to achieve it:
 
 ```python
 # reveal_type_hook.py
@@ -243,8 +242,8 @@ def hook(item: YamlTestItem) -> None:
 ```
 
 What do we do here?
-1. We get code from `main:` section
-2. Then append `reveal_type()` call from `reveal_type:` key
+1. We get the source code from the `main:` key
+2. Then append `reveal_type()` call from the `reveal_type:` key
 
 As a result, we have a custom `DSL` that fulfills our initial idea.
 
@@ -263,7 +262,7 @@ typesafety/test_hook.yml .                                                     [
 ================================= 1 passed in 0.87s ==================================
 ```
 
-We pass a new flag: `--mypy-extension-hook` which points to our own `DSL` implementation. And it works perfectly!
+We pass a new flag: `--mypy-extension-hook` which points to our own `DSL` implementation. And it works perfectly! That's how one can reuse a large amounts of code in `yaml`-based tests.
 
 
 ## Conlusion
