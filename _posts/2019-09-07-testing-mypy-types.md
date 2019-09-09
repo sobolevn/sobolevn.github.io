@@ -50,7 +50,7 @@ Long story short, it is impossible. This little helper is builtin inside `mypy` 
 
 ## Modern approach
 
-I stumbled on [`pytest-mypy-plugins`](https://github.com/typeddjango/pytest-mypy-plugins) package. It was originally created to make sure that types for `django` works fine in [`TypedDjango`](https://github.com/typeddjango) project.
+I stumbled on [`pytest-mypy-plugins`](https://github.com/typeddjango/pytest-mypy-plugins) package. It was originally created to make sure that types for `django` works fine in [`TypedDjango`](https://github.com/typeddjango) project. Check out [my previous post](https://sobolevn.me/2019/08/typechecking-django-and-drf) about it.
 
 To install `pytest-mypy-plugins` in your project run:
 
