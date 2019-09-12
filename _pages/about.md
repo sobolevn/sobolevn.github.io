@@ -49,6 +49,7 @@ I also like to spread the limited knowledge I have.
 I worked as a professor in several universities in Russia:
 - [MosPolytech](https://mospolytech.ru/) in 2017
 - [RANEPA](https://www.ranepa.ru/) in 2018
+- [IFMO](http://www.ifmo.ru/) in 2019
 
 And I have also created several
 independent courses for `#tceh`, `iidf`, `devman`, and `Numa Moscow`.
