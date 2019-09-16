@@ -8,7 +8,10 @@ writing_time:
   writing: "2:00"
   proofreading: "0:10"
   decorating: "0:30"
-republished: []
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/testing-mypy-stubs-plugins-and-types-1b71
+    language: us
 ---
 
 ![Post logo](https://i.imgur.com/xcEfEGA.png)
@@ -18,7 +21,6 @@ Have you ever tried to:
 - Create complex generic types in your own project?
 - Write [distributable stubs](https://www.python.org/dev/peps/pep-0561/) for your library?
 - Create [custom `mypy` plugin](https://mypy.readthedocs.io/en/latest/extending_mypy.html)?
-- Write custom type-checker?
 
 In case you try to do any of these, you will soon find out that you need to test your types. Wait, what? Let me explain this paradox in detail.
 
