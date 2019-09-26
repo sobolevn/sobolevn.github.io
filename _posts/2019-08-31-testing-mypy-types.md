@@ -2,7 +2,7 @@
 layout: post
 title: Testing mypy stubs, plugins, and types
 description: "Have you ever wanted to test type reveal in python? In case you do you would probably need pytest-mypy-plugins for that."
-date: 2019-08-25
+date: 2019-08-31
 tags: python
 writing_time:
   writing: "2:00"
