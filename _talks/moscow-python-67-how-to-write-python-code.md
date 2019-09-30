@@ -3,7 +3,7 @@ layout: talk
 title: "How to write python code so people would love you"
 conference: MoscowPython Meetup
 slides: https://speakerdeck.com/sobolevn/how-to-write-python-code-so-people-would-love-you-or-not
-youtube:
+youtube: ELwkO5warfs
 location: Moscow, Russia
 language: ru
 date: 2019-08-21
@@ -21,5 +21,4 @@ Featuring:
 - <https://github.com/dry-python/returns>
 - <https://github.com/bobthemighty/punq>
 
-Short video will available soon.
-Now only [the raw source](https://youtu.be/PZ9Gd6goyFs?t=1342) is available.
+I hope that my severe headache won't spoil the video :)
