@@ -254,7 +254,16 @@ Let's install and configure it:
 pip install djangorestframework djangorestframework-stubs
 ```
 
-And we can start to create serializers:
+Let's also add a new `mypy` plugin:
+
+```ini
+[mypy]
+plugins =
+  mypy_django_plugin.main,
+  mypy_drf_plugin.main  # new!
+```
+
+Then we can start to create serializers:
 
 ```python
 # server/apps/main/serializers.py
