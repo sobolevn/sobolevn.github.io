@@ -25,4 +25,5 @@ This talk covers:
 
 ## Related talks
 
-- [Enterprise Ready Vue Template](/talks/moscowjs-2018)
+- [Enterprise Ready Vue Template](https://sobolevn.me/talks/moscowjs-2018)
+- [Business logic in Vue.js](https://sobolevn.me/talks/moscow-vue-js-3)

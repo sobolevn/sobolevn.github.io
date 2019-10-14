@@ -22,4 +22,6 @@ to the large-scale Vue projects, including:
 
 ## Related talks
 
-- [Testing real Vue apps](/talks/krasnodar-dev-days-2018)
+- [Testing real Vue apps](https://sobolevn.me/talks/krasnodar-dev-days-2018)
+- [Business logic in Vue.js](https://sobolevn.me/talks/moscow-vue-js-3)
+

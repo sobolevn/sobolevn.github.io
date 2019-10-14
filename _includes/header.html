@@ -5,19 +5,34 @@
   <h2 class="c-page__subtitle">{{ site.description }}</h2>
   {% endif %}
 
-  <p>
-    <a href="{{ "/" | prepend: site.baseurl }}">Blog</a>
+  <nav role="navigation">
+    <a href="{{ "/" | prepend: site.baseurl }}" role="menuitem">
+      Blog
+    </a>
+
     <span class="u-separate"></span>
-    <a href="{{ "/talks/" | prepend: site.baseurl }}">Talks</a>
+    <a href="{{ "/talks/" | prepend: site.baseurl }}" role="menuitem">
+      Talks
+    </a>
+
     <span class="u-separate"></span>
-    <a href="{{ "/activities/" | prepend: site.baseurl }}">Activities</a>
+    <a href="{{ "/activities/" | prepend: site.baseurl }}" role="menuitem">
+      Activities
+    </a>
+
     <span class="u-separate"></span>
-    <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+    <a href="{{ "/about/" | prepend: site.baseurl }}" role="menuitem">
+      About
+    </a>
+
     <span class="u-separate"></span>
-    <a href="{{ "/subscribe" | prepend: site.baseurl }}">Subscribe</a>
+    <a href="{{ "/subscribe/" | prepend: site.baseurl }}" role="menuitem">
+      Subscribe
+    </a>
+
     <span class="u-separate"></span>
-    <a href="https://www.patreon.com/sobolevn" target="_blank">
+    <a href="https://www.patreon.com/sobolevn" target="_blank" role="menuitem">
       Support me
     </a>
-  </p>
+  </nav>
 </header>

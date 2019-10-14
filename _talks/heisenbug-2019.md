@@ -21,4 +21,4 @@ I have also made a [small github repo](https://github.com/sobolevn/heisenbug-201
 to show some code samples.
 
 P.S. This talk was [also presented](https://conf.python.ru/2019/abstracts/5159)
-on MoscowPythonConf++ the same year as a reserve one.
+on MoscowPythonConf++ the same year as a reserved one, because one of the speakers was not able to come.
