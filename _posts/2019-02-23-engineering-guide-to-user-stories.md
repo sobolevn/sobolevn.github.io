@@ -15,7 +15,7 @@ republished:
   - resource: hackernoon.com
     link: https://hackernoon.com/engineering-guide-to-writing-correct-user-stories-238bb2a2b6e0
     language: us
-  - resource:
+  - resource: wholeman.dev
     link: https://wholeman.dev/posts/guide-to-writing-correct-user-stories/
     language: ko
 ---
