@@ -17,7 +17,7 @@ republished:
     language: us
   - resource: wholeman.dev
     link: https://wholeman.dev/posts/guide-to-writing-correct-user-stories/
-    language: ko
+    language: kr
 ---
 
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/3p0vlvdavfjlwr3neiw8.png)
