@@ -6,7 +6,7 @@ slides: https://speakerdeck.com/moscowdjango/khranieniie-siekrietnykh-nastroiek
 youtube: xtr3sUZUnQA
 location: Moscow, Russia
 language: ru
-date: 2016-09-23
+date: 2017-08-21
 tags: python django security
 ---
 
