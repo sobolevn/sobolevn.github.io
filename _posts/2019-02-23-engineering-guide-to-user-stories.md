@@ -8,6 +8,10 @@ writing_time:
   writing: "3:00"
   proofreading: "1:30"
   decorating: "0:30"
+translated:
+  - name: Korean
+    link: https://wholeman.dev/posts/guide-to-writing-correct-user-stories/
+    language: kr
 republished:
   - resource: dev.to
     link: https://dev.to/wemake-services/engineering-guide-to-writing-correct-user-stories-1i7f
@@ -15,9 +19,6 @@ republished:
   - resource: hackernoon.com
     link: https://hackernoon.com/engineering-guide-to-writing-correct-user-stories-238bb2a2b6e0
     language: us
-  - resource: wholeman.dev
-    link: https://wholeman.dev/posts/guide-to-writing-correct-user-stories/
-    language: kr
 ---
 
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/3p0vlvdavfjlwr3neiw8.png)

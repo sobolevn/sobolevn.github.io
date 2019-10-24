@@ -23,6 +23,28 @@ layout: page
 
   <!-- Content -->
   <div class="c-article__main">
+
+    {% if page.translated %}
+      {% assign translations = page.translated.size %}
+      {% if translations != 0 %}
+      <div class="post-translate">
+        <h4>Translated to:</h4>
+        <ul>
+        {% for translated in page.translated %}
+          <li>
+            <a class="c-article__repost" href="{{ translated.link }}" target="_blank">
+              {{ translated.name }} :{{ translated.language }}:
+            </a>
+            {% unless forloop.last %}
+              •
+            {% endunless %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    {% endif %}
+
     <div class="c-article__body" itemprop="articleBody">
       {% include anchors.html html=content %}
     </div>

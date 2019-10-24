@@ -4,13 +4,14 @@ title: Building blameless working environment
 description: Blaming people does not work. Let's stop to do that. And find alternative ways to work.
 date: 2018-12-13
 tags: rsdp management
+translated:
+  - name: Russian
+    link: https://techrocks.ru/2018/12/15/working-environment-without-blaming-anyone/
+    language: ru
 republished:
   - resource: dev.to
     link: https://dev.to/sobolevn/building-blameless-working-environment--17hl
     language: us
-  - resource: tech.rocks
-    link: https://techrocks.ru/2018/12/15/working-environment-without-blaming-anyone/
-    language: ru
 ---
 
 ![Blame](https://thepracticaldev.s3.amazonaws.com/i/6fy52tyxgnx0r1nk6h6i.png)

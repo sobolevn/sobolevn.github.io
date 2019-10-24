@@ -187,6 +187,21 @@
         font-size: 15px;
       }
     }
+
+    .post-translate {
+      ul {
+        margin-left: 0;
+
+        li {
+          display: inline-block;
+
+          &:before {
+            display: none;
+            visibility: hidden;
+          }
+        }
+      }
+    }
 }
 
 .c-article__repost {

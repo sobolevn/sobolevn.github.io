@@ -4,13 +4,14 @@ title: I am a mediocre developer
 description: "I personally know some developers who are very talented and can create wonderful pieces of software with no or little struggle. Because of these gifted individuals, our industry is full of high expectations. But the sad truth is: not everyone is a ninja/guru/rockstar developer."
 date: 2018-03-13
 tags: career
+translated:
+  - name: Russian
+    link: https://ain.ua/2018/03/30/ya-posredstvennyj-razrabotchik/
+    language: ru
 republished:
   - resource: dev.to
     link: https://dev.to/sobolevn/i-am-a-mediocre-developer--30hn
     language: us
-  - resource: ain.ua
-    link: https://ain.ua/2018/03/30/ya-posredstvennyj-razrabotchik/
-    language: ru
 ---
 
 

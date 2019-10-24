@@ -4,6 +4,10 @@ title: "Testing Bash applications"
 description: Some time ago I was faced with a task of testing a bash script. At first I decided to use Python unit-tests, however, I was reluctant to bring external technologies to the project. Therefore I had to go with the testing framework written in the notorious bash.
 date: 2017-07-08
 tags: bash
+translated:
+  - name: Russian
+    link: https://habr.com/post/278937/
+    language: ru
 republished:
   - resource: dev.to
     link: https://dev.to/sobolevn/testing-bash-scripts
@@ -11,9 +15,6 @@ republished:
   - resource: medium.com
     link: https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
     language: us
-  - resource: habr.com
-    link: https://habr.com/post/278937/
-    language: ru
 ---
 
 <img src="https://cdn-images-1.medium.com/max/1200/1*FEE98iWinlZBYkxBAG8MvA.png" width="33%">
