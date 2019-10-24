@@ -8,7 +8,10 @@ writing_time:
   writing: "3:00"
   proofreading: "2:00"
   decorating: "0:20"
-republished: []
+republished:
+  - resource: habr.com
+    link: https://habr.com/ru/post/472876/
+    language: us
 ---
 
 ![Logo](https://imgur.com/r6SwSFy.png)
