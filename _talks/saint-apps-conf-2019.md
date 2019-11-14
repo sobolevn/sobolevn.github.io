@@ -3,7 +3,7 @@ layout: talk
 title: "Server languages for mobile devs"
 conference: Saint Apps Conf
 slides: https://speakerdeck.com/sobolevn/server-languages-for-mobile-devs
-youtube:
+youtube: JTk7dYxELIg
 location: St.Petersburg, Russia
 language: ru
 date: 2019-10-22
