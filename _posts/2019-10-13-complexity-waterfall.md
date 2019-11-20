@@ -16,11 +16,11 @@ republished:
 
 ![Logo](https://imgur.com/r6SwSFy.png)
 
-When talking about "bad code" people almost certainly mean "complex code" among other popular problems. The thing about complexity is that it comes out of nowhere. One day you start your fairly simple project, the other day you find it in ruins. And no one knows how and when did it happen.
+When talking about "bad code" people almost certainly mean "complex code" among other popular problems. The thing about complexity is that it comes out of nowhere. You start your fairly simple project, then one day you find it in ruins. And no one knows how and when it happened.
 
 But, this ultimately happens for a reason! Code complexity enters your codebase in two possible ways: with big chunks and incremental additions. And people are bad at reviewing and finding both of them.
 
-When a big chunk of code comes in, the reviewer will be challenged to find the exact location where the code is complex and what to do about it. Then, the review will have to prove the point: why this code is complex in the first place. And other developers might disagree. We all know these kinds of code reviews!
+When a big chunk of code comes in, the reviewer will be challenged to find the exact location where the code is complex and what to do about it. Then, the reviewer will have to prove the point: why this code is complex in the first place. And other developers might disagree. We all know these kinds of code reviews!
 
 ![Number of lines for review and comments ratio](https://imgur.com/c4HYCAi.png)
 
@@ -68,26 +68,26 @@ def format_username(user) -> str:
     return '@' + username
 ```
 
-There are different problems with expression as well. We can also have [overused expressions](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.OverusedExpressionViolation): when you use `some_object.some_attr` attribute everywhere instead of creating a new local variable. We can also have [too complex logic conditions](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooManyConditionsViolation) or [too deep dot access](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooDeepAccessViolation).
+There are other problems with expressions as well. We can also have [overused expressions](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.OverusedExpressionViolation): when you use `some_object.some_attr` attribute everywhere instead of creating a new local variable. We can also have [too complex logic conditions](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooManyConditionsViolation) or [too deep dot access](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooDeepAccessViolation).
 
 **Solution**: create new variables, arguments, or constants. Create and use new utility functions or methods if you have to.
 
 ### Lines
 
-Expressions form code lines (please, do not confuse lines with statements: single statement can take multiple lines and multiple statements might be located on a single line).
+Expressions form code lines (please, do not confuse lines with statements: a single statement can take multiple lines and multiple statements might be located on a single line).
 
-The first and the most obvious complexity metric for a line is its length. Yes, you heard it correctly. That's why we (programmers) prefer to stick to `80` chars-per-line rule and not because it was [previously used](https://en.wikipedia.org/wiki/Characters_per_line) in the teletypewriters. There are a lot of rumors about it lately, saying that it does not make any sence to use `80` chars for your code in 2k19. But, that's obviously not true.
+The first and the most obvious complexity metric for a line is its length. Yes, you heard it correctly. That's why we (programmers) prefer to stick to the `80` chars-per-line rule and not because it was [previously used](https://en.wikipedia.org/wiki/Characters_per_line) in teletypewriters. There are a lot of rumors about it lately, saying that it does not make any sence to use `80` chars for your code in 2k19. But, that's obviously not true.
 
-The idea is simple. You can have twice as much logic in a line with `160` chars than in line with only `80` chars. That's why this limit should be set and enforced. Remember, this is *not a stylistic choice*. It is a complexity metric!
+The idea is simple. You can have twice as much logic in a line with `160` chars as in a line with only `80` chars. That's why this limit should be set and enforced. Remember, this is *not a stylistic choice*. It is a complexity metric!
 
-The second main line complexity metric is less known and less used. It is called [Jones Complexity](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.LineComplexityViolation). The idea behind it is simple: we count code (or `ast`) nodes in a single line to get its complexity. Let's have a look at the example. These two lines are fundamentally different in terms of complexity but have the exact same width in chars:
+The second main line complexity metric is less known and less used. It is called [Jones Complexity](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.LineComplexityViolation). The idea behind it is simple: we count code (or `ast`) nodes in a single line to get its complexity. Let's have a look at an example. These two lines are fundamentally different in terms of complexity but have the exact same width in chars:
 
 ```python
 print(first_long_name_with_meaning, second_very_long_name_with_meaning, third)
 print(first * 5 + math.pi * 2, matrix.trans(*matrix), display.show(matrix, 2))
 ```
 
-Let's count the nodes in the first one: one call, three names. Four nodes totally. The second one has twenty-one `ast` nodes. Well, the difference is clear. That's why we use Jones Complexity metric to allow the first long line and disallow the second one based on an internal complexity, not on just raw length.
+Let's count the nodes in the first one: one call, three names. Four nodes in total. The second one has twenty-one `ast` nodes. Well, the difference is clear. That's why we use the Jones Complexity metric to allow the first long line and disallow the second one based on internal complexity, not just on raw length.
 
 What to do with lines with a high Jones Complexity score?
 
@@ -105,9 +105,9 @@ Now it is way more readable!
 
 ### Structures
 
-The next step is analyzing language structures like `if`, `for`, `with`, etc that are formed from lines and expressions. I have to say that this point is very language-specific. I'll showcase several rules from this category using `python` as well.
+The next step is analyzing language structures like `if`, `for`, `with`, etc., that are formed from lines and expressions. I have to say that this point is very language-specific. I'll showcase several rules from this category using `python` as well.
 
-We'll start with `if`. What can be easier than a good-old `if`? Actually, `if` starts to get tricky really fast. Here's an example of how one can [reimplement `switch`](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooManyElifsViolation) with `if`:
+We'll start with `if`. What could be easier than a good old `if`? Actually, `if` starts to get tricky really fast. Here's an example of how one can [reimplement `switch`](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooManyElifsViolation) with `if`:
 
 ```python
 if isinstance(some, int):
@@ -124,9 +124,9 @@ elif isinstance(some, list):
     ...
 ```
 
-What's the problem with this code? Well, imagine that we have tens of data types that should be covered including customs ones that we are not aware of yet. Then this complex code is an indicator that we are choosing a wrong pattern here. We need to refactor our code to fix this problem. For example, one can use [`typeclass`es](https://github.com/thejohnfreeman/python-typeclasses) or [`singledispatch`](https://docs.python.org/3/library/functools.html#functools.singledispatch). They the same job, but nicer.
+What's the problem with this code? Well, imagine that we have tens of data types that should be covered including custom ones that we are not aware of yet. Then this complex code is an indicator that we are choosing the wrong pattern here. We need to refactor our code to fix this problem. For example, one can use [`typeclass`es](https://github.com/thejohnfreeman/python-typeclasses) or [`singledispatch`](https://docs.python.org/3/library/functools.html#functools.singledispatch). They do the same job, but nicer.
 
-`python` never stops to amuse us. For example, you can write `with` with [an arbitrary number of cases](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/consistency.html#wemake_python_styleguide.violations.consistency.MultipleContextManagerAssignmentsViolation), which is too mentally complex and confusing:
+`python` never ceases to amaze us. For example, you can write `with` with [an arbitrary number of cases](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/consistency.html#wemake_python_styleguide.violations.consistency.MultipleContextManagerAssignmentsViolation), which is too mentally complex and confusing:
 
 ```python
 with first(), second(), third(), fourth():
@@ -160,7 +160,7 @@ Compare it with the simple and readable version:
 ]
 ```
 
-You can also accidentally include [multiple statements inside a `try`](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooLongTryBodyViolation) case, which is unsafe because it can raise and handle an exception in an expected place:
+You can also accidentally include [multiple statements inside a `try`](https://wemake-python-stylegui.de/en/latest/pages/usage/violations/complexity.html#wemake_python_styleguide.violations.complexity.TooLongTryBodyViolation) case, which is unsafe because it can raise and handle an exception in an unexpected place:
 
 ```python
 try:
@@ -178,9 +178,9 @@ And that's not even 10% of cases that can and will go wrong with your `python` c
 
 Expressions, statements, and structures form functions. Complexity from these entities flows into functions. And that's where things start to get intriguing. Because functions have literally dozens of complexity metrics: both good and bad.
 
-We will start with the most known ones: [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) and function's length measured in code lines. Cyclomatic complexity indicates how many turns your execution flow can take: it is almost equal to the number of unit tests that are required to fully cover the source code. It is a good metric because it respects the semantic and helps the developer to do the refactoring. On the other hand, a function's length is a bad metric. It does not coop with the previously explained Jones Complexity metric since we already know: multiple lines are easier to read than one big line with everything inside. We will concentrate on good metrics only and ignore bad ones.
+We will start with the most known ones: [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) and a function's length measured in code lines. Cyclomatic complexity indicates how many turns your execution flow can take: it is almost equal to the number of unit tests that are required to fully cover the source code. It is a good metric because it respects the semantics and helps the developer to do the refactoring. On the other hand, a function's length is a bad metric. It conflicts with the previously explained Jones Complexity metric since we already know: multiple lines are easier to read than one big line with everything inside. We will concentrate on good metrics only and ignore bad ones.
 
-Based on my experience multiple useful complexity metrics should be counted instead of regular function's length:
+Based on my experience, multiple useful complexity metrics should be counted instead of regular function's length:
 
 - Number of function decorators; lower is better
 - Number of arguments; lower is better
@@ -191,13 +191,13 @@ Based on my experience multiple useful complexity metrics should be counted inst
 
 The combination of all these checks really allows you to write simple functions (all rules are also applied to methods as well).
 
-When you will try to do some nasty things with your function, you will surely break at least one metric. And this will disappoint our linter and blow your build. As a result, your function will be saved.
+When you try to do some nasty things with your function, you will surely break at least one metric. And this will disappoint our linter and blow your build. As a result, your function will be saved.
 
 **Solution**: when one function is too complex, the only solution you have is to split this function into multiple ones.
 
 ### Classes
 
-The next level of abstraction after functions are classes. And as you already guessed they are even more complex and fluid than functions. Because classes might contain multiple functions inside (that are called method) and have other unique features like inheritance and mixins, class-level attributes and class-level decorators. So, we have to check all methods as functions and the class body itself.
+The next level of abstraction after functions are classes. And as you already guessed they are even more complex and fluid than functions. Because classes might contain multiple functions inside (that are called methods) and have other unique features like inheritance and mixins, class-level attributes, and class-level decorators. So, we have to check all methods as functions and the class body itself.
 
 For classes we have to measure the following metrics:
 
@@ -215,7 +215,7 @@ Notable mention: one can also track [cohesion](https://github.com/mschwager/cohe
 
 ### Modules
 
-Modules do contain multiple statements, functions, and classes. And as you might have already mentioned we usually advise to split functions and classes into new ones. That's why we have to keep and eye on module complexity: it literally flows into modules from classes and functions.
+Modules do contain multiple statements, functions, and classes. And as we might have already mentioned we usually advise to split functions and classes into new ones. That's why we have to keep an eye on module complexity: it literally flows into modules from classes and functions.
 
 To analyze the complexity of the module we have to check:
 
@@ -225,13 +225,13 @@ To analyze the complexity of the module we have to check:
 
 What do we do in the case of a complex module?
 
-**Solution**: yes, you got it right. We split one module into several ones.
+**Solution**: yes, you got it right. We split one module into several.
 
 ### Packages
 
 Packages contain multiple modules. Luckily, that's all they do.
 
-So, he number of modules in a package can soon start to be too large, so you will end up with too many of them. And it is the only complexity that can be found with packages.
+So, the number of modules in a package can soon start to be too large, so you will end up with too many of them. And it is the only complexity that can be found with packages.
 
 **Solution**: you have to split packages into sub-packages and packages of different levels.
 
@@ -335,7 +335,7 @@ This process also has one interesting consequence. It allows you to have "Archit
 
 Some people fall into architecture vs code complexity trap. They can overly-complicate their architecture from the very start with the full repository/service/domain layers. Or they can overly-complicate the source code with no clear separation. Struggle and live like this for years (if they will be able to live for years with the code like this!).
 
-"Architecture on Demand" concept solves these problems. You start small, when the time comes - you split and refactor things:
+The "Architecture on Demand" concept solves these problems. You start small, when the time comes - you split and refactor things:
 
 1. You start with `logic/domains/user.py` and put everything in there
 2. Later you create `logic/domains/user/repository.py` when you have enough database related stuff
@@ -349,7 +349,7 @@ That's it. It is a perfect tool to balance your architecture and code complexity
 
 ## Conclusion
 
-Good linter does much more than finding missing commas and bad quotes. Good linter allows you to rely on it with architecture decisions and help you with the refactoring process.
+A good linter does much more than finding missing commas and bad quotes. A good linter allows you to rely on it with architecture decisions and help you with the refactoring process.
 
 For example, `wemake-python-styleguide` might help you with the `python` source code complexity, it allows you to:
 
