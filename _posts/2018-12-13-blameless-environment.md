@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building blameless working environment
-description: Blaming people does not work. Let's stop to do that. And find alternative ways to work.
+description: Blaming people does not work. Let's stop doing that. And find alternative ways to work.
 date: 2018-12-13
 tags: rsdp management
 translated:
