@@ -49,7 +49,7 @@ So, how can we test migrations on some existing data?
 
 ## django-test-migrations
 
-That's where [`django-test-migrations`](https://github.com/wemake-services/wemake-django-template) comes in handy.
+That's where [`django-test-migrations`](https://github.com/wemake-services/django-test-migrations) comes in handy.
 
 The idea of this project is simple:
 
