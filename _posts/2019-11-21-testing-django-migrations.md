@@ -8,7 +8,10 @@ writing_time:
  writing: "0:40"
  proofreading: "0:15"
  decorating: "0:00"
-republished: []
+republished:
+  - resource: dev.to
+    link: https://dev.to/wemake-services/testing-django-migrations-3288
+    language: us
 ---
 
 Dear internet,
@@ -81,7 +84,7 @@ def _is_clean_item(instance: 'SomeItem') -> bool:
     """
     Pure function to the actual migration.
 
-    Idealy, it should be moved to ``main_app/logic/migrations``.
+    Ideally, it should be moved to ``main_app/logic/migrations``.
     But, as an example it is easier to read them together.
     """
     return ' ' not in instance.string_field
@@ -187,6 +190,6 @@ By the way, we also support raw [`unittest` cases](https://github.com/wemake-ser
 
 Don't be sure about your migrations. Test them!
 
-You can test forward and rollback migrations and their [ordering](https://github.com/wemake-services/django-test-migrations#testing-migrations-ordering) with the help of `django-test-migrations`. It is simple, frienly, and already works with the test framework of your choice.
+You can test forward and rollback migrations and their [ordering](https://github.com/wemake-services/django-test-migrations#testing-migrations-ordering) with the help of `django-test-migrations`. It is simple, friendly, and already works with the test framework of your choice.
 
-I also want to say "thank you" to [these awesome people](https://github.com/wemake-services/django-test-migrations#credits). Without their work it whould take me much longer to come up with the working solution.
+I also want to say "thank you" to [these awesome people](https://github.com/wemake-services/django-test-migrations#credits). Without their work it would take me much longer to come up with the working solution.
