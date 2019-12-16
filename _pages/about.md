@@ -72,4 +72,3 @@ Please, drop me a line if you want to:
 2. [Audit](https://wemake.services/meta/rsdp/audits/) your code
 3. Invite me to speak at your conference or meetup
 4. Invite me to make a private consulting session
-5. Just get to know each other ;)
