@@ -27,7 +27,7 @@ I also run a few side projects:
 
 - [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers (**closed**)
 - [drylabs.io](https://drylabs.io/) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
-- [`opensource-findings`](https://tgstat.ru/channel/@opensource_findings) channel where I share and advertise awesome open-source related projects, articles, and talks
+- [OpensourceFindings](https://tgstat.ru/channel/@opensource_findings) channel where I share and advertise awesome open-source related projects, articles, and talks
 
 ## Stack
 
