@@ -3,7 +3,7 @@ layout: talk
 title: "Automating code reviews"
 conference: DUMP
 slides: https://speakerdeck.com/sobolevn/automating-code-reviews
-youtube:
+youtube: 17gGnTdH-R4
 location: Kazan, Russia
 language: ru
 date: 2019-11-08
