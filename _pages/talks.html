@@ -2,6 +2,19 @@
 layout: page
 title: Talks
 permalink: /talks/
+future_talks:
+  - url: https://bel.cultreg.ru/events/26097/vstrecha-python-meetup
+    title: Code quality metrics
+    date: 08.02.2020
+    language: ru
+    conference: FIT Python Meetup
+    location: Belgorod, Russia
+  - url: http://teamleadconf.ru/moscow/2020/abstracts/6240
+    title: Practical guide to microtasks
+    date: 10.02.2020
+    language: ru
+    conference: TeamLeadConf
+    location: Moscow, Russia
 ---
 
 <div class="c-summary">
@@ -30,7 +43,7 @@ permalink: /talks/
       <p>
         {{ talk.date | date: "%b %-d, %Y" }}
         <small>
-          {{ talk.conference }} :{{ talk.language }}:
+          {{ talk.conference }}, {{ talk.location }} :{{ talk.language }}:
         </small>
       </p>
     </li>
@@ -53,7 +66,7 @@ permalink: /talks/
       <p>
         {{ talk.date | date: "%b %-d, %Y" }}
         <small>
-          {{ talk.conference }} :{{ talk.language }}:
+          {{ talk.conference }}, {{ talk.location }} :{{ talk.language }}:
         </small>
       </p>
     </li>
