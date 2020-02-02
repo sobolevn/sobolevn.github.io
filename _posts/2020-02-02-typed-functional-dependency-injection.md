@@ -72,7 +72,7 @@ And now your code won't type-check. Because that's how our caller looks like:
 
 ```python
 def calculate_points(word: str) -> int:
-    guessed_letters_count = len([letter for letter in word if letter != '.'])
+    # ...
     return _award_points_for_letters(guessed_letters_count)
 ```
 
@@ -80,11 +80,11 @@ To fix this ``calculate_points`` function (and all other upper caller functions)
 
 ```python
 def calculate_points(word: str, threshold: int) -> int:
-    guessed_letters_count = len([letter for letter in word if letter != '.'])
+    # ...
     return _award_points_for_letters(guessed_letters_count, threshold)
 ```
 
-It also effects our `views.py`:
+It also affects our `views.py`:
 
 ```python
 from django.conf import settings
