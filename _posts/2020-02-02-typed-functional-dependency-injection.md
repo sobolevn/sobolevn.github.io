@@ -239,7 +239,7 @@ That's it. No mess, no magic, no framework internals. But typing, composition, a
 
 What if you want to also change the symbol that indicates unguessed letter (currently `.`), to be configurable? Some users prefer `.`, some `_`. Ok, we can do that, cannot we?
 
-A little confusion can happen to functional newcomers at this step.because we only have `deps` available inside `_award_points_for_letters` and not inside `calculate_points`. And composition again is the answer. We have a special composition helper for this case: `Context.ask()` which fetches the dependencies from the current context and allows us to explicitly use it whenever we want:
+A little confusion can happen to functional newcomers at this step. Because we only have `deps` available inside `_award_points_for_letters` and not inside `calculate_points`. And composition again is the answer. We have a special composition helper for this case: [`Context.ask()`](https://returns.readthedocs.io/en/latest/pages/context.html#returns.context.requires_context.Context.ask) which fetches the dependencies from the current context and allows us to explicitly use it whenever we want:
 
 ```python
 from returns.context import Context, RequiresContext
