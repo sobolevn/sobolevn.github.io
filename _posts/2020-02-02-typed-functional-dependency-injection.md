@@ -223,7 +223,7 @@ def _maybe_add_extra_holiday_point(awarded_points: int) -> int:
     return awarded_points + 1 if random.choice([True, False]) else awarded_points
 ```
 
-We have changed the return type of the functions and we have also added `awarded_points.map(_maybe_add_extra_holiday_point)`. Which is another way of saying "compose RequiresContext container with this pure function _maybe_add_extra_holiday_point". We don't change our framework layer at all.
+We have changed the return type of the functions and we have also added `awarded_points.map(_maybe_add_extra_holiday_point)`. Which is another way of saying "compose `RequiresContext` container with this pure function `_maybe_add_extra_holiday_point`". We don't change our framework layer at all.
 
 How does it work?
 
