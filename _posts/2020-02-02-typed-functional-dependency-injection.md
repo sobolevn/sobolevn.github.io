@@ -133,7 +133,7 @@ So, how in a world I am going to pass this troublesome value into the function i
 
 Functional programmers are smart people. Really. They can do literally everything with just pure functions.
 
-![Functional patterns](https://dev-to-uploads.s3.amazonaws.com/i/e0kjtxmcsotbgj3plqok.gif)
+[![Functional patterns](https://dev-to-uploads.s3.amazonaws.com/i/e0kjtxmcsotbgj3plqok.gif)](https://vimeo.com/113588389)
 
 They have also solved the dependencies problem with elegance while maintaining simplicity. The core idea of dependency injection in a functional way is that we don't call things that rely on the context we don't have. Instead, we schedule them to be called later. Let's see how our original logic will change after adapting this idea:
 
