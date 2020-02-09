@@ -6,7 +6,7 @@ slides: https://speakerdeck.com/sobolevn/easy-and-complex
 youtube:
 location: Belgorod, Russia
 language: ru
-date: 2020-02-20
+date: 2020-02-08
 tags: python
 ---
 
