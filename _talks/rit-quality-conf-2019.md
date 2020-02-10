@@ -17,3 +17,11 @@ I shared an opinion about my view on code's quality.
 My opinion was:
 
 > The most important property of software quality: is software (code) quality!
+
+
+## Related talks
+
+- [Simple and complex](https://sobolevn.me/talks/belgorod-python-2020)
+- [Practical microtasks](sobolevn.me/talks/teamleadconf-2020)
+- [Preaching about blameless environment](https://sobolevn.me/talks/rit-2019)
+- [How to teach programmers in the 21st century?](https://sobolevn.me/talks/knowledge-conf-2019)

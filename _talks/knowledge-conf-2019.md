@@ -22,7 +22,8 @@ I have also offered them to take
 a look at the alternative solution: [RSDP](https://wemake.services/meta).
 
 
-## Relates talks
+## Related talks
 
+- [Practical microtasks](sobolevn.me/talks/teamleadconf-2020)
 - [About corporate education](https://sobolevn.me/talks/teamlead-spb-meetup-2019)
 - [Problems in teaching programming](https://sobolevn.me/talks/softer-2018)

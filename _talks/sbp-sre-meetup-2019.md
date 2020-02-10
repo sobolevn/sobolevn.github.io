@@ -19,3 +19,9 @@ that we actively use to decrease the negative effect of lack of SRE.
 And it also raises an important question to think about:
 
 > How to combine RSPD and SRE together in a single business process?
+
+## Related talks
+
+- [Simple and complex](https://sobolevn.me/talks/belgorod-python-2020)
+- [Automating Code Reviews](https://sobolevn.me/talks/dumpconf-2019)
+- [How to write python code so people would love you](https://sobolevn.me/talks/moscow-python-67-how-to-write-python-code)
