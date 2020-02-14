@@ -15,6 +15,8 @@ This talk is a practical guide to microtasks.
 It demistifies a lot of rumors, misconceptions,
 and shows real problems about them.
 
+Here's a short text version of my talk in Russian: [vc.ru](https://vc.ru/ontico/106882-chto-kak-i-zachem-delat-timlidu)
+
 
 ## Related talks
 
