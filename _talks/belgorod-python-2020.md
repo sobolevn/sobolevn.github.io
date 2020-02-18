@@ -18,6 +18,12 @@ Even one that I have invented myself: Sobolev's complexity.
 I also gave a bunch of tools to fight
 the complexity on all levels of abstractions.
 
+This talk featured:
+
+- [`wemake-python-styleguide`](https://github.com/wemake-services/wemake-python-styleguide)
+- [`dry-python/returns`](https://github.com/dry-python/returns)
+- [Complexity Waterfall](https://sobolevn.me/2019/10/complexity-waterfall) article
+
 
 ## Related talks
 
