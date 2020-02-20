@@ -3,7 +3,7 @@ layout: talk
 title: "Practical microtasks"
 conference: TeamLeadConf
 slides: https://speakerdeck.com/sobolevn/practical-microtasks
-youtube:
+youtube: 7wgxJirrg8U
 location: Moscow, Russia
 language: ru
 date: 2020-02-10
