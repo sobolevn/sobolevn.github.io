@@ -16,7 +16,7 @@ layout: page
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h3>
       <p>
-        {{ post.date | date: "%B %-d, %Y" }}
+        <small>{{ post.date | date: "%B %-d, %Y" }}</small>
         <small>{% include read_time.html post=post %}</small>
         <small>
           <a href="{{ post.url | prepend: site.baseurl }}#discussion"

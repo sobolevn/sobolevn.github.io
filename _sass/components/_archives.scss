@@ -37,6 +37,11 @@
                 flex-direction: column;
     }
 
+    &.c-archives__item--squashed {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }
+
     .c-archives__description {
         margin-top: 1rem;
     }
@@ -58,7 +63,12 @@
         color: #515862;
 
         small {
-            margin-left: 1rem;
+            margin: 0;
+            text-transform: lowercase;
+
+            + small {
+                margin-left: 1rem;
+            }
         }
     }
 }

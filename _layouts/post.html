@@ -6,20 +6,23 @@ layout: page
   <header class="c-article__header">
     <h1 class="c-article__title" itemprop="name">{{ page.title }}</h1>
     <p class="c-article__time">
-      <time datetime="{{ page.date | date_to_xmlschema }}"
-            itemprop="datePublished">
-        {{ page.date | date: "%B %-d, %Y" }}
-      </time>
+      <small>
+        <time datetime="{{ page.date | date_to_xmlschema }}"
+              itemprop="datePublished">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+      </small>
       <small>{% include read_time.html post=page %}</small>
+      <small><a href="#discussion">Start a discussion</a></small>
     </p>
   </header>
 
   <!-- Post Tags -->
-  <ul class="c-tags">
+  <!-- <ul class="c-tags">
     {% for tag in page.tags %}
     <li class="c-tag">{{ tag }}</li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
   <!-- Content -->
   <div class="c-article__main">

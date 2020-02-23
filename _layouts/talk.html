@@ -6,27 +6,30 @@ layout: page
   <header class="c-article__header">
     <h1 class="c-article__title">{{ page.title }}</h1>
     <p class="c-article__time">
-      <time datetime="{{ page.date | date_to_xmlschema }}"
-            itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </time>
+      <small>
+        <time datetime="{{ page.date | date_to_xmlschema }}"
+              itemprop="datePublished">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+      </small>
       <small>{{ page.conference }}</small>
       <small>{{ page.location }}</small>
     </p>
   </header>
 
   <!-- Post Tags -->
-  <ul class="c-tags">
+  <!-- <ul class="c-tags">
     {% for tag in page.tags %}
     <li class="c-tag">{{ tag }}</li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
   <!-- Content -->
   <div class="c-article__main">
     {{ content }}
 
     {% if page.youtube %}
+      <h2>Video</h2>
       <iframe
         id="ytplayer" type="text/html" width="640" height="360"
         src="https://www.youtube.com/embed/{{ page.youtube }}"

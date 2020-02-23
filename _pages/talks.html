@@ -24,12 +24,12 @@ future_talks: []
   {% if page.future_talks %}
   <h2 class="c-archives__year" id="upcoming-ref">Upcoming</h2>
   {% for talk in page.future_talks  %}
-    <li class="c-archives__item">
+    <li class="c-archives__item c-archives__item--squashed">
       <h3>
         <a href="{{ talk.url }}">{{ talk.title }}</a>
       </h3>
       <p>
-        {{ talk.date | date: "%b %-d, %Y" }}
+        <small>{{ talk.date | date: "%b %-d, %Y" }}</small>
         <small>
           {{ talk.conference }}, {{ talk.location }} :{{ talk.language }}:
         </small>
@@ -47,12 +47,12 @@ future_talks: []
       <h2 class="c-archives__year" id="{{ this_year }}-ref">{{ this_year }}</h2>
       <ul class="c-archives__list">
     {% endif %}
-    <li class="c-archives__item">
+    <li class="c-archives__item c-archives__item--squashed">
       <h3>
         <a href="{{ talk.url | prepend: site.baseurl }}">{{ talk.title }}</a>
       </h3>
       <p>
-        {{ talk.date | date: "%b %-d, %Y" }}
+        <small>{{ talk.date | date: "%b %-d, %Y" }}</small>
         <small>
           {{ talk.conference }}, {{ talk.location }} :{{ talk.language }}:
         </small>
