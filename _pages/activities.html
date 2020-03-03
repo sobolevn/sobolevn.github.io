@@ -33,7 +33,7 @@ permalink: /activities/
         :link: <a href="{{ activity.link }}" target="_blank">{{ activity.title }}</a>
       </h3>
       <p>
-        {{ activity.date | date: "%b %-d, %Y" }}
+        <small>{{ activity.date | date: "%b %-d, %Y" }}</small>
         <small>
           {% assign domain = activity.link | replace_first: 'www.', '' | split: '/' %}
           {{ domain[2] }}, {{ activity.type | downcase }} :{{ activity.language }}:
