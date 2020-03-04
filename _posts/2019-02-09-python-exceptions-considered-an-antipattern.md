@@ -187,7 +187,7 @@ Failure(4).map(lambda number: number / 2)
 
 Now you can just concentrate on correct execution flow and be sure that failed state won't break your program in random places.
 
-And you can always [take care of a failed state and even fix it](https://returns.readthedocs.io/en/latest/pages/container.html#returning-execution-to-the-right-track) and return to the right track if you want to.
+And you can always [take care of a failed state and even fix it](https://returns.readthedocs.io/en/latest/pages/railway.html) and return to the right track if you want to.
 
 ```python
 Failure(4).rescue(lambda number: Success(number + 1))
@@ -201,7 +201,7 @@ It means that "**all problems must be resolved individually**" practice is the o
 
 ### But how to unwrap values from containers?
 
-Yes, indeed, you really need raw values when dealing with functions that actually accept these raw values. You can use [`.unwrap()` or `.value_or()`](https://returns.readthedocs.io/en/latest/pages/container.html#unwrapping-values) methods:
+Yes, indeed, you really need raw values when dealing with functions that actually accept these raw values. You can use [`.unwrap()` or `.value_or()`](https://returns.readthedocs.io/en/latest/pages/railway.html#unwrapping-values) methods:
 
 ```python
 Success(1).unwrap()
@@ -288,7 +288,7 @@ Now it is perfectly readable. That's how `.unwrap()` and `@pipeline` synergy wor
 
 ## Wrapping all together
 
-Now, let's solve this `requests` example with all the new tools we have. Remember, that each line could raise an exception? And there's no way to make them return `Result` container. But you can use [`@safe` decorator](https://returns.readthedocs.io/en/latest/pages/functions.html#safe) to wrap unsafe functions and make them safe. These two examples are identical:
+Now, let's solve this `requests` example with all the new tools we have. Remember, that each line could raise an exception? And there's no way to make them return `Result` container. But you can use [`@safe` decorator](https://returns.readthedocs.io/en/latest/pages/result.html#safe) to wrap unsafe functions and make them safe. These two examples are identical:
 
 ```python
 from returns.functions import safe
