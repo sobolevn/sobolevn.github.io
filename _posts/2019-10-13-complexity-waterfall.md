@@ -76,7 +76,7 @@ There are other problems with expressions as well. We can also have [overused ex
 
 Expressions form code lines (please, do not confuse lines with statements: a single statement can take multiple lines and multiple statements might be located on a single line).
 
-The first and the most obvious complexity metric for a line is its length. Yes, you heard it correctly. That's why we (programmers) prefer to stick to the `80` chars-per-line rule and not because it was [previously used](https://en.wikipedia.org/wiki/Characters_per_line) in teletypewriters. There are a lot of rumors about it lately, saying that it does not make any sence to use `80` chars for your code in 2k19. But, that's obviously not true.
+The first and the most obvious complexity metric for a line is its length. Yes, you heard it correctly. That's why we (programmers) prefer to stick to the `80` chars-per-line rule and not because it was [previously used](https://en.wikipedia.org/wiki/Characters_per_line) in teletypewriters. There are a lot of rumors about it lately, saying that it does not make any sense to use `80` chars for your code in 2k19. But, that's obviously not true.
 
 The idea is simple. You can have twice as much logic in a line with `160` chars as in a line with only `80` chars. That's why this limit should be set and enforced. Remember, this is *not a stylistic choice*. It is a complexity metric!
 
