@@ -41,6 +41,8 @@ future_talks:
 
   {% if page.future_talks %}
   <h2 class="c-archives__year" id="upcoming-ref">Upcoming</h2>
+
+  <ul class="c-archives__list">
   {% for talk in page.future_talks  %}
     <li class="c-archives__item c-archives__item--squashed">
       <h3>
@@ -54,6 +56,8 @@ future_talks:
       </p>
     </li>
   {% endfor %}
+  </ul>
+
   {% endif %}
 
   {% assign sorted_talks = site.talks | reverse %}
