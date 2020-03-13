@@ -11,7 +11,7 @@ tags: rsdp management python
 ---
 
 This was a talk about "undoing" code reviews.
-The main idea is: you should concentrate on automating stuff instead of blindly following the same process over and oever again.
+The main idea is: you should concentrate on automating stuff instead of blindly following the same process over and over again.
 
 This reveals a lot of unexpected features: like code review speed and quality.
 
