@@ -12,6 +12,13 @@ You can also subscribe to my [Activities](https://sobolevn.me/feed/activities.xm
 If you don't know what `RSS` is, then it is not your choice.
 Consider Github subscription.
 
+
+## Telegram
+
+I cross-post all articles and tools I make in [`@OpensourceFindings`](https://t.me/opensource_findings) telegram channel.
+You can join it if you are using this platform: you will also receive lots of extra open-source goodies made by other developers.
+
+
 ## Github
 
 You can also [follow me on Github](https://github.com/sobolevn)

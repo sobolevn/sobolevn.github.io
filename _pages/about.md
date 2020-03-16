@@ -9,6 +9,7 @@ This is how I usually look like:
 
 <img src="https://avatars3.githubusercontent.com/u/4660275?s=460&v=4" alt="My photo" width="250">
 
+
 ## Work
 
 I work as a CTO at [wemake.services](https://wemake.services),
@@ -27,7 +28,8 @@ I also run a few side projects:
 
 - [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers (**closed**)
 - [drylabs.io](https://drylabs.io/) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
-- [OpensourceFindings](https://tgstat.ru/channel/@opensource_findings) channel where I share and advertise awesome open-source related projects, articles, and talks
+- [OpensourceFindings](https://t.me/opensource_findings) channel where I share and advertise awesome open-source related projects, articles, and talks
+
 
 ## Stack
 
@@ -37,22 +39,27 @@ But, I am also familiar with *many* other languages.
 You can check my [`.dotfiles`](https://github.com/sobolevn/dotfiles) to get
 the exact the same setup as I have.
 
+
 ## Conferences I organize
 
 I am also helping to organize several meetups and conferences:
+
 - [ElixirLangMoscow](http://elixir-lang.moscow/) which I founded back in 2016
 - [MoscowPythonConf](http://conf.python.ru) where I am a Program Committee member
+
 
 ## Education career
 
 I also like to spread the limited knowledge I have.
-I give lectures in several universities in Russia:
+I gave lectures in several Universities in Russia:
+
 - [MosPolytech](https://mospolytech.ru/) in 2017
 - [RANEPA](https://www.ranepa.ru/) in 2018
 - [IFMO](http://www.ifmo.ru/) in 2019
 
 And I have also created several
 independent courses for `#tceh`, `iidf`, `devman`, and `Numa Moscow`.
+
 
 ## Identity
 
@@ -63,6 +70,7 @@ I am using [`keybase`](https://keybase.io/sobolevn) to identify
 my verified online accounts.
 
 My public `gpg` key is: [`C9F576BBC3A81B65BAF16635FF672D568AE3C73E`](https://keybase.io/sobolevn/pgp_keys.asc?fingerprint=c9f576bbc3a81b65baf16635ff672d568ae3c73e)
+
 
 ## Contact me
 
