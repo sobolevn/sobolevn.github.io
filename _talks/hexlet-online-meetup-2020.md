@@ -9,3 +9,7 @@ language: ru
 date: 2020-03-22
 tags: python
 ---
+
+This talk was targeted on the very beginners in programming.
+
+I was explaning how composition and types work.
