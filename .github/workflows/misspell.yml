@@ -1,7 +1,8 @@
 name: misspell
 
 on:
-  - push
+  push: 
+    branches: ['master']
 
 jobs:
   build:
