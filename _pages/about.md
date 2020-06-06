@@ -60,6 +60,10 @@ I gave lectures in several Universities in Russia:
 And I have also created several
 independent courses for `#tceh`, `iidf`, `devman`, and `Numa Moscow`.
 
+I have also participated in
+[Google Summer of Code 2020](https://www.djangoproject.com/weblog/2020/may/13/summer-of-code/)
+as a mentor for Django Software Foundation.
+
 
 ## Identity
 
