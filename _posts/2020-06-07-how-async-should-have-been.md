@@ -119,7 +119,7 @@ Let me introduce to you type-safe, `mypy`-friendly, framework-independent, pure-
 
 ### Sync version
 
-Before we go any further to make this example reproducible, I need to provide dependencies that are going to be used later:
+Before we go any further, to make this example reproducible, I need to provide dependencies that are going to be used later:
 
 ```bash
 pip install returns httpx anyio
