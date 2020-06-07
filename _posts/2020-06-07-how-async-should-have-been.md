@@ -7,7 +7,7 @@ tags: python
 writing_time:
   writing: "1:30"
   proofreading: "0:40"
-  decorating: "0:15"
+  decorating: "0:00"
 republished: []
 ---
 
