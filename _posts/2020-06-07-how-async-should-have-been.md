@@ -362,7 +362,7 @@ Composition and abstraction can solve any problem. In this article, I have shown
 
 Check out [`dry-python/returns`](https://github.com/dry-python/returns), provide your feedback, learn new ideas, maybe even [help us to sustain this project](https://github.com/sponsors/dry-python/)!
 
-And as always, [follow me on GitHub](https://github.com/sobolevn/) to keep up with new awesome Python libraries I do!
+And as always, [follow me on GitHub](https://github.com/sobolevn/) to keep up with new awesome Python libraries I make or help with!
 
 
 ##  Gratis
