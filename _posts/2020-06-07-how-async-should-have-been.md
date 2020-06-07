@@ -297,7 +297,7 @@ Feel free to try new `dry-python/returns@0.14` release, it has lots of other goo
 
 Speaking about goodies, I want to highlight several of features I am most proud of:
 
-1. [Typed `partial` and `@curry`](https://returns.readthedocs.io/en/latest/pages/curry.html) functions
+- [Typed `partial` and `@curry`](https://returns.readthedocs.io/en/latest/pages/curry.html) functions
 
 ```python
 from returns.curry import curry, partial
@@ -323,7 +323,7 @@ assert example(1, 'abc') == 4.0
 assert example(1)('abc') == 4.0
 ```
 
-2. [Functional pipelines with type-inference](https://returns.readthedocs.io/en/latest/pages/pipeline.html)
+- [Functional pipelines with type-inference](https://returns.readthedocs.io/en/latest/pages/pipeline.html)
 
 You can now use functional pipelines with full type inference that is augmentated by a custom `mypy` plugin:
 
@@ -340,7 +340,7 @@ We all know how hard it is to work with `lambda`s in typed code because its argu
 
 Now, we always know that `lambda collection: max(collection)` has `Callable[[List[int]], int]` inside this pipeline. And `lambda max_number: -max_number` is just `Callable[[int], int]`.
 
-3. [`RequiresContextFutureResult`](https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextfutureresult-container) for [typed functional dependency injection](https://sobolevn.me/2020/02/typed-functional-dependency-injection)
+- [`RequiresContextFutureResult`](https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextfutureresult-container) for [typed functional dependency injection](https://sobolevn.me/2020/02/typed-functional-dependency-injection)
 
 It is an abstraction over `FutureResult` we have already covered in this article.
 It might be used to explicitly pass dependencies in a functional manner in your async programs.
