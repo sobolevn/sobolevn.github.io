@@ -283,10 +283,10 @@ Let's try to screw something up:
 This will be catched by `mypy`:
 
 ```python
-» mypy ex.py
-ex.py:33: error: Argument 1 to "map" of "IOResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
-ex.py:33: error: Argument 1 to "map" of "FutureResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
-ex.py:33: error: Incompatible return value type (got "bytes", expected "int")
+» mypy async_and_sync.py
+async_and_sync.py:33: error: Argument 1 to "map" of "IOResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
+async_and_sync.py:33: error: Argument 1 to "map" of "FutureResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
+async_and_sync.py:33: error: Incompatible return value type (got "bytes", expected "int")
 ```
 
 As you can see, there's nothing magical in a way how async code can be written with right abstractions. Inside our implementation, there's still no magic. Just good old composition. What we real magic we do is providing the same API for different types - this allows us to abstract away how, for example, HTTP requests work: synchronously or asynchronously.
