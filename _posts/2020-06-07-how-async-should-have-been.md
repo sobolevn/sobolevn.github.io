@@ -87,9 +87,7 @@ Now, let's rewrite our code to work with async version:
 
 ```python
 def fetch_resource_size(url: str) -> AsyncAbstraction[int]:
-    return client_get(
-        url,
-    ).map(
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 ```
