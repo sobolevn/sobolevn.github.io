@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "How async should have been"
-description: ""
+description: "Your sync and async code can be identical. But still, work differently. It is a matter of right abstractions. In this article, I will show how one can write sync code to run async programs in Python."
 date: 2020-06-07
 tags: python
 writing_time:
-  writing: "0"
-  proofreading: "0"
-  decorating: "0"
+  writing: "1:30"
+  proofreading: "0:40"
+  decorating: "0:15"
 republished: []
 ---
 
@@ -35,14 +35,13 @@ Read [this brilliant piece](http://journal.stuffwithstuff.com/2015/02/01/what-co
 
 Different colors of functions lead to a more practical problem: code duplication.
 
-Imagine, that you are writing a CLI tool to fetch sizes of web pages. And you want to support both sync and async ways of doing it.
+Imagine, that you are writing a CLI tool to fetch sizes of web pages. And you want to support both sync and async ways of doing it. This might be very useful for library authors when you don't know how your code is going to be used. It is not limited to just PyPI libraries, but also includes your in-company libraries with shared logic for different services written, for example, in Django and aiohttp. Or any other sync and async code. But, I must admit that single applications are mostly written in sync or async way only.
 
 Let's start with the sync pseudo-code:
 
 ```python
 def fetch_resource_size(url: str) -> str:
     response = client_get(url)
-    response.raise_for_status()
     return len(response.content)
 ```
 
@@ -51,8 +50,7 @@ Looking pretty good! Now, let's add its async counterpart:
 ```python
 async def fetch_resource_size(url: str) -> str:
     response = await client_get(url)
-    response.raise_for_status()
-    return len(await response.content)
+    return len(response.content)
 ```
 
 It is basically the same code, but filled with `await` keywords!
@@ -73,26 +71,24 @@ These two principles can help us in solving this problem.
 First of all, let's rewrite our imperative pseudo-code into a functional pseudo-code. This will allow us to see the pattern more clearly:
 
 ```python
-def fetch_resource_size(url: str) -> Abstraction[str]:
-    return client_get(
-        url,
-    ).map(
-        lambda response: response.raise_for_status(),
-    ).map(
+def fetch_resource_size(url: str) -> Abstraction[int]:
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 ```
+
+What is this [`.map`](https://returns.readthedocs.io/en/latest/pages/container.html#working-with-a-container) method? What does it do?
+
+This is a functional way of composing complex abstractions and pure functions. This method allows creating a new abstraction from the existing one with the new state. Let's say that when we call `client_get(url)` it initially returns `Abstraction[Response]` and calling `.map(lambda response: len(response.content))` transforms it to the needed `Abstraction[int]` instance.
 
 Now the steps are pretty clear! Notice how easily we went from several independent steps into a single pipeline of function calls. We have also changed the return type of this function: now it returns some `Abstraction`.
 
 Now, let's rewrite our code to work with async version:
 
 ```python
-def fetch_resource_size(url: str) -> AsyncAbstraction[str]:
+def fetch_resource_size(url: str) -> AsyncAbstraction[int]:
     return client_get(
         url,
-    ).map(
-        lambda response: response.raise_for_status(),
     ).map(
         lambda response: len(response.content),
     )
@@ -106,12 +102,8 @@ The last thing we need is to decide which client we want: async or sync one. Let
 def fetch_resource_size(
     client_get: Callable[[str], AbstactionType[Response]],
     url: str,
-) -> AbstactionType[str]:
-    return client_get(
-        url,
-    ).map(
-        lambda response: response.raise_for_status(),
-    ).map(
+) -> AbstactionType[int]:
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 ```
@@ -129,29 +121,28 @@ Let me introduce to you type-safe, `mypy`-friendly, framework-independent, pure-
 
 ### Sync version
 
-One can rewrite this pseudo-code as real python code. Let's start with the sync version:
+Before we go any further to make this example reproducible, I need to provide dependencies that are going to be used later:
 
-# TODO: explain what `.map` means
-# TODO: add `pip install` command
+```bash
+pip install returns httpx anyio
+```
+
+Let's move on!
+
+One can rewrite this pseudo-code as a real working python code. Let's start with the sync version:
 
 ```python
 from typing import Callable
 
 import httpx
 
-from returns.functions import tap
 from returns.io import IOResultE, impure_safe
-from returns.result import safe
 
 def fetch_resource_size(
     client_get: Callable[[str], IOResultE[httpx.Response]],
     url: str,
 ) -> IOResultE[int]:
-    return client_get(
-        url,
-    ).bind_result(
-        lambda response: safe(tap(httpx.Response.raise_for_status))(response),
-    ).map(
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 
@@ -164,9 +155,8 @@ print(fetch_resource_size(
 
 We have changed a couple of things to make our pseudo-code real:
 
-1. We now use [`IOResultE`](https://returns.readthedocs.io/en/latest/pages/io.html) which is a functional way to handle sync `IO` that might fail. Remember, [exceptions are not always welcome](https://sobolevn.me/2019/02/python-exceptions-considered-an-antipattern)! In a traditional approach, no one cares about exceptions. We do ❤️
-2. We changed one `.map` call to `.bind_result` for correct type composition, we have also changed how `raise_for_status` is called. Because in `httpx` it does not return any value and we still want to chain it, `tap` helps us with that. We also mark it as `safe`, now it won't raise any exceptions. Instead, it will return `Result` values: `Success[Response]` if the request was successful, and `Failure(reason)` if it was the case
-3. We use [`httpx`](https://github.com/encode/httpx/) that can work with sync and async requests
+1. We now use [`IOResultE`](https://returns.readthedocs.io/en/latest/pages/io.html) which is a functional way to handle sync `IO` that might fail. Remember, [exceptions are not always welcome](https://sobolevn.me/2019/02/python-exceptions-considered-an-antipattern)! `Result`-based types allow modeling exceptions as separate `Failure()` values. While successful values are wrapped in `Success` type. In a traditional approach, no one cares about exceptions. But, we do care ❤️
+2. We use [`httpx`](https://github.com/encode/httpx/) that can work with sync and async requests
 
 Now, let's try the async version!
 
@@ -178,19 +168,13 @@ from typing import Callable
 import anyio
 import httpx
 
-from returns.functions import tap
 from returns.future import FutureResultE, future_safe
-from returns.result import safe
 
 def fetch_resource_size(
     client_get: Callable[[str], FutureResultE[httpx.Response]],
     url: str,
 ) -> FutureResultE[int]:
-    return client_get(
-        url,
-    ).bind_result(
-        safe(tap(httpx.Response.raise_for_status)),
-    ).map(
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 
@@ -227,10 +211,8 @@ from typing import Callable, Union, overload
 import anyio
 import httpx
 
-from returns.functions import tap
 from returns.future import FutureResultE, future_safe
 from returns.io import IOResultE, impure_safe
-from returns.result import safe
 
 @overload
 def fetch_resource_size(
@@ -253,16 +235,14 @@ def fetch_resource_size(
     ],
     url: str,
 ) -> Union[IOResultE[int], FutureResultE[int]]:
-    return client_get(
-        url,
-    ).bind_result(
-        safe(tap(httpx.Response.raise_for_status)),
-    ).map(
+    return client_get(url).map(
         lambda response: len(response.content),
     )
 ```
 
-# TODO: examplain `@overloads`
+With `@overload` decorators we describe which combinations of inputs are allowed. And what return type will it produce. You can read more about `@overload` [here](https://sobolevn.me/2019/01/simple-dependent-types-in-python).
+
+Finally, calling our function with both sync and async client:
 
 ```python
 # Sync:
@@ -283,7 +263,8 @@ print(anyio.run(page_size.awaitable))
 # => <IOResult: <Success: 27972>>
 ```
 
-# TODO: give more details about its usage
+As you can see `fetch_resource_size` with sync client immediately returns `IOResult` and can execute itself.
+In contrast to it, async version requires some event-loop to execute it. Like a regular coroutine. We use `anyio` for the demo.
 
 `mypy` is pretty happy about it too:
 
@@ -292,8 +273,23 @@ print(anyio.run(page_size.awaitable))
 Success: no issues found in 1 source file
 ```
 
-# TODO: show `mypy` error
-# TODO: intermediate conclusion
+Let's try to screw something up:
+
+```diff
+---lambda response: len(response.content),
++++lambda response: response.content,
+```
+
+This will be catched by `mypy`:
+
+```python
+» mypy ex.py
+ex.py:33: error: Argument 1 to "map" of "IOResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
+ex.py:33: error: Argument 1 to "map" of "FutureResult" has incompatible type "Callable[[Response], bytes]"; expected "Callable[[Response], int]"
+ex.py:33: error: Incompatible return value type (got "bytes", expected "int")
+```
+
+As you can see, there's nothing magical in a way how async code can be written with right abstractions. Inside our implementation, there's still no magic. Just good old composition. What we real magic we do is providing the same API for different types - this allows us to abstract away how, for example, HTTP requests work: synchronously or asynchronously.
 
 I hope, that this quick demo shows how awesome `async` programs can be!
 Feel free to try new `dry-python/returns@0.14` release, it has lots of other goodies!
@@ -369,3 +365,8 @@ Composition and abstraction can solve any problem. In this article, I have shown
 Check out [`dry-python/returns`](https://github.com/dry-python/returns), provide your feedback, learn new ideas, maybe even [help us to sustain this project](https://github.com/sponsors/dry-python/)!
 
 And as always, [follow me on GitHub](https://github.com/sobolevn/) to keep up with new awesome Python libraries I do!
+
+
+##  Gratis
+
+Thanks for reviewing this post to [@AlwxSin](https://github.com/AlwxSin) and [@ditansu](https://github.com/ditansu).
