@@ -125,11 +125,14 @@ When we pass `Abstraction` our code works like a sync one, when `AsyncAbstractio
 
 Luckily, we already have the right abstractions in [`dry-python/returns`](https://github.com/dry-python/returns)!
 
-Let me introduce to you type-safe, `mypy`-friendly, framework-independent, pure-python, awesome tool to provide you awesome abstractions you can use in any project!
+Let me introduce to you type-safe, `mypy`-friendly, framework-independent, pure-python tool to provide you awesome abstractions you can use in any project!
 
 ### Sync version
 
 One can rewrite this pseudo-code as real python code. Let's start with the sync version:
+
+# TODO: explain what `.map` means
+# TODO: add `pip install` command
 
 ```python
 from typing import Callable
@@ -257,7 +260,11 @@ def fetch_resource_size(
     ).map(
         lambda response: len(response.content),
     )
+```
 
+# TODO: examplain `@overloads`
+
+```python
 # Sync:
 print(fetch_resource_size(
     impure_safe(httpx.get),
@@ -276,6 +283,8 @@ print(anyio.run(page_size.awaitable))
 # => <IOResult: <Success: 27972>>
 ```
 
+# TODO: give more details about its usage
+
 `mypy` is pretty happy about it too:
 
 ```
@@ -283,8 +292,12 @@ print(anyio.run(page_size.awaitable))
 Success: no issues found in 1 source file
 ```
 
+# TODO: show `mypy` error
+# TODO: intermediate conclusion
+
 I hope, that this quick demo shows how awesome `async` programs can be!
 Feel free to try new `dry-python/returns@0.14` release, it has lots of other goodies!
+
 
 ## Other awesome features
 
