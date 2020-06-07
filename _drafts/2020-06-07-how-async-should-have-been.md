@@ -40,7 +40,7 @@ Imagine, that you are writing a CLI tool to fetch sizes of web pages. And you wa
 Let's start with the sync pseudo-code:
 
 ```python
-def def fetch_resource_size((url: str) -> str:
+def fetch_resource_size((url: str) -> str:
     response = client_get(url)
     response.raise_for_status()
     return len(response.content)
