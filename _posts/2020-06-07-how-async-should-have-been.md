@@ -239,7 +239,7 @@ def fetch_resource_size(
     )
 ```
 
-With `@overload` decorators we describe which combinations of inputs are allowed. And what return type will it produce. You can read more about `@overload` [here](https://sobolevn.me/2019/01/simple-dependent-types-in-python).
+With `@overload` decorators we describe which combinations of inputs are allowed. And what return type will they produce. You can read more about `@overload` decorator [here](https://sobolevn.me/2019/01/simple-dependent-types-in-python).
 
 Finally, calling our function with both sync and async client:
 
@@ -265,7 +265,7 @@ print(anyio.run(page_size.awaitable))
 As you can see `fetch_resource_size` with sync client immediately returns `IOResult` and can execute itself.
 In contrast to it, async version requires some event-loop to execute it. Like a regular coroutine. We use `anyio` for the demo.
 
-`mypy` is pretty happy about it too:
+`mypy` is pretty happy about our code too:
 
 ```
 » mypy async_and_sync.py
@@ -279,7 +279,7 @@ Let's try to screw something up:
 +++lambda response: response.content,
 ```
 
-This will be catched by `mypy`:
+And check that new error will be catched by `mypy`:
 
 ```python
 » mypy async_and_sync.py
