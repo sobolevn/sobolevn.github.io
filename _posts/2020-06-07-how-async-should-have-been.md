@@ -155,6 +155,7 @@ We have changed a couple of things to make our pseudo-code real:
 
 1. We now use [`IOResultE`](https://returns.readthedocs.io/en/latest/pages/io.html) which is a functional way to handle sync `IO` that might fail. Remember, [exceptions are not always welcome](https://sobolevn.me/2019/02/python-exceptions-considered-an-antipattern)! `Result`-based types allow modeling exceptions as separate `Failure()` values. While successful values are wrapped in `Success` type. In a traditional approach, no one cares about exceptions. But, we do care ❤️
 2. We use [`httpx`](https://github.com/encode/httpx/) that can work with sync and async requests
+3. We use [`impure_safe`](https://returns.readthedocs.io/en/latest/pages/io.html#impure-safe) function to convert the return type of `httpx.get` to return the abstraction we need
 
 Now, let's try the async version!
 
@@ -192,9 +193,9 @@ And its core part didn't change at all!
 
 However, it has some important notes:
 
-1. We changed sync `IOResultE` into async [`FutureResultE`](https://returns.readthedocs.io/en/latest/pages/future.html) and `impure_safe` to `future_safe`
+1. We changed sync `IOResultE` into async [`FutureResultE`](https://returns.readthedocs.io/en/latest/pages/future.html) and `impure_safe` to [`future_safe`](https://returns.readthedocs.io/en/latest/pages/future.html#future-safe), which does the same thing but returns another abstraction
 2. We now also use `AsyncClient` from `httpx`
-3. We also require to run the resulting `FutureResult` value. To demonstrate that this approach works with any async library (`asyncio`, `trio`, `curio`), I am using [`anyio`](https://github.com/agronholm/anyio) utility
+3. We are also required to run the resulting `FutureResult` value. Because red functions cannot run themselves! To demonstrate that this approach works with any async library (`asyncio`, `trio`, `curio`), I am using [`anyio`](https://github.com/agronholm/anyio) utility
 
 ### Combining the two
 
