@@ -15,12 +15,12 @@ In the last few years `async` keyword and semantics made its way into many popul
 
 Of course, Python also has `async` and `await` keywords since `python3.5`.
 
-In this article, I would love to provide my opinion about this feature, think of alternatives, and provide a new solution.
+In this article, I would like to provide my opinion about this feature, think of alternatives, and provide a new solution.
 
 
 ## Colours of functions
 
-When introducing `async` functions into the languages, we actually end up with a split world. Now, one functions start to be red (or `async`) and old ones continue to be blue (sync).
+When introducing `async` functions into the languages, we actually end up with a split world. Now, some functions start to be red (or `async`) and old ones continue to be blue (sync).
 
 The thing about this division is that blue functions cannot call red ones.
 Red ones potentially can call blue ones. In Python, for example, it is partially true. Async functions can only call sync non-blocking functions. Is it possible to tell whether this function is blocking or not by its definition? Of course not! Python is a scripting language, don't forget about that!
