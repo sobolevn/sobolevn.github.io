@@ -354,7 +354,7 @@ However, there are more things to be done before we can hit `1.0`:
 1. We need to implement Higher Kinded Types or their emulation, [source](https://github.com/dry-python/returns/issues/408)
 2. Adding proper type-classes, so we can implement needed abstractions, [source](https://github.com/dry-python/classes)
 3. We would love to try the `mypyc` compiler. It will potentially allow us to compile our typed-annotated Python program to binary. And as a result, simply dropping in `dry-python/returns` into your program will make it several times faster, [source](https://github.com/dry-python/returns/issues/398)
-4. Find new ways to write functional Python code, like our on-going investigation of ["do-notation"](https://github.com/dry-python/returns/issues/392)
+4. Finding new ways to write functional Python code, like our on-going investigation of ["do-notation"](https://github.com/dry-python/returns/issues/392)
 
 
 ## Conclusion
