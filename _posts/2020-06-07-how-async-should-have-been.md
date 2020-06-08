@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How async should have been"
-description: "Your sync and async code can be identical. But still, work differently. It is a matter of right abstractions. In this article, I will show how one can write sync code to run async programs in Python."
+description: "Your sync and async code can be identical, but still, can work differently. It is a matter of right abstractions. In this article, I will show how one can write sync code to run async programs in Python."
 date: 2020-06-07
 tags: python
 writing_time:
