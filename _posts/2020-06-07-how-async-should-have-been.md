@@ -337,9 +337,9 @@ assert flow(
 ) == -3
 ```
 
-We all know how hard it is to work with `lambda`s in typed code because its arguments always have `Any` type. And this breaks regular `mypy` inference.
+We all know how hard it is to work with `lambda`s in typed code because its arguments always have `Any` type. And this might break regular `mypy` inference.
 
-Now, we always know that `lambda collection: max(collection)` has `Callable[[List[int]], int]` inside this pipeline. And `lambda max_number: -max_number` is just `Callable[[int], int]`.
+Now, we always know that `lambda collection: max(collection)` has `Callable[[List[int]], int]` type inside this pipeline. And `lambda max_number: -max_number` is just `Callable[[int], int]`. You can pass any number of arguments to `flow`, they all will work perfectly. Thanks to our custom plugin!
 
 - [`RequiresContextFutureResult`](https://returns.readthedocs.io/en/latest/pages/context.html#requirescontextfutureresult-container) for [typed functional dependency injection](https://sobolevn.me/2020/02/typed-functional-dependency-injection)
 
