@@ -291,7 +291,7 @@ async_and_sync.py:33: error: Incompatible return value type (got "bytes", expect
 As you can see, there's nothing magical in a way how async code can be written with right abstractions. Inside our implementation, there's still no magic. Just good old composition. What we real magic we do is providing the same API for different types - this allows us to abstract away how, for example, HTTP requests work: synchronously or asynchronously.
 
 I hope, that this quick demo shows how awesome `async` programs can be!
-Feel free to try new `dry-python/returns@0.14` release, it has lots of other goodies!
+Feel free to try new [`dry-python/returns@0.14`](https://github.com/dry-python/returns/releases/tag/0.14.0) release, it has lots of other goodies!
 
 
 ## Other awesome features
