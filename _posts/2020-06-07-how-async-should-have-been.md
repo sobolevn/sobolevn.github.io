@@ -155,7 +155,7 @@ We have changed a couple of things to make our pseudo-code real:
 
 1. We now use [`IOResultE`](https://returns.readthedocs.io/en/latest/pages/io.html) which is a functional way to handle sync `IO` that might fail. Remember, [exceptions are not always welcome](https://sobolevn.me/2019/02/python-exceptions-considered-an-antipattern)! `Result`-based types allow modeling exceptions as separate `Failure()` values. While successful values are wrapped in `Success` type. In a traditional approach, no one cares about exceptions. But, we do care ❤️
 2. We use [`httpx`](https://github.com/encode/httpx/) that can work with sync and async requests
-3. We use [`impure_safe`](https://returns.readthedocs.io/en/latest/pages/io.html#impure-safe) function to convert the return type of `httpx.get` to return the abstraction we need
+3. We use [`impure_safe`](https://returns.readthedocs.io/en/latest/pages/io.html#impure-safe) function to convert the return type of `httpx.get` to return the abstraction we need: `IOResultE`
 
 Now, let's try the async version!
 
