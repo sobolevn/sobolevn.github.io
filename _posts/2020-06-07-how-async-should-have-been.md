@@ -193,7 +193,7 @@ And its core part didn't change at all!
 
 However, it has some important notes:
 
-1. We changed sync `IOResultE` into async [`FutureResultE`](https://returns.readthedocs.io/en/latest/pages/future.html) and `impure_safe` to [`future_safe`](https://returns.readthedocs.io/en/latest/pages/future.html#future-safe), which does the same thing but returns another abstraction
+1. We changed sync `IOResultE` into async [`FutureResultE`](https://returns.readthedocs.io/en/latest/pages/future.html) and `impure_safe` to [`future_safe`](https://returns.readthedocs.io/en/latest/pages/future.html#future-safe), which does the same thing but returns another abstraction: `FutureResultE`
 2. We now also use `AsyncClient` from `httpx`
 3. We are also required to run the resulting `FutureResult` value. Because red functions cannot run themselves! To demonstrate that this approach works with any async library (`asyncio`, `trio`, `curio`), I am using [`anyio`](https://github.com/agronholm/anyio) utility
 
