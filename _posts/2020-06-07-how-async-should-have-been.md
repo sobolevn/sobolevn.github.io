@@ -53,7 +53,7 @@ async def fetch_resource_size(url: str) -> str:
     return len(response.content)
 ```
 
-It is basically the same code, but filled with `await` keywords!
+It is basically the same code, but filled with `async` and `await` keywords!
 And I am not making this up, just compare code sample in `httpx` tutorial:
 
 - [Sync](https://www.python-httpx.org/quickstart/) code
@@ -92,7 +92,7 @@ def fetch_resource_size(url: str) -> AsyncAbstraction[int]:
     )
 ```
 
-Wow, that's mostly it! The only thing that is different is the `AsyncAbstraction` return type. Other than that, our code stayed exactly the same. We also don't need to use `async` and `await` keyword anymore. We don't use `await` at all (that's the whole point of our journey!), and `async` functions do not make any sense without `await`.
+Wow, that's mostly it! The only thing that is different is the `AsyncAbstraction` return type. Other than that, our code stayed exactly the same. We also don't need to use `async` and `await` keywords anymore. We don't use `await` at all (that's the whole point of our journey!), and `async` functions do not make any sense without `await`.
 
 The last thing we need is to decide which client we want: async or sync one. Let's fix that!
 
