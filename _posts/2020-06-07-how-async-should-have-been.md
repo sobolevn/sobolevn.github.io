@@ -40,7 +40,7 @@ Imagine, that you are writing a CLI tool to fetch sizes of web pages. And you wa
 Let's start with the sync pseudo-code:
 
 ```python
-def fetch_resource_size(url: str) -> str:
+def fetch_resource_size(url: str) -> int:
     response = client_get(url)
     return len(response.content)
 ```
@@ -48,7 +48,7 @@ def fetch_resource_size(url: str) -> str:
 Looking pretty good! Now, let's add its async counterpart:
 
 ```python
-async def fetch_resource_size(url: str) -> str:
+async def fetch_resource_size(url: str) -> int:
     response = await client_get(url)
     return len(response.content)
 ```
