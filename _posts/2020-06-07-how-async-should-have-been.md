@@ -12,6 +12,10 @@ republished:
   - resource: dev.to
     link: https://dev.to/wemake-services/how-async-should-have-been-5df8
     language: us
+translated:
+  - name: Russian
+    link: https://habr.com/ru/company/oleg-bunin/blog/512650/
+    language: ru
 ---
 
 In the last few years `async` keyword and semantics made its way into many popular programming languages: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), [Rust](https://doc.rust-lang.org/std/keyword.async.html), [C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await), and [many others](https://en.wikipedia.org/wiki/Async/await) languages that I don't know or don't use.
