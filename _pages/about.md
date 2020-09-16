@@ -46,6 +46,7 @@ I am also helping to organize several meetups and conferences:
 
 - [ElixirLangMoscow](http://elixir-lang.moscow/) which I founded back in 2016
 - [MoscowPythonConf](http://conf.python.ru) where I am a Program Committee member
+- [RussianPythonWeek](https://conf.python.ru/moscow/2020) where I am a Program Committee leader
 
 
 ## Education career
