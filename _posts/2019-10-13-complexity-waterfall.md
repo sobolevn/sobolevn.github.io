@@ -12,6 +12,9 @@ republished:
   - resource: habr.com
     link: https://habr.com/ru/post/472876/
     language: us
+  - resource: dev.to
+    link: https://dev.to/wemake-services/complexity-waterfall-n2d
+    language: us
 ---
 
 ![Logo](https://imgur.com/r6SwSFy.png)
