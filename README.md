@@ -13,7 +13,7 @@ Make sure you have `ruby 2.5.1` installed, use `rbenv` in case you don't.
 Then run:
 
 1. `bundle install`
-2. `bundle run jekyll s --safe --strict_front_matter`
+2. `bundle exec jekyll serve --safe --strict_front_matter`
 3. Done!
 
 

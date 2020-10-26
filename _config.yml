@@ -12,7 +12,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sobolevn.me" # the base hostname & protocol for your site
 
 github_edit_url: "https://github.com/sobolevn/sobolevn.github.io/blob/master"
-google_analytics_id: UA-66588818-1
 disqus_id: sobolevn-me
 
 # Build settings
@@ -40,7 +39,6 @@ exclude: [vendor]
 
 # Plugins:
 plugins:
-  - jekyll-seo-tag
   - jemoji
   - jekyll-sitemap
   - jekyll-feed
