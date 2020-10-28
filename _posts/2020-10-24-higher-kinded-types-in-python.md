@@ -165,7 +165,7 @@ def stringify_iterable_items(arg: T[int]) -> T[str]:
     return type(arg)(str(item) for item in arg)
 ```
 
-And this will solve our problem! What happens here is that we abstract away the `Iterable` type itself. And then ask `mypy` to figure this out for us.
+And this would solve our problem! What happens here is that we abstract away the `Iterable` type itself. And then ask `mypy` to figure this out for us.
 
 This way we can potentially have `stringify_iterable_items` working for any `Iterable` type, but with the exact same type returned back without any information lost. And it would work for all types.
 
