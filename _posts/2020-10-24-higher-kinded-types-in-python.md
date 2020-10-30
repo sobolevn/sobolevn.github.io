@@ -106,7 +106,7 @@ One can say: we are all using Object-Oriented Programming! Why cannot we just cr
 Well, it is a possible solution. But, there are some reasonable problems:
 
 - You cannot add methods to existing types and extend them with this approach. Only create new ones, probably via subtyping, and add new methods there. In our example you would have to create your own versions of `List`, `Set`, and `Tuple`. Which is not desirable in most situations
-- It really it starts to be messy if you have a lot of methods to add. A type with more than `X` (choose the number yourself) methods starts to be really complex to read, understand, and use. Instead, using separate functions is much easier, because we don't have to put everything into a single namespace
+- It really starts to be messy if you have a lot of methods to add. A type with more than `X` (choose the number yourself) methods starts to be really complex to read, understand, and use. Instead, using separate functions is much easier, because we don't have to put everything into a single namespace
 
 Let's try something else.
 
