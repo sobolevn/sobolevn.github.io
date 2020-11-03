@@ -13,8 +13,7 @@ translated:
     link: https://dev-gang.ru/article/primenenie-principa-edinoi-otvetstvennosti-v-python-sytp3516rx/
     language: ru
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/enforcing-single-responsibility-principle-in-python-2il8
+  - link: https://dev.to/wemake-services/enforcing-single-responsibility-principle-in-python-2il8
     language: us
 ---
 

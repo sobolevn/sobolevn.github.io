@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:10"
   decorating: "0:30"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/testing-mypy-stubs-plugins-and-types-1b71
+  - link: https://dev.to/wemake-services/testing-mypy-stubs-plugins-and-types-1b71
     language: us
 ---
 

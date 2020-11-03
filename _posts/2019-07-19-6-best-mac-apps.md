@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:10"
   decorating: "0:30"
 republished:
-  - resource: dev.to
-    link: https://dev.to/sobolevn/6-mac-apps-that-fit-everyone-4b7o
+  - link: https://dev.to/sobolevn/6-mac-apps-that-fit-everyone-4b7o
     language: us
 ---
 

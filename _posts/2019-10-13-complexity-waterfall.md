@@ -9,11 +9,9 @@ writing_time:
   proofreading: "2:00"
   decorating: "0:20"
 republished:
-  - resource: habr.com
-    link: https://habr.com/ru/post/472876/
+  - link: https://habr.com/ru/post/472876/
     language: us
-  - resource: dev.to
-    link: https://dev.to/wemake-services/complexity-waterfall-n2d
+  - link: https://dev.to/wemake-services/complexity-waterfall-n2d
     language: us
 ---
 

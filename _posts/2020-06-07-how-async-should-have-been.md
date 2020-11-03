@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:40"
   decorating: "0:00"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/how-async-should-have-been-5df8
+  - link: https://dev.to/wemake-services/how-async-should-have-been-5df8
     language: us
 translated:
   - name: Russian

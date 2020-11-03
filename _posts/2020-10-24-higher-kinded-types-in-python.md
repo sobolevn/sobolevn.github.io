@@ -2,13 +2,15 @@
 layout: post
 title: "Higher Kinded Types in Python"
 description: "This post will guide newcomers through the high waters of Higher Kinded Types and explain how they work and how they can be used."
-date: 2020-10-07
+date: 2020-10-24
 tags: python
 writing_time:
   writing: "3:00"
   proofreading: "0:30"
   decorating: "0:10"
-republished: []
+republished:
+  - link: https://dev.to/wemake-services/higher-kinded-types-in-python-51n8
+    language: us
 translated: []
 ---
 

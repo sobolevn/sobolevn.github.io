@@ -9,8 +9,7 @@ writing_time:
  proofreading: "1:00"
  decorating: "0:10"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/typed-functional-dependency-injection-in-python-4e7b
+  - link: https://dev.to/wemake-services/typed-functional-dependency-injection-in-python-4e7b
     language: us
 translated: []
 ---

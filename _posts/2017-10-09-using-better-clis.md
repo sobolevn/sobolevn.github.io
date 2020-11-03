@@ -5,8 +5,7 @@ description: Don't stick to the default CLIs, there are better alternatives!
 date: 2017-10-09
 tags: bash python
 republished:
-  - resource: dev.to
-    link: https://dev.to/sobolevn/using-better-clis-6o8
+  - link: https://dev.to/sobolevn/using-better-clis-6o8
     language: us
 ---
 

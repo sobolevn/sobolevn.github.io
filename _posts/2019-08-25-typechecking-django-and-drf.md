@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:30"
   decorating: "0:30"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/typechecking-django-internals-and-querysets-1m47
+  - link: https://dev.to/wemake-services/typechecking-django-internals-and-querysets-1m47
     language: us
 ---
 

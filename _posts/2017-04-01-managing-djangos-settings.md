@@ -5,11 +5,9 @@ description: "Managing Django’s settings might be tricky. There are severals i
 date: 2017-04-01
 tags: python django
 republished:
-  - resource: medium.com
-    link: https://medium.com/wemake-services/managing-djangos-settings-e2b7f496120d
+  - link: https://medium.com/wemake-services/managing-djangos-settings-e2b7f496120d
     language: us
-  - resource: dev.to
-    link: https://dev.to/wemake-services/managing-djangos-settings-37ao
+  - link: https://dev.to/wemake-services/managing-djangos-settings-37ao
     language: us
 ---
 

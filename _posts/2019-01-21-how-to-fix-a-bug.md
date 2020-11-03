@@ -5,8 +5,7 @@ description: "The important thing is: how do you respond to the bugs you and oth
 date: 2019-01-21
 tags: rsdp testing
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/best-engineering-practices-how-to-fix-a-bug-58g5
+  - link: https://dev.to/wemake-services/best-engineering-practices-how-to-fix-a-bug-58g5
     language: us
 ---
 

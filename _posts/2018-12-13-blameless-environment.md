@@ -9,8 +9,7 @@ translated:
     link: https://techrocks.ru/2018/12/15/working-environment-without-blaming-anyone/
     language: ru
 republished:
-  - resource: dev.to
-    link: https://dev.to/sobolevn/building-blameless-working-environment--17hl
+  - link: https://dev.to/sobolevn/building-blameless-working-environment--17hl
     language: us
 ---
 

@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:20"
   decorating: "0:10"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/cover-the-tricky-parts-of-your-code-24m6
+  - link: https://dev.to/wemake-services/cover-the-tricky-parts-of-your-code-24m6
     language: us
 ---
 

@@ -9,11 +9,9 @@ translated:
     link: https://habr.com/post/278937/
     language: ru
 republished:
-  - resource: dev.to
-    link: https://dev.to/sobolevn/testing-bash-scripts
+  - link: https://dev.to/sobolevn/testing-bash-scripts
     language: us
-  - resource: medium.com
-    link: https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
+  - link: https://medium.com/wemake-services/testing-bash-applications-85512e7fe2de
     language: us
 ---
 

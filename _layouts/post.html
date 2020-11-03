@@ -71,7 +71,8 @@ layout: page
       {% for repost in page.republished %}
         <li>
           <a class="c-article__repost" href="{{ repost.link }}" target="_blank">
-            {{ repost.resource }} :{{ repost.language }}:
+            {% assign domain = repost.link | replace_first: 'www.', '' | split: '/' %}
+            {{ domain[2] }} :{{ repost.language }}:
           </a>
         </li>
       {% endfor %}

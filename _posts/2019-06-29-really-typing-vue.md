@@ -9,11 +9,9 @@ writing_time:
   proofreading: "0:30"
   decorating: "0:10"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/really-typing-vue-6j2
+  - link: https://dev.to/wemake-services/really-typing-vue-6j2
     language: us
-  - resource: habr.com
-    link: https://habr.com/ru/post/458632/
+  - link: https://habr.com/ru/post/458632/
     language: us
 ---
 

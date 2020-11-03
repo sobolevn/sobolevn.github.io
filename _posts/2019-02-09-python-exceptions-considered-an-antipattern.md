@@ -4,13 +4,13 @@ title: Python exceptions considered an anti-pattern
 description: "You might be wondering how do exceptions are an anti-pattern and how does this relate to typing at all? Well, let's find out!"
 date: 2019-02-09
 tags: python
-republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/python-exceptions-considered-an-anti-pattern-17o9
-    language: us
-  - resource: habr.com
+translated:
+  - name: Russian
     link: https://habr.com/ru/company/oleg-bunin/blog/445234/
     language: ru
+republished:
+  - link: https://dev.to/wemake-services/python-exceptions-considered-an-anti-pattern-17o9
+    language: us
 ---
 
 ![Article logo](https://thepracticaldev.s3.amazonaws.com/i/hikrr2fhv3os6b816n3w.png)

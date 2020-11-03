@@ -5,8 +5,7 @@ description: "The term “slug” comes from the world of newspaper production. 
 date: 2017-07-19
 tags: elixir
 republished:
-  - resource: medium.com
-    link: https://medium.com/wemake-services/creating-slugs-for-ecto-schemas-7349513410f0
+  - link: https://medium.com/wemake-services/creating-slugs-for-ecto-schemas-7349513410f0
     language: us
 ---
 

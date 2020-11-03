@@ -9,8 +9,7 @@ writing_time:
   proofreading: "0:30"
   decorating: "0:30"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/from-flow-to-typescript-why-1k7m
+  - link: https://dev.to/wemake-services/from-flow-to-typescript-why-1k7m
     language: us
 ---
 

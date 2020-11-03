@@ -5,8 +5,7 @@ description: "Phoenix Framework always has been awesome. But it was never as awe
 date: 2017-05-14
 tags: elixir phoenix
 republished:
-  - resource: medium.com
-    link: https://medium.com/wemake-services/why-changes-in-phoenix-1-3-are-so-important-2d50c9bdabb9
+  - link: https://medium.com/wemake-services/why-changes-in-phoenix-1-3-are-so-important-2d50c9bdabb9
     language: us
 ---
 

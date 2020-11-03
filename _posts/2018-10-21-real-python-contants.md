@@ -5,8 +5,7 @@ description: How to use final types to make your API better
 date: 2018-07-08
 tags: python
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/1-minute-guide-to-real-constants-in-python-2bpk
+  - link: https://dev.to/wemake-services/1-minute-guide-to-real-constants-in-python-2bpk
     language: us
 ---
 

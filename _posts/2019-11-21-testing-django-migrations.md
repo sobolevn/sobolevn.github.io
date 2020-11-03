@@ -9,8 +9,7 @@ writing_time:
  proofreading: "0:15"
  decorating: "0:00"
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/testing-django-migrations-3288
+  - link: https://dev.to/wemake-services/testing-django-migrations-3288
     language: us
 ---
 

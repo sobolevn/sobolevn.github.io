@@ -13,11 +13,9 @@ translated:
     link: https://wholeman.dev/posts/guide-to-writing-correct-user-stories/
     language: kr
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/engineering-guide-to-writing-correct-user-stories-1i7f
+  - link: https://dev.to/wemake-services/engineering-guide-to-writing-correct-user-stories-1i7f
     language: us
-  - resource: hackernoon.com
-    link: https://hackernoon.com/engineering-guide-to-writing-correct-user-stories-238bb2a2b6e0
+  - link: https://hackernoon.com/engineering-guide-to-writing-correct-user-stories-238bb2a2b6e0
     language: us
 ---
 

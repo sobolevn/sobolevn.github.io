@@ -5,8 +5,7 @@ description: "Python typing just got a new shiny feature: Literal types. Let's d
 date: 2019-01-31
 tags: python
 republished:
-  - resource: dev.to
-    link: https://dev.to/wemake-services/simple-dependent-types-in-python-4e14
+  - link: https://dev.to/wemake-services/simple-dependent-types-in-python-4e14
     language: us
 ---
 

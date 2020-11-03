@@ -9,8 +9,7 @@ translated:
     link: https://ain.ua/2018/03/30/ya-posredstvennyj-razrabotchik/
     language: ru
 republished:
-  - resource: dev.to
-    link: https://dev.to/sobolevn/i-am-a-mediocre-developer--30hn
+  - link: https://dev.to/sobolevn/i-am-a-mediocre-developer--30hn
     language: us
 ---
 
