@@ -17,7 +17,7 @@ I am also happen to be a founder of this company.
 
 The thing I like about my job is freedom, I can:
 - Create new products for our clients
-- Write a lot of [open-source code](https://github.com/sobolevn)
+- Write a lot of [open-source code](https://github.com/sobolevn) [:star:](https://stars.github.com/profiles/sobolevn/)
 - Work on processes in our company, that's exactly how I came up with [`RSDP`](https://wemake.services/meta/)
 - Spread a word about what I do with my [blog posts](https://sobolevn.me/) and [conference talks](https://sobolevn.me/talks/)
 - Participate in different closely-related [activities](https://sobolevn.me/activities/)
