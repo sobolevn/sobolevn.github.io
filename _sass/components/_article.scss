@@ -88,6 +88,11 @@
     ul,
     ol {
         margin-left: 2.1rem;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 
     ul {
