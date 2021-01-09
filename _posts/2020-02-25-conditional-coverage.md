@@ -70,7 +70,7 @@ With all these examples in mind, one can be sure that 100% of coverage is not po
 The common scenario to still achieve a feeling of 100% coverage for these cases was:
 
 1. Using [`# pragma: no cover`](https://coverage.readthedocs.io/en/stable/excluding.html) magic comment to exclude a single line or a whole block from coverage
-2. Or writing every compatibility related check in a special `compat.py` that were later [ommited](https://coverage.readthedocs.io/en/stable/source.html#execution) from coverage
+2. Or writing every compatibility related check in a special `compat.py` that were later [omitted](https://coverage.readthedocs.io/en/stable/source.html#execution) from coverage
 
 Here's how the first way looks like:
 

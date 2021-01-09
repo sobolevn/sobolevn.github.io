@@ -29,7 +29,7 @@ The second way of complexity getting into your code is incremental addition: whe
 
 So, what can be done to prevent your code from getting complex? We need to use automation! Let's make a deep dive into the code complexity and ways to find and finally solve it.
 
-In this article, I will guide you through places where complexity lives and how to fight it there. Then we will discuss how well written simple code and automation enable an opportunity of "Continous Refactoring" and "Architecture on Demand" development styles.
+In this article, I will guide you through places where complexity lives and how to fight it there. Then we will discuss how well written simple code and automation enable an opportunity of "Continuous Refactoring" and "Architecture on Demand" development styles.
 
 
 ## Complexity explained

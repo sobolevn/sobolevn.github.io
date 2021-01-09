@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Typechecking Django and DRF
-description: "Types are comming to the Django land! This posts announces TypedDjango organisation and stubs for django and djangorestframework"
+description: "Types are coming to the Django land! This posts announces TypedDjango organisation and stubs for django and djangorestframework"
 date: 2019-08-25
 tags: python
 writing_time:

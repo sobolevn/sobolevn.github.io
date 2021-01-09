@@ -285,7 +285,7 @@ Let's try to screw something up:
 +++lambda response: response.content,
 ```
 
-And check that new error will be catched by `mypy`:
+And check that new error will be caught by `mypy`:
 
 ```python
 » mypy async_and_sync.py

@@ -101,7 +101,7 @@ ignore_missing_imports = True
 strict_optional = True
 ```
 
-That's the invokation result:
+That's the invocation result:
 
 ```
 » pytest --mypy-ini-file=setup.cfg

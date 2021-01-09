@@ -12,4 +12,4 @@ tags: python
 
 This talk was targeted on the very beginners in programming.
 
-I was explaning how composition and types work.
+I was explaining how composition and types work.
