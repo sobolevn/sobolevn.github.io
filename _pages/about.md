@@ -84,5 +84,5 @@ Please, drop me a line if you want to:
 
 1. Create a new product using [`RSDP`](https://wemake.services/meta)
 2. [Audit](https://wemake.services/meta/rsdp/audits/) your code
-3. Invite me to speak at your conference or meetup
+3. Invite me to [speak](https://sobolevn.me/talks/) at your conference or meetup
 4. Invite me to make a [private consulting session](https://drylabs.io/)
