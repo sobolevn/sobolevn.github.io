@@ -23,7 +23,7 @@ Let's jump into it.
 
 Right now the status-quo for source code/tests dualism is that you ship source code to your library users and most often do not include your tests in any manner.
 
-Sometimes people also attach the `tests/` folder to your release, so they are just laying around just in case. Most of the time they are useless to the end-user.
+Sometimes people also attach the `tests/` folder to a release, so they are just laying around just in case. Most of the time they are useless to the end-user.
 
 And what is the most important part of it all is that our users are often find themselves in a situation when they have to reimplement some tests for library-specific things.
 
@@ -313,7 +313,8 @@ class _LawSpec(LawSpecDef):  # LOOKATME: our laws def!
         third: _EqualType,
     ) -> None:
         """If ``A == B`` and ``B == C`` then ``A == C``."""
-        assert (first == second and second == third) == (first == third)
+        if first.equals(second) and second.equals(third):
+            assert first.equals(third)
 
 
 class Equable(Lawful['Equable']):
