@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Make tests a part of the app"
+title: "Make tests a part of your app"
 description: "Tests can be generated, tests can be shipped by library authors directly to end-users, tests can be encoded into the body of your app. Let's follow this path!"
 date: 2021-02-28
 tags: python
