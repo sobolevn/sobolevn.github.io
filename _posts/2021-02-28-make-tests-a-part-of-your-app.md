@@ -349,7 +349,7 @@ So, here's what we are going to do:
 And we should provide a simple API for an end-user to do all these in one function call! That's what we came up with:
 
 ```python
-# test_bad_example.py
+# test_example.py
 from returns.contrib.hypothesis.laws import check_all_laws
 from your_app import Example
 
@@ -359,11 +359,11 @@ check_all_laws(Example, use_init=True)
 And here's the result:
 
 ```
-» pytest test_bad_example.py
+» pytest test_example.py
 ============================ test session starts ===============================
 collected 3 items
 
-test_bad_example.py .F.                                                   [100%]
+test_example.py .F.                                                   [100%]
 
 =================================== FAILURES ===================================
 ____________________ test_Example_equable_reflexive_law _____________________
@@ -397,11 +397,11 @@ class Example(Equable):
 And run our tests once again:
 
 ```
-» pytest test_bad_example.py
+» pytest test_example.py
 ============================= test session starts ==============================
 collected 3 items
 
-test_bad_example.py ...                                                   [100%]
+test_example.py ...                                                   [100%]
 
 ============================== 3 passed in 1.57s ===============================
 ```
