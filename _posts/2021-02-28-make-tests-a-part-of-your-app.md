@@ -42,7 +42,7 @@ So, in our tests we would have to write at least two tests:
 1. For the successful auth case and our business logic
 2. For the failed auth case
 
-Wouldn't it be amazing if we could just skip the second one and rely on some existing test-logic?
+Wouldn't it be amazing if we could just skip the second one and rely on some existing test-logic that we can re-use from the library itself?
 
 Imagine an API like:
 
@@ -113,11 +113,11 @@ def div(a: int, b: int) -> float:
     return a / b
 ```
 
-It has all the contract information in the function definition:
+It has all the contract information in the function's definition:
 - `@deal.pre(lambda a, b: a >= 0 and b >= 0)` checks that passed arguments are positive
-- `@deal.raises(ZeroDivisionError)` allows this function to raise `ZeroDivisionError` without breaking the contract, by default functions cannot raise any exceptions
+- `@deal.raises(ZeroDivisionError)` allows this function to explicitly raise `ZeroDivisionError` without breaking the contract, by default functions cannot raise any exceptions
 
-Note: type annotations are not enforced `(a: int, b: int) -> float`, you should use `mypy` to catch typing errors.
+Note: type annotations like in `(a: int, b: int) -> float` are not enforced, you should use `mypy` to catch typing errors.
 
 Usage (remember, it is still just a function!):
 
