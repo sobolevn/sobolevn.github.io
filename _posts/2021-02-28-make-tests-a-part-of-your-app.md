@@ -183,7 +183,7 @@ As you can see our tests did find the bug! But how?
 
 There are a lot of questions to ask:
 
-> Where did the data for the test come from?
+- Where did the data for the test come from?
 
 It comes from another awesome library called [`hypothesis`](https://github.com/HypothesisWorks/hypothesis). It smartly generates lots of different test data according to some specific rules we define.
 
@@ -194,11 +194,11 @@ In our case, we have two rules:
 We can control how many examples would be generated and do other small tweaks.
 More about it is in the [docs](https://deal.readthedocs.io/basic/tests.html).
 
-> Why `ZeroDivisionError` didn't break the test while raw `Exception` did?
+- Why `ZeroDivisionError` didn't break the test while raw `Exception` did?
 
 Because that's how contracts work: you clearly define all possible cases. If something strange happens - the contract is violated. In our example, `ZeroDivisionError` is a part of the contract via `deal.raises` decorator. So, we know that it can (and will) happen. That's why we don't treat it as a test failure, while raw `Exception` is not a part of our contract and we treat it as a failure.
 
-> Will it find all bugs in my code?
+- Will it find all bugs in my code?
 
 That's the most interesting question. And the answer is **no**. Sad, but true.
 There are endless use-cases, logic, combitations, and bugs in them. And I know for sure that it is impossible to catch all bugs your app has.
