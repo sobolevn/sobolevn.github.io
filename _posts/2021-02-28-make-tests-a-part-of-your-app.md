@@ -187,9 +187,7 @@ There are a lot of questions to ask:
 
 It comes from another awesome library called [`hypothesis`](https://github.com/HypothesisWorks/hypothesis). It smartly generates lots of different test data according to some specific rules we define.
 
-In our case, we have two rules:
-- Generate two `int` arguments as defined in `def div(a: int, b: int)`
-- These integers must be `>= 0` as defined in `@deal.pre(lambda a, b: a >= 0 and b >= 0)`
+In our case, we have two rules. First rule generate two `int` arguments as defined in `def div(a: int, b: int)`. The second rule is that these integers must be `>= 0` as defined in `@deal.pre(lambda a, b: a >= 0 and b >= 0)`.
 
 We can control how many examples would be generated and do other small tweaks.
 More about it is in the [docs](https://deal.readthedocs.io/basic/tests.html).
@@ -414,7 +412,7 @@ And again, awesome `hypothesis` helps us by generating random data to feed it in
 
 Of course, `Equable` is not the only interface we have in `dry-python/returns`, we have [lots of them](https://github.com/dry-python/returns/tree/master/returns/interfaces), covering most of the traditional functional instances, read our [docs](https://returns.readthedocs.io/en/latest/pages/interfaces.html) if you are interested.
 
-These interfaces will help people if they are wondering what `Monad` actually is and what laws it has.
+These interfaces will help people if they are wondering what [`Monad`](https://github.com/dry-python/returns/blob/master/returns/interfaces/container.py) actually is and what laws it has.
 
 Most of them have laws attached to the definition. This helps our users to be sure that their implementations are correct with as few steps as possible.
 
