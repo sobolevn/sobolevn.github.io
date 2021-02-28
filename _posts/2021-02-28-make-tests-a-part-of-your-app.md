@@ -107,7 +107,6 @@ Let's say you have a function to divide two positive integers (which are just `i
 ```python
 import deal
 
-
 @deal.pre(lambda a, b: a >= 0 and b >= 0)
 @deal.raises(ZeroDivisionError)  # this function can raise if `b=0`, it is ok
 def div(a: int, b: int) -> float:
@@ -135,7 +134,6 @@ Ok, the simple use-case is clear. Now, let's put a bug in this function on purpo
 ```python
 import deal
 
-
 @deal.pre(lambda a, b: a >= 0 and b >= 0)
 @deal.raises(ZeroDivisionError)  # this function can raise if `b=0`, it is ok
 def div(a: int, b: int) -> float:
@@ -151,7 +149,6 @@ import deal
 
 from my_lib import div
 
-
 @deal.cases(div)  # That's all we have to do to test deal-based functions!
 def test_div(case: deal.TestCase) -> None:
     case()
@@ -162,9 +159,6 @@ Here's what the output would be like:
 ```
 » pytest test_deal.py
 ============================= test session starts ==============================
-platform darwin -- Python 3.8.6, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
-rootdir: /Users/sobolev/Documents/github/sobolevn.github.io
-plugins: hypothesis-6.3.4, typeguard-2.11.1
 collected 1 item
 
 test_deal.py F                                                            [100%]
@@ -182,14 +176,6 @@ a = 51, b = 0
 E           Exception: Oh no! Bug happened!
 
 test_deal.py:8: Exception
-
-site-packages/deal/_decorators/raises.py:42: RaisesContractError
----------------------------------- Hypothesis ----------------------------------
-You can reproduce this example by temporarily adding
-@reproduce_failure('6.3.4', b'AAAAAAAAZg==')
-as a decorator on your test case
-=========================== short test summary info ============================
-FAILED test_deal.py::test_div - deal.RaisesContractError
 ============================== 1 failed in 0.35s ===============================
 ```
 
@@ -375,9 +361,6 @@ And here's the result:
 ```
 » pytest test_bad_example.py
 ============================ test session starts ===============================
-platform darwin -- Python 3.7.7, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
-rootdir: /example/returns, configfile: setup.cfg
-plugins: returns-0.14.0
 collected 3 items
 
 test_bad_example.py .F.                                                   [100%]
@@ -395,8 +378,6 @@ first = <ex.Example object at 0x104d61b90>
 E       AssertionError
 
 returns/interfaces/equable.py:32: AssertionError
-=========================== short test summary info ============================
-FAILED test_bad_example::test_Example_equable_reflexive_law - AssertionError
 ========================= 1 failed, 2 passed in 0.22s ==========================
 ```
 
@@ -418,9 +399,6 @@ And run our tests once again:
 ```
 » pytest test_bad_example.py
 ============================= test session starts ==============================
-platform darwin -- Python 3.7.7, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
-rootdir: /example/returns, configfile: setup.cfg
-plugins: returns-0.14.0
 collected 3 items
 
 test_bad_example.py ...                                                   [100%]
