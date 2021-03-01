@@ -386,7 +386,7 @@ class Example(Equable):
         self._inner_value = inner_value
 
     def equals(self, other: 'Example') -> bool:
-        return self._inner_value == other._inner_value  # no we are talking!
+        return self._inner_value == other._inner_value  # now we are talking!
 ```
 
 And run our tests once again:
