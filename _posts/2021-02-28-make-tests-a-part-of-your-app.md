@@ -411,7 +411,7 @@ Of course, `Equable` is not the only interface we have in `dry-python/returns`, 
 
 These interfaces will help people if they are wondering what [`Monad`](https://github.com/dry-python/returns/blob/master/returns/interfaces/container.py) actually is and what laws it has.
 
-Most of them have laws attached to the definition. This helps our users to be sure that their implementations are correct with as few steps as possible.
+Most of the interfaces have laws attached to the definition. This helps our users to be sure that their implementations are correct with as few steps as possible.
 
 
 ## Conclusion
