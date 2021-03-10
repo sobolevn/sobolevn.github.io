@@ -8,8 +8,13 @@ writing_time:
   writing: "4:00"
   proofreading: "0:20"
   decorating: "0:05"
-republished: []
-translated: []
+republished:
+  - link: https://dev.to/sobolevn/make-tests-a-part-of-your-app-8nm
+    language: us
+translated:
+  - link: https://habr.com/ru/post/545646/
+    name: Russian
+    language: ru
 ---
 
 ![Cover image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c4y2pgr3ddjtu33svrm2.png)
