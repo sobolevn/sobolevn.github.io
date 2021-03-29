@@ -1,5 +1,5 @@
 ---
-type: Podcast
+type: Stream
 title: "Moscow Python Stream: about leveling up"
 language: ru
 date: 2021-02-05

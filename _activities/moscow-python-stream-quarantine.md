@@ -1,5 +1,5 @@
 ---
-type: Podcast
+type: Stream
 title: "Moscow Python Stream: about ecosystem"
 language: ru
 date: 2020-11-20
