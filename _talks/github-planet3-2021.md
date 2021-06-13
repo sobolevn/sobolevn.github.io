@@ -12,4 +12,7 @@ tags: github
 
 :star:
 
-Video link: https://youtu.be/I7DLJQyhEag?t=1142
+This was an emotional talk about what [GitHub Stars](https://stars.github.com/) is.
+Why emotional? Because for me - that's the most important part of being an open-source developer!
+
+[Video link](https://youtu.be/I7DLJQyhEag?t=1142)
