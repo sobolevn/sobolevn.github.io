@@ -208,6 +208,15 @@ However, it has some important notes:
 And now I can show you how you can combine
 these two versions into a single type-safe API.
 
+**Update after [HKT](https://sobolevn.me/2020/10/higher-kinded-types-in-python) support is released**:
+
+Now, after `returns@0.14.0` is released, you can have a look what this program looks like with Higher Kinded Types, [link](https://sobolevn.me/2020/10/higher-kinded-types-in-python#real-life-use-case).
+It is 100% recommended over the version above.
+
+I am going to keep the old version for the historical reasons.
+
+**Old version**:
+
 Sadly, [Higher Kinded Types](https://github.com/dry-python/returns/issues/408) and proper [type-classes](https://github.com/dry-python/classes) are work-in-progress, so we would use regular `@overload` function cases:
 
 ```python
