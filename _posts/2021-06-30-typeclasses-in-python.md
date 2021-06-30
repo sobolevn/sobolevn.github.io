@@ -131,7 +131,7 @@ Moreover, I think that mixing structure and behavior into a single abstraction i
 
 For abstractions on this level, it is way easier to have behavior near the structure, not inside it. Mixing these two only makes sense when we work on a higher level like [services](https://en.wikipedia.org/wiki/Service-oriented_architecture) or [processes](https://en.wikipedia.org/wiki/Open_Telecom_Platform).
 
-**Second**, it only works for custom types. Existing types are hard to extend.
+**Second**, it only works for custom types. [Existing types are hard to extend](https://en.wikipedia.org/wiki/Expression_problem).
 For example, how would you add the `greet` method to the `str` type?
 
 You can create `str` subtype with `greet` method in it:
