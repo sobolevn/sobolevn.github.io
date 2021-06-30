@@ -229,9 +229,9 @@ Let's look at how functional languages (and `Rust`, people still [argue](https:/
 
 Some common knowledge:
 - All these languages don't have `class` concept as we know it in Python and, of course, there's no subclassing
-- All the languages above don't have `object`s as we do in Python, they don't mix behavior and structure (however, `Elixir` has Alan Key's [real objects](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented))
+- All the languages below don't have `object`s as we do in Python, they don't mix behavior and structure (however, `Elixir` has Alan Key's [real objects](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented))
 - Instead, these languages use [ad-hoc polymorphism](https://en.wikipedia.org/wiki/Ad_hoc_polymorphism) to make functions behave differently for different types via overloading
-- And, of course, you don't have to know any of the languages above to understand what is going on
+- And, of course, you don't have to know any of the languages below to understand what is going on
 
 ### Elixir
 
@@ -346,7 +346,7 @@ So, what's a typeclass?
 Typeclass is a group of types, all of which satisfy some common contract.
 It is also a form of ad-hoc polymorphism that is mostly used for overloading.
 
-I am a bit sorry for the `Haskell` syntax above, it might be not very pleasant and clear to read, especially for people who are not familiar with this brilliant language, but we have what we have:
+I am a bit sorry for the `Haskell` syntax below, it might be not very pleasant and clear to read, especially for people who are not familiar with this brilliant language, but we have what we have:
 
 ```haskell
 {-# LANGUAGE FlexibleInstances #-}
