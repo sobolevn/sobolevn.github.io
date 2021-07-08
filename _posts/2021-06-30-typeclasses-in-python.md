@@ -8,7 +8,9 @@ writing_time:
   writing: "8:00"
   proofreading: "1:00"
   decorating: "0:05"
-republished: []
+republished:
+  - link: https://dev.to/wemake-services/typeclasses-in-python-3ma6
+    language: us
 translated: []
 ---
 
