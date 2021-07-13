@@ -13,6 +13,7 @@ url: "https://sobolevn.me" # the base hostname & protocol for your site
 
 github_edit_url: "https://github.com/sobolevn/sobolevn.github.io/blob/master"
 disqus_id: sobolevn-me
+google_analytics_id: UA-66588818-1
 
 # Build settings
 include: [_pages]
