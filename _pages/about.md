@@ -57,7 +57,7 @@ I gave lectures in several Universities in Russia:
 - [MosPolytech](https://mospolytech.ru/) in 2017
 - [RANEPA](https://www.ranepa.ru/) in 2018
 - [IFMO](http://www.ifmo.ru/) in 2019
-- [SPbU](https://spbu.ru/) in 2020
+- [SPbU](https://spbu.ru/) in 2020/2021
 
 And I have also created several
 independent courses for `#tceh`, `iidf`, `devman`, and `Numa Moscow`.
