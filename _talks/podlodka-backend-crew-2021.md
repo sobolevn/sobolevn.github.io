@@ -1,6 +1,6 @@
 ---
-layout: interview
-title: "Discussion about open-source"
+layout: talk
+title: "Discussion about OpenSource"
 conference: podlodka backend crew
 slides:
 youtube: JeCzGdaA37g
