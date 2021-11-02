@@ -1,5 +1,5 @@
 ---
-layout: Interview
+layout: talk
 title: "OpenSource Motivation"
 conference: Russia OpenSource
 slides:
