@@ -1,5 +1,5 @@
 ---
-layout: interview
+layout: talk
 title: "Discussion about Code Quality"
 conference: FunBox Meetup
 slides:
