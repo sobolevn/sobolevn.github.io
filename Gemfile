@@ -6,4 +6,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 1.2.0"
   gem "jemoji", "~> 0.10.1"
   gem "jekyll-feed", "~> 0.11.0"
+  gem "kramdown-parser-gfm"
 end
