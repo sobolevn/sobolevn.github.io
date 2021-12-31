@@ -30,6 +30,7 @@ def logger(function: C) -> C:
 ```
 
 Notice the most important part here: `C = TypeVar('C', bound=Callable)`
+
 What does it mean? It means that we take any callable in and return the exact same callable.
 
 This allows you to decorate any function and preserve its signature:
@@ -56,7 +57,7 @@ def catch_exception(function):
 ```
 
 This is a perfectly valid Python code.
-But how can we type it? Note that we cannot use `C = TypeVar('C', bound=Callable)` anymore, since we are changing the type now.
+But how can we type it? Note that we cannot use `TypeVar('C', bound=Callable)` anymore, since we are changing the return type now.
 
 Initially, I've tried something like:
 
@@ -68,7 +69,7 @@ def catch_exception(function: Callable[..., T]) -> Callable[..., Optional[T]]:
 But, this means a different thing: it turns all function's arguments into `*args: Any, **kwargs: Any`, but, the return type will be correct. Generally, this is not what we need when it comes to type-safety.
 
 The second way to do that in a type-safe way is adding a custom Mypy plugin.
-Here's our example from [`dry-python/returns`](https://github.com/dry-python/returns) to support decorators that [were changing return types](https://github.com/dry-python/returns/blob/0.17.0/returns/contrib/mypy/_features/decorators.py). But, plugins are quite hard to write (you need to learn a bit of Mypy's API), they are not universal (for example, Pyright does not understand Mypy plugins), and they require to be explicitly installed by the end user.
+Here's our example from [`dry-python/returns`](https://github.com/dry-python/returns) to support decorators that [were changing return types](https://github.com/dry-python/returns/blob/0.17.0/returns/contrib/mypy/_features/decorators.py). But, plugins are quite hard to write (you need to learn a bit of Mypy's API), they are not universal (for example, Pyright does not understand Mypy plugins), and they require to be [explicitly installed](https://returns.readthedocs.io/en/latest/pages/contrib/mypy_plugins.html) by the end user.
 
 That's why `ParamSpec` was added. Here's how it can be used in this case:
 
@@ -115,7 +116,7 @@ Unfortunately, Mypy does not support `Concatenate` just yet, but I can show you 
 Let's start with some basic definitions:
 
 ```python
-from typing_extensions import ParamSpec, Concatenate
+from typing_extensions import ParamSpec, Concatenate  # or `typing` for `python>=3.10`
 
 P = ParamSpec('P')
 
