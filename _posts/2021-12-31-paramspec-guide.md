@@ -104,7 +104,7 @@ def plus(arg: int, other: int) -> int:
 reveal_type(plus)  # (arg: int, other: int) -> Optional[int]:
 ```
 
-The recent release of Mypy 0.930 with `ParamSpec` support allowed us to remove our custom Mypy plugin and use a well-defined primitive. Here's [a commit to show](https://github.com/dry-python/returns/commit/32aa73f852ef2ffb5ff4664b0d6e0ac2ebd71017) how easy our transition was.
+The recent release of Mypy 0.930 with `ParamSpec` support allowed us to remove our custom Mypy plugin and use a well-defined primitive. Here's [a commit to show](https://github.com/dry-python/returns/commit/32aa73f852ef2ffb5ff4664b0d6e0ac2ebd71017) how easy our transition was. It was even released today in [`returns@0.18.0`](https://github.com/dry-python/returns/releases/tag/0.18.0), check it out!
 
 ## What's next? Concatenate
 
