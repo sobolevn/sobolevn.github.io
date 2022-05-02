@@ -10,7 +10,7 @@ date: 2019-02-28
 tags: python sre devops
 ---
 
-We do not have SRE culture in [wemake.services](https://wemake.services).
+We do not have SRE culture in [wemake.services](https://wemake-services.github.io).
 And we somehow manage to live without it. A lot of people ask about it.
 
 This talk covers a lot of tools and practices

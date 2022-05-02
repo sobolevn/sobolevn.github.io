@@ -37,7 +37,7 @@ Before going any further and describing how we did manage to change our environm
 1. It indicates broken processes exist inside the company's workflow, but instead of fixing them people just point fingers and completely hide the problem. So, it will never be fixed
 2. It demotivates people. You can lose the best engineers because of that. There are companies where people behave differently. And we, engineers, can choose
 
-What can we do instead? We can build [our processes another way](https://wemake.services/meta/)!
+What can we do instead? We can build [our processes another way](https://wemake-services.github.io/meta/)!
 
 
 ## Improve your project instead of blaming anyone
@@ -127,4 +127,4 @@ This way it is hard and pointless to blame anyone, collaborate and build awesome
 
 Since we practice these things we have not failed a single project. And we have not lost a single engineer because of the conflict.
 
-Of course, this article does not cover all features and tricks that we use in our daily life, but you can read more about how we work at the [`RSDP` (Repeatable Software Development Process) home page](https://wemake.services/meta/). And you can [follow me on github](https://github.com/sobolevn) to be informed about what tools we build.
+Of course, this article does not cover all features and tricks that we use in our daily life, but you can read more about how we work at the [`RSDP` (Repeatable Software Development Process) home page](https://wemake-services.github.io/meta/). And you can [follow me on github](https://github.com/sobolevn) to be informed about what tools we build.

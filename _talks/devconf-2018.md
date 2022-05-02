@@ -18,4 +18,4 @@ It is beneficial for employers to pay less
 and force people to work as hard as possible.
 
 I have also offered them to take
-a look at the alternative solution: [RSDP](https://wemake.services/meta).
+a look at the alternative solution: [RSDP](https://wemake-services.github.io/meta).

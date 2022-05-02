@@ -10,7 +10,7 @@ date: 2018-08-22
 tags: rsdp documentation
 ---
 
-This talk covers [a simple process](https://wemake.services/meta/)
+This talk covers [a simple process](https://wemake-services.github.io/meta/)
 we follow in our company to document the code we write.
 
 The main idea of the process is to:

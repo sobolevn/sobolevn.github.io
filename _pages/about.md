@@ -12,13 +12,13 @@ This is how I usually look like:
 
 ## Work
 
-I work as a CTO at [wemake.services](https://wemake.services),
+I work as a CTO at [wemake.services](https://wemake-services.github.io),
 I also happen to be a founder of this company.
 
 The thing I like about my job is freedom, I can:
 - Create new products for our clients
 - Write a lot of [open-source code](https://github.com/sobolevn) [:star:](https://stars.github.com/profiles/sobolevn/)
-- Work on processes in our company, that's exactly how I came up with [`RSDP`](https://wemake.services/meta/)
+- Work on processes in our company, that's exactly how I came up with [`RSDP`](https://wemake-services.github.io/meta/)
 - Spread a word about what I do with my [blog posts](https://sobolevn.me/) and [conference talks](https://sobolevn.me/talks/)
 - Participate in different closely-related [activities](https://sobolevn.me/activities/)
 
@@ -82,7 +82,7 @@ My public `gpg` key is: [`C9F576BBC3A81B65BAF16635FF672D568AE3C73E`](https://key
 
 Please, drop me a line if you want to:
 
-1. Create a new product using [`RSDP`](https://wemake.services/meta)
-2. [Audit](https://wemake.services/meta/rsdp/audits/) your code
+1. Create a new product using [`RSDP`](https://wemake-services.github.io/meta)
+2. [Audit](https://wemake-services.github.io/meta/rsdp/audits/) your code
 3. Invite me to [speak](https://sobolevn.me/talks/) at your conference or meetup
 4. Invite me to make a [private consulting session](https://drylabs.io/)

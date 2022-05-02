@@ -11,7 +11,7 @@ tags: rsdp management education
 ---
 
 The main idea of this talk was: there are different methods of corporate education. And you should choose wisely.
-These methods include [audits](https://wemake.services/meta/rsdp/audits/) and [corporate consulting](https://drylabs.io).
+These methods include [audits](https://wemake-services.github.io/meta/rsdp/audits/) and [corporate consulting](https://drylabs.io).
 
 I also discussed why online courses do not work and what problems other platforms have.
 

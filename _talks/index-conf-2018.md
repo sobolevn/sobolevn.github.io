@@ -11,7 +11,7 @@ tags: rsdp management hiring
 ---
 
 This talk shows that there are different ways to hire people in 2018.
-I have covered different things that make [`wemake.services`](https://wemake.services)
+I have covered different things that make [`wemake.services`](https://wemake-services.github.io)
 so successful in this particular area.
 
 Including:

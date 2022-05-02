@@ -21,7 +21,7 @@ republished:
 
 ![Logo](https://thepracticaldev.s3.amazonaws.com/i/3p0vlvdavfjlwr3neiw8.png)
 
-Agile people are obsessed with writing user stories. And it is a powerful instrument indeed. But, from [my practice](https://wemake.services/meta/rsdp/audits/) a lot of people are doing it wrong.
+Agile people are obsessed with writing user stories. And it is a powerful instrument indeed. But, from [my practice](https://wemake-services.github.io/meta/rsdp/audits/) a lot of people are doing it wrong.
 
 Let's see an example:
 
@@ -189,7 +189,7 @@ I like how this simple user story now feels like a quite complex one. Because it
 
 Currently, it is not clear how important it is for architects to "overview and track issues' progress". Is it more important than other user stories we have? Since it looks rather complex maybe we can do something easier and more important instead?
 
-Ranking and prioritization are crucial to any product and we cannot ignore it. Even if we have user stories as the only way to write requirements. There are different methods to prioritize your requirements, but we recommend to stick to [MoSCoW method](https://wemake.services/meta/rsdp/requirements-analysis/#requirements-prioritization). This simple method is based on four main categories: `must`, `should`, `could`, and `won't`. And implies that we will have a separate prioritized table of all user stories in a project somewhere in the documentation.
+Ranking and prioritization are crucial to any product and we cannot ignore it. Even if we have user stories as the only way to write requirements. There are different methods to prioritize your requirements, but we recommend to stick to [MoSCoW method](https://wemake-services.github.io/meta/rsdp/requirements-analysis/#requirements-prioritization). This simple method is based on four main categories: `must`, `should`, `could`, and `won't`. And implies that we will have a separate prioritized table of all user stories in a project somewhere in the documentation.
 
 And again, we need to ask users about how important each feature is.
 

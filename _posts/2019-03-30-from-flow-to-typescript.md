@@ -35,7 +35,7 @@ Please, do not make your face like this. I will explain how it works, and possib
 
 I quite often [speak](https://sobolevn.me/talks/) about our stack, write articles about it, etc. And every time I said that we were using `Flow` other developers asked me: "But why not `TypeScript`"? And every time I had to explain my choice. Going deep into details, history, and tooling. Sometimes even explaining the state of current projects and our workflow. This was not a pleasant experience when you are not advocating for something. I was just a user. I do not really prefer one to another. And it felt really strange to had this conversation over and over again.
 
-Moreover, we make services for our clients, and [we hire](https://wemake.services/meta/rsdp/job-application/) other developers. And some of them literally wants to work with `TypeScript` and does not want to work with `Flow`. Why? Because they heard about `TypeScript` and how awesome it is. While the hype train around `Flow` is not so massive.
+Moreover, we make services for our clients, and [we hire](https://wemake-services.github.io/meta/rsdp/job-application/) other developers. And some of them literally wants to work with `TypeScript` and does not want to work with `Flow`. Why? Because they heard about `TypeScript` and how awesome it is. While the hype train around `Flow` is not so massive.
 
 > Me: Hi, we use X, Y, Z, and `Flow` for this project
 

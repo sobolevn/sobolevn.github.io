@@ -13,7 +13,7 @@ There are some basic engineering practices that I want to cover with a series of
 
 First, why do I think that fixing bugs is the most important thing?
 Because bugs happen all the time. If you write code, you write bugs.
-And that's not a problem at all. [Repeatable Software Development Process](https://wemake.services/meta/), that we stick to, works on that basis: people make mistakes.
+And that's not a problem at all. [Repeatable Software Development Process](https://wemake-services.github.io/meta/), that we stick to, works on that basis: people make mistakes.
 I wrote an article about it not so long ago: [developer should not be blamed for bugs, the project should be](https://sobolevn.me/2018/12/blameless-environment).
 
 The important thing is: how do you respond to the bugs you and other people have created? What do you do to prevent them from happening in the future? How do you even know that this buggy situation even exist?

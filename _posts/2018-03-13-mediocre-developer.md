@@ -85,7 +85,7 @@ The thing is: anyone should not be allowed to write code with obvious errors. At
 3. Use automated style checks. There are tons of the style checkers for every language
 4. Use quality checks. Some tools run some complex heuristic algorithms on your code base to detect different problems like this line has too many logics inside, this class is not needed, this function is too complex
 5. Review your code. Review it before merging to `master`. And sometime after the merge
-6. [Pay other people to audit your code](https://wemake.services/meta/rsdp/audits/). This technique has a huge positive influence! Because when developers look at your code for the first time it is easier for them to spot inconsistencies and bad design decisions
+6. [Pay other people to audit your code](https://wemake-services.github.io/meta/rsdp/audits/). This technique has a huge positive influence! Because when developers look at your code for the first time it is easier for them to spot inconsistencies and bad design decisions
 
 
 ## It should work not only on my computer

@@ -19,7 +19,7 @@ amount of time and money trying to teach them.
 This simply does not work.
 
 I have also offered them to take
-a look at the alternative solution: [RSDP](https://wemake.services/meta).
+a look at the alternative solution: [RSDP](https://wemake-services.github.io/meta).
 
 
 ## Related talks
