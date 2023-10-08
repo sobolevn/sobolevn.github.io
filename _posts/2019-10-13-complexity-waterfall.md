@@ -156,7 +156,7 @@ Compare it with the simple and readable version:
 ```python
 [
     (x, y, z)
-    for x, y, x in itertools.product(x_coords, y_coords, z_coords)
+    for x, y, z in itertools.product(x_coords, y_coords, z_coords)
     if valid_coordinates(x, y, z)
 ]
 ```
