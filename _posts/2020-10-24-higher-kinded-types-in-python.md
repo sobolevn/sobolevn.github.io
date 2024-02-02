@@ -144,7 +144,7 @@ reveal_type(stringify_iterable_items({1, 2}))
 
 Awesome! Looks like we've achieved our goal, haven't we? But, there's a new problem. We have to manually list all possible cases in a function's signature. This works for cases when all possible arguments and outcomes are known in advance. But, not in this case. In Python `Iterable` is a protocol. We can use this function with any type with `__iter__` method defined: with both builtin and custom types. So, the number of possible arguments and outcomes is endless.
 
-To illusrate the problem, let's see what happens for `Tuple` which is not listed in the function's overloads:
+To illustrate the problem, let's see what happens for `Tuple` which is not listed in the function's overloads:
 
 ```python
 reveal_type(stringify_iterable_items((1, 2, 3)))
@@ -269,7 +269,7 @@ class Kind(Generic[_InstanceType, _FirstTypeArgType]):
     """Used for HKT emulation."""
 ```
 
-One pro-tip about `Kind`: it won't not exist during runtime. Only during type-checking.
+One pro-tip about `Kind`: it will not exist during runtime. Only during type-checking.
 
 Now, let's change `apply_function` to use `Kind`:
 
