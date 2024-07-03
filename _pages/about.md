@@ -27,7 +27,7 @@ The thing I like about my job is freedom, I can:
 I also run a few side projects:
 
 - [hrvs.tech](https://hrvs.tech/) where I help recruiters to write great vacancies for developers (**closed**)
-- [drylabs.io](https://drylabs.io/) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
+- [drylabs.io]([https://drylabs.io/](https://dry-labs.github.io/)) where I consult people about their architecture and design decisions. This project is started with sustainable open-source model in mind
 - [OpensourceFindings](https://t.me/opensource_findings) channel where I share and advertise awesome open-source related projects, articles, and talks
 
 
@@ -85,4 +85,4 @@ Please, drop me a line if you want to:
 1. Create a new product using [`RSDP`](https://wemake-services.github.io/meta)
 2. [Audit](https://wemake-services.github.io/meta/rsdp/audits/) your code
 3. Invite me to [speak](https://sobolevn.me/talks/) at your conference or meetup
-4. Invite me to make a [private consulting session](https://drylabs.io/)
+4. Invite me to make a [private consulting session](https://dry-labs.github.io/)
