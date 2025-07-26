@@ -16,6 +16,7 @@ What's included?
 - Controlling the preparation process from the client
 - All the paperwork
 
-Paid conference talks is one of the main way that allow me to keep producing high quality opensource libraries and free educational content.
+Paying for conference talks is one of the main ways
+that allows me to keep producing high quality opensource libraries and free educational content.
 
 Just [drop me a line!](mailto:mail@sobolevn.me)
