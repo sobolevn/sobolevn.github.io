@@ -12,9 +12,13 @@ If it is a paid conference / company organized free event – my price is 200.00
 What's included?
 - All the travel consts
 - Styling the presentation into any template you wish
-- Custom talk ideas
+- Custom talk topics
 - Controlling the preparation process from the client
 - All the paperwork
+
+What's not included?
+- Ads or promotions in my Telegram / YouTube channels, you can buy them separately
+- You can't tell me what to say, I don't sell my opinion
 
 Paying for conference talks is one of the main ways
 that allows me to keep producing high quality opensource libraries and free educational content.
