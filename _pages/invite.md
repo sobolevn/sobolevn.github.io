@@ -10,7 +10,7 @@ If it is a free community event – I will speak there for free, except the trav
 If it is a paid conference / company organized free event – my price is 200.000 rubles for a talk.
 
 What's included?
-- All the travel consts
+- All the travel costs
 - Styling the presentation into any template you wish
 - Custom talk topics
 - Controlling the preparation process from the client
