@@ -7,7 +7,7 @@ permalink: /invite/
 If you want to invite me to a conference, I would be happy to participate.
 
 If it is a free community event – I will speak there for free, except the travel compensation.
-If it is a paid conference / company organized free event – my price is 200.000 rubles for a talk.
+If it is a paid conference / company organized free event – my price is **200.000** rubles for a talk.
 
 What's included?
 - All the travel costs
